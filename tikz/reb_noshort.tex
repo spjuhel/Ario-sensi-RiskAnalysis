@@ -1,0 +1,57 @@
+\begin{tikzpicture}[domain=0:10, line width = 1pt, scale=0.6]
+  % \draw (-0.1,0) grid (4.9,4.9);
+
+  \draw[->] (-0.2,0) -- (10.2,0) node[below, xshift=-2ex] {$Time$};
+  \draw[->] (0,-0.2) -- (0,5.2) node[left, xshift=-3ex, rotate=90] {$Production$};
+
+  \draw[dashed, thin, name=initlevel] (0,3.0) -- (9.9,3.0);
+
+  \draw (0,3.0) -- (0.5,3.0);
+
+  \coordinate (a) at (0.5,3.0);
+  \coordinate (b) at (0.6,2.0);
+  \coordinate (c) at (2,2.0);
+  \coordinate (d) at (2.5,2.05);
+  \coordinate (e) at (3.0,2.45);
+  \coordinate (f) at (4.2,0.40);
+  \coordinate (g) at (4.7,1.2);
+  \coordinate (h) at (5.5,4.0);
+  \coordinate (i) at (7.25,3.5);
+  \coordinate (j) at (9.9,3.0);
+
+  \draw [name=event] (a) -- (b) -- (c);
+
+  \draw [name=beforeshort] (c) .. controls (d) .. (e);
+
+  \draw (e) parabola[bend at end] (h) parabola[bend at end]  (j);
+
+  %\path [name intersections={of=(0,3.0) -- (9.9,3.0) and (e) parabola[bend at end] (h),by=int}];
+  \draw[red,dotted] (0,0 -| a) -- (a) -- (a |- 0,5.2);
+  % \draw[red,dotted] (0,0 -| int) -- (int |- 0,5.2);
+  % \draw[red,dotted] (0,0 -| e) -- (e) -- (e |- 0,5.2);
+  % \draw[red,dotted] (0,0 -| h) -- (h) -- (h |- 0,5.2);
+
+  \begin{scope}[on background layer]
+    \begin{scope}
+      \clip (0,0 -| a) rectangle (h |- 0,3.0);
+      \fill [blue!20] (a) -- (b) -- (c) .. controls (d) .. (e) parabola[bend at end] (h) -- (h |- 0,3.0) -- cycle;
+    \end{scope}
+
+    \begin{scope}
+      \clip (0.5,3.0) rectangle (10,6);
+      \fill [yellow!20] (e) parabola[bend at end] (h) parabola[bend at end]  (j) -- cycle;
+    \end{scope}
+  \end{scope}
+
+  % \node[circle,draw,red,scale=0.7, inner sep=1pt] at (0.25,1) {A};
+  % \node[circle,draw,red,scale=0.7, inner sep=1pt] at (1.3,1) {B};
+  % \node[circle,draw,red,scale=0.7, inner sep=1pt] at (2.25,1) {C};
+  % \node[circle,draw,red,scale=0.7, inner sep=1pt] at (3.75,1) {D};
+  % \node[circle,draw,red,scale=0.7, inner sep=1pt] at (6.0,1) {E};
+
+\end{tikzpicture}
+
+%%% Local Variables:
+%%% mode: latex
+%%% TeX-master: "../main"
+%%% End:
