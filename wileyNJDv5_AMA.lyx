@@ -93,7 +93,7 @@
 \html_math_output 0
 \html_css_as_file 0
 \html_be_strict false
-\author 1286759212 "Vincent Viguié"
+\author -1263083292 "Samuel Juhel"
 \end_header
 
 \begin_body
@@ -392,14 +392,9 @@ literal "false"
 \end_layout
 
 \begin_layout Standard
-These models enable researchers to 
-\change_deleted 1286759212 1687510182
-evaluate
-\change_inserted 1286759212 1687510183
-analyze
-\change_unchanged
- the economic consequences of disasters in ways that would be difficult
- to achieve empirically, as well as enabling prospective analysis.
+These models enable researchers to analyze the economic consequences of
+ disasters in ways that would be difficult to achieve empirically, as well
+ as enabling prospective analysis.
  They can be parameterized to reproduce existing empirical assessments of
  natural disasters, providing insights into associated impacts that may
  not be directly evaluated through empirical means.
@@ -420,24 +415,17 @@ literal "false"
 To our knowledge, no study exists on the sensitivity to the selection of
  multi-regional input-output tables (MRIOT)
 \color inherit
-.
-\change_inserted 1286759212 1687510267
-
+ from different sources.
 \begin_inset Note Note
 status open
 
 \begin_layout Plain Layout
-
-\change_inserted 1286759212 1687510314
-c'est fait dans les papiers sur les flood globales, non?
-\change_unchanged
-
+c'est fait dans les papiers sur les flood globales, non? SJ: Oui mais seulement
+ entre différente années de la même source
 \end_layout
 
 \end_inset
 
-
-\change_unchanged
  This contrasts with the fact that such tables serve as crucial input economic
  data for these models and that there is an increasing availability of them
  
@@ -464,21 +452,8 @@ literal "false"
 \end_inset
 
 .
- 
-\change_deleted 1286759212 1687510362
-We explore a set of parameters and input data that align its simulation
- outcomes with existing empirical evidence of the economic consequences
- of the event.
- Through this analysis, we demonstrate that a wide range of simulation outcomes
- can be achieved while remaining coherent with empirical data.
- The ARIO
-\change_unchanged
- 
-\change_inserted 1286759212 1687510365
-This 
-\change_unchanged
-model is one of the most frequently used models in the literature for studying
- the economic impact of disasters 
+ This model is one of the most frequently used models in the literature
+ for studying the economic impact of disasters 
 \begin_inset CommandInset citation
 LatexCommand cite
 key "guan20_global_suppl_chain_effec_covid_contr_measur,   hallegatte08_adapt_region_input_output_model,   koks14_integ_direc_indir_flood_risk_model,   ranger10_asses_poten_impac_climat_chang, wang20_econom_footp_calif_wildf,   zhang-2018-analy-econom"
@@ -496,38 +471,25 @@ literal "false"
 \end_inset
 
 .
-
-\change_inserted 1286759212 1687510359
  We explore a set of parameters and input data that align its simulation
  outcomes with existing empirical evidence of the economic consequences
  of the event.
  Through this analysis, we demonstrate that a wide range of simulation outcomes
  can be achieved while remaining coherent with empirical data.
- 
-\change_unchanged
-
 \end_layout
 
 \begin_layout Standard
 To carry out this analysis, we developed a new open-source and resource-efficien
 t Python implementation of the ARIO model, called BoARIO
-\change_inserted 1286759212 1687510394
-
 \begin_inset Foot
 status open
 
 \begin_layout Plain Layout
-
-\change_inserted 1286759212 1687510395
 https://github.com/spjuhel/BoARIO
-\change_unchanged
-
 \end_layout
 
 \end_inset
 
-
-\change_unchanged
 .
  We first carry out simulations over a large set of parameters, and then
  incrementally reduce the set by excluding the values that produce results
@@ -540,19 +502,9 @@ https://github.com/spjuhel/BoARIO
  consequences of the natural disaster.
  This
 \color red
- 
-\change_deleted 1286759212 1687510489
-raises
-\change_unchanged
- 
-\change_inserted 1286759212 1687510634
-highlights the uncertainty of the estimates obtained when using similar
+ highlights the uncertainty of the estimates obtained when using similar
  models 
-\change_deleted 1286759212 1687510638
-the question of the use
 \color inherit
- of similar models 
-\change_unchanged
 in prospective studies 
 \begin_inset CommandInset citation
 LatexCommand cite
@@ -561,30 +513,13 @@ literal "false"
 
 \end_inset
 
-, over events whose indirect consequences are by nature not observed
-\change_inserted 1286759212 1687510690
-.
- This also calls for
-\change_deleted 1286759212 1687510665
-.
-
-\change_unchanged
+, over events whose indirect consequences are by nature not observed.
+ This also calls for improvements in the collection of detailed economic
+ data after present day natural disasters, 
+\change_deleted -1263083292 1689690174
  
-\change_inserted 1286759212 1687510673
-i
-\change_deleted 1286759212 1687510672
-I
 \change_unchanged
-mprovements in the collection of detailed economic data after present day
- natural disasters
-\change_inserted 1286759212 1687510677
-,
-\change_unchanged
- 
-\change_deleted 1286759212 1687510682
-is therefore key
-\change_unchanged
- to better anticipate the economic cost of future natural disasters caused
+to better anticipate the economic cost of future natural disasters caused
  by climate change.
 \end_layout
 
@@ -603,17 +538,7 @@ name "sec2"
 \end_layout
 
 \begin_layout Standard
-Our case study 
-\change_deleted 1286759212 1687510720
-consists
-\change_inserted 1286759212 1687510720
-is
-\change_unchanged
- 
-\change_deleted 1286759212 1687510722
-in 
-\change_unchanged
-the flood event that affected Germany in July 2021.
+Our case study is the flood event that affected Germany in July 2021.
  The flooding event resulted from a large-scale weather situation that affected
  Western and Central Europe from 13 to 15 July 2021.
  This flood is considered to be the worst flooding disaster in Germany since
@@ -702,33 +627,42 @@ name "subsec31"
 \end_layout
 
 \begin_layout Standard
-The ARIO model 
-\change_deleted 1286759212 1687510796
-still
-\change_unchanged
- is one of the most widely used model to simulate the indirect economic
- costs and for a wide range of possible shocks
-\change_inserted 1286759212 1687510821
-
 \begin_inset Note Note
 status open
 
 \begin_layout Plain Layout
-
-\change_inserted 1286759212 1687510835
 commence par une pjhrase sur son histoire ancienne, quand il a été cr'é
  etc.
  avant de parler des papiers récents
-\change_unchanged
-
 \end_layout
 
 \end_inset
 
+ The ARIO model, was first developed in 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "hallegatte08_adapt_region_input_output_model"
+literal "false"
 
-\change_unchanged
-.
- Recently, 
+\end_inset
+
+ to study the economic consequences of hurricane Katrina in Louisiana.
+ Since then, ARIO has been used in several local case studies on the effect
+ of various natural disasters (or economic shocks in general) see Figure~
+\backslash
+ref{fig1}.
+ ARIO was later improved in 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "hallegatte13_model_role_inven_heter_asses"
+literal "false"
+
+\end_inset
+
+ to integrate inventory mechanisms and is now part the most widely used
+ models to simulate the indirect economic costs and for a wide range of
+ possible shocks.
+ More recently, 
 \begin_inset CommandInset citation
 LatexCommand cite
 key "huang-2020-asses-econom"
@@ -944,7 +878,11 @@ Regaining its production capacity following an exogenous recovery function
 \end_inset
 
 .
+
+\change_deleted -1263083292 1689690174
  
+\change_unchanged
+
 \end_layout
 
 \begin_layout Enumerate
@@ -955,7 +893,11 @@ Via the endogenous answer to a rebuilding demand.
 \end_inset
 
 .
+
+\change_deleted -1263083292 1689690174
  
+\change_unchanged
+
 \end_layout
 
 \begin_layout Standard
@@ -1143,31 +1085,59 @@ literal "false"
 
 \begin_layout Itemize
 Activities of membership organization n.e.c.
- (91) 
+ (91)
+\change_deleted -1263083292 1689690174
+ 
+\change_unchanged
+
 \end_layout
 
 \begin_layout Itemize
-Extra-territorial organizations and bodies 
+Extra-territorial organizations and bodies
+\change_deleted -1263083292 1689690174
+ 
+\change_unchanged
+
 \end_layout
 
 \begin_layout Itemize
-Financial intermediation, except insurance and pension funding (65) 
+Financial intermediation, except insurance and pension funding (65)
+\change_deleted -1263083292 1689690174
+ 
+\change_unchanged
+
 \end_layout
 
 \begin_layout Itemize
-Insurance and pension funding, except compulsory social security (66) 
+Insurance and pension funding, except compulsory social security (66)
+\change_deleted -1263083292 1689690174
+ 
+\change_unchanged
+
 \end_layout
 
 \begin_layout Itemize
-Real estate activities (70) 
+Real estate activities (70)
+\change_deleted -1263083292 1689690174
+ 
+\change_unchanged
+
 \end_layout
 
 \begin_layout Itemize
-Recreational, cultural and sporting activities (92) 
+Recreational, cultural and sporting activities (92)
+\change_deleted -1263083292 1689690174
+ 
+\change_unchanged
+
 \end_layout
 
 \begin_layout Itemize
-Activities auxiliary to financial intermediation (67) 
+Activities auxiliary to financial intermediation (67)
+\change_deleted -1263083292 1689690174
+ 
+\change_unchanged
+
 \end_layout
 
 \begin_layout Standard
@@ -1249,8 +1219,12 @@ status open
 
 \series bold
 Name
+\change_deleted -1263083292 1689690174
+
 \series default
  
+\change_unchanged
+
 \end_layout
 
 \end_inset
@@ -1262,8 +1236,12 @@ Name
 
 \series bold
 Number of sectors
+\change_deleted -1263083292 1689690174
+
 \series default
  
+\change_unchanged
+
 \end_layout
 
 \end_inset
@@ -1275,8 +1253,12 @@ Number of sectors
 
 \series bold
 Number of regions
+\change_deleted -1263083292 1689690174
+
 \series default
  
+\change_unchanged
+
 \end_layout
 
 \end_inset
@@ -1288,8 +1270,12 @@ Number of regions
 
 \series bold
 Other characteristics
+\change_deleted -1263083292 1689690174
+
 \series default
  
+\change_unchanged
+
 \end_layout
 
 \end_inset
@@ -1300,7 +1286,11 @@ Other characteristics
 \begin_inset Text
 
 \begin_layout Plain Layout
-EXIOBASE 3 
+EXIOBASE 3
+\change_deleted -1263083292 1689690174
+ 
+\change_unchanged
+
 \end_layout
 
 \end_inset
@@ -1309,7 +1299,11 @@ EXIOBASE 3
 \begin_inset Text
 
 \begin_layout Plain Layout
-163 
+163
+\change_deleted -1263083292 1689690174
+ 
+\change_unchanged
+
 \end_layout
 
 \end_inset
@@ -1372,7 +1366,11 @@ Basic prices,
 \begin_inset Text
 
 \begin_layout Plain Layout
-EUREGIO 
+EUREGIO
+\change_deleted -1263083292 1689690174
+ 
+\change_unchanged
+
 \end_layout
 
 \end_inset
@@ -1381,7 +1379,11 @@ EUREGIO
 \begin_inset Text
 
 \begin_layout Plain Layout
-14 
+14
+\change_deleted -1263083292 1689690174
+ 
+\change_unchanged
+
 \end_layout
 
 \end_inset
@@ -1449,7 +1451,11 @@ EUREGIO
 \begin_inset Text
 
 \begin_layout Plain Layout
-WIOD based, 
+WIOD based,
+\change_deleted -1263083292 1689690174
+ 
+\change_unchanged
+
 \end_layout
 
 \end_inset
@@ -1460,7 +1466,11 @@ WIOD based,
 \begin_inset Text
 
 \begin_layout Plain Layout
-with NUTS2 regional 
+with NUTS2 regional
+\change_deleted -1263083292 1689690174
+ 
+\change_unchanged
+
 \end_layout
 
 \end_inset
@@ -1496,7 +1506,11 @@ disaggregation for EU,
 \begin_inset Text
 
 \begin_layout Plain Layout
-EORA26 
+EORA26
+\change_deleted -1263083292 1689690174
+ 
+\change_unchanged
+
 \end_layout
 
 \end_inset
@@ -1505,7 +1519,11 @@ EORA26
 \begin_inset Text
 
 \begin_layout Plain Layout
-26 
+26
+\change_deleted -1263083292 1689690174
+ 
+\change_unchanged
+
 \end_layout
 
 \end_inset
@@ -1514,7 +1532,11 @@ EORA26
 \begin_inset Text
 
 \begin_layout Plain Layout
-189 
+189
+\change_deleted -1263083292 1689690174
+ 
+\change_unchanged
+
 \end_layout
 
 \end_inset
@@ -1527,7 +1549,11 @@ Basic prices,
 \begin_inset Formula $10^{3}$
 \end_inset
 
-$ 
+$
+\change_deleted -1263083292 1689690174
+ 
+\change_unchanged
+
 \end_layout
 
 \end_inset
@@ -1553,7 +1579,11 @@ name "tab:mriot"
 
 \end_inset
 
+
+\change_deleted -1263083292 1689690174
  
+\change_unchanged
+
 \end_layout
 
 \end_inset
@@ -1691,7 +1721,11 @@ If
  is close to 0, an inventory reduction in an industry is homogeneously distribut
 ed among its firms: inventory reduction impacts industry production only
  if its large enough to affect a sufficiently large part of the firms.
+
+\change_deleted -1263083292 1689690174
  
+\change_unchanged
+
 \end_layout
 
 \begin_layout Itemize
@@ -1702,7 +1736,11 @@ If
  is close to 1, an inventory reduction in an industry is concentrated in
  a few firms and forces them to stop producing which directly impact production
  on the industry level.
+
+\change_deleted -1263083292 1689690174
  
+\change_unchanged
+
 \end_layout
 
 \begin_layout Standard
@@ -1750,7 +1788,10 @@ name "subsubsec423"
 
 \begin_layout Standard
 We also consider two options for recovery of destroyed productive capital:
+\change_deleted -1263083292 1689690174
  
+\change_unchanged
+
 \end_layout
 
 \begin_layout Description
@@ -1765,7 +1806,11 @@ Recovery case
 \end_inset
 
  Exogenous linear recovery.
+
+\change_deleted -1263083292 1689690174
  
+\change_unchanged
+
 \end_layout
 
 \begin_layout Description
@@ -1811,7 +1856,11 @@ noprefix "false"
 \end_inset
 
 .
+
+\change_deleted -1263083292 1689690174
  
+\change_unchanged
+
 \end_layout
 
 \begin_layout Standard
@@ -1865,7 +1914,11 @@ For the recovery case, a characteristic period of
 \end_inset
 
  of the remaining rebuilding demand is ordered at each step.
+
+\change_deleted -1263083292 1689690174
  
+\change_unchanged
+
 \end_layout
 
 \end_inset
@@ -1932,7 +1985,11 @@ USA
 ROW
 \family default
  region (i.e., the affected region, a geographically close region, two geographica
-lly far and major economies, and the rest of the world) 
+lly far and major economies, and the rest of the world)
+\change_deleted -1263083292 1689690174
+ 
+\change_unchanged
+
 \end_layout
 
 \begin_layout Itemize
@@ -1940,8 +1997,12 @@ lly far and major economies, and the rest of the world)
 \family typewriter
 Agriculture, Construction, Energy and Utilities and Mining, Manufacture,
  Sales, Transports and Services, Others
+\change_deleted -1263083292 1689690174
+
 \family default
  
+\change_unchanged
+
 \end_layout
 
 \begin_layout Standard
@@ -2114,23 +2175,39 @@ When we look at simulations where indirect losses are more than five times
 
 \begin_layout Itemize
 Rebuilding demand is considered.
+
+\change_deleted -1263083292 1689690174
  
+\change_unchanged
+
 \end_layout
 
 \begin_layout Itemize
 Rebuilding time is below a year (six and three month).
+
+\change_deleted -1263083292 1689690174
  
+\change_unchanged
+
 \end_layout
 
 \begin_layout Itemize
 \begin_inset Formula $\psi$
 \end_inset
 
- is at least equal to 0.95 
+ is at least equal to 0.95
+\change_deleted -1263083292 1689690174
+ 
+\change_unchanged
+
 \end_layout
 
 \begin_layout Itemize
-Overproduction pace is low enough 
+Overproduction pace is low enough
+\change_deleted -1263083292 1689690174
+ 
+\change_unchanged
+
 \end_layout
 
 \begin_layout Standard
@@ -2149,7 +2226,11 @@ All sets where rebuilding time is three months and
 \end_inset
 
  is at least 0.97.
+
+\change_deleted -1263083292 1689690174
  
+\change_unchanged
+
 \end_layout
 
 \begin_layout Itemize
@@ -2162,7 +2243,11 @@ All sets where rebuilding time is six months,
 \end_inset
 
  is strictly greater than 90 days.
+
+\change_deleted -1263083292 1689690174
  
+\change_unchanged
+
 \end_layout
 
 \begin_layout Itemize
@@ -2175,7 +2260,11 @@ All sets where
 \end_inset
 
  is strictly greater than 90 days.
+
+\change_deleted -1263083292 1689690174
  
+\change_unchanged
+
 \end_layout
 
 \begin_layout Standard
@@ -3252,25 +3341,41 @@ The economy is modelled as a set of economic sectors and a set of regions.
 \end_layout
 
 \begin_layout Standard
-Multiple kinds of shocks can be implemented: 
+Multiple kinds of shocks can be implemented:
+\change_deleted -1263083292 1689690174
+ 
+\change_unchanged
+
 \end_layout
 
 \begin_layout Itemize
 On the production capacity directly (one or multiple industries are arbitrarily
- forced to produce less) 
+ forced to produce less)
+\change_deleted -1263083292 1689690174
+ 
+\change_unchanged
+
 \end_layout
 
 \begin_layout Itemize
 On the productive capital (one or multiple industries arbitrarily lose some
  part of their factors of production and are thus forced to both produce
  less and to build back their capital stock).
+
+\change_deleted -1263083292 1689690174
  
+\change_unchanged
+
 \end_layout
 
 \begin_layout Itemize
 On the households (households of affected regions lose some part of their
  goods and seek to get them back).
+
+\change_deleted -1263083292 1689690174
  
+\change_unchanged
+
 \end_layout
 
 \begin_layout Standard
@@ -3313,14 +3418,22 @@ Direct economic impact consists in the valuation of the initial exogenous
 \begin_layout Itemize
 Final demand not met, i.e.
  goods that households could not buy due to rationing.
+
+\change_deleted -1263083292 1689690174
  
+\change_unchanged
+
 \end_layout
 
 \begin_layout Itemize
 Relative production change, i.e.
  diminished or increased production of industries relative to their initial
  production.
+
+\change_deleted -1263083292 1689690174
  
+\change_unchanged
+
 \end_layout
 
 \begin_layout Standard
@@ -3506,7 +3619,11 @@ Such a reduction also happens in the Recovery case but to a lesser extent,
 \begin_inset Formula $O(t)$
 \end_inset
 
+
+\change_deleted -1263083292 1689690174
  
+\change_unchanged
+
 \end_layout
 
 \begin_layout Paragraph
@@ -3612,7 +3729,11 @@ Finally, the actual production
 \begin_layout Itemize
 Lastly, inputs required for production are then drawn from their respective
  inventories.
+
+\change_deleted -1263083292 1689690174
  
+\change_unchanged
+
 \end_layout
 
 \begin_layout Paragraph
@@ -3688,7 +3809,11 @@ In case capital rebuilding has been set as endogenous, only a fraction
  Rebuilding demand is used to build back capital stocks and thus restores
  production capacities to their pre-shock levels.
  If capital rebuilding is exogenous, there is no rebuilding demand.
+
+\change_deleted -1263083292 1689690174
  
+\change_unchanged
+
 \end_layout
 
 \begin_layout Paragraph
@@ -3950,7 +4075,11 @@ If a shortage happens, production reduces to match its inventories.
  so that the gap starts decreasing.
  Production then increases back as in the last phase of c), but sharply
  due to the increased orders to refill inventories.
+
+\change_deleted -1263083292 1689690174
  
+\change_unchanged
+
 \end_layout
 
 \begin_layout Standard
@@ -4016,7 +4145,11 @@ Industries can always hire (for overproduction).
 \begin_layout Itemize
 Industries and households can always buy goods (no prices, no wages, no
  budget).
+
+\change_deleted -1263083292 1689690174
  
+\change_unchanged
+
 \end_layout
 
 \begin_layout Subsubsection
@@ -4048,7 +4181,11 @@ The model does not account for price variations.
 The implementation does (yet) not account for the role of labor (notably
  the reduction in production capacity due to workers not being able to work
  during the event).
+
+\change_deleted -1263083292 1689690174
  
+\change_unchanged
+
 \end_layout
 
 \begin_layout Section
@@ -4270,8 +4407,12 @@ centering
 
 \series bold
 Study
+\change_deleted -1263083292 1689690174
+
 \series default
  
+\change_unchanged
+
 \end_layout
 
 \end_inset
@@ -4283,8 +4424,12 @@ Study
 
 \series bold
 Method
+\change_deleted -1263083292 1689690174
+
 \series default
  
+\change_unchanged
+
 \end_layout
 
 \end_inset
@@ -4296,8 +4441,12 @@ Method
 
 \series bold
 Direct damages estimate
+\change_deleted -1263083292 1689690174
+
 \series default
  
+\change_unchanged
+
 \end_layout
 
 \end_inset
@@ -4309,8 +4458,12 @@ Direct damages estimate
 
 \series bold
 Indirect damage estimate
+\change_deleted -1263083292 1689690174
+
 \series default
  
+\change_unchanged
+
 \end_layout
 
 \end_inset
@@ -4322,8 +4475,12 @@ Indirect damage estimate
 
 \series bold
 Ratio indirect/direct
+\change_deleted -1263083292 1689690174
+
 \series default
  
+\change_unchanged
+
 \end_layout
 
 \end_inset
@@ -4341,7 +4498,11 @@ literal "false"
 
 \end_inset
 
+
+\change_deleted -1263083292 1689690174
  
+\change_unchanged
+
 \end_layout
 
 \end_inset
@@ -4350,7 +4511,11 @@ literal "false"
 \begin_inset Text
 
 \begin_layout Plain Layout
-ARIO v1 
+ARIO v1
+\change_deleted -1263083292 1689690174
+ 
+\change_unchanged
+
 \end_layout
 
 \end_inset
@@ -4359,7 +4524,11 @@ ARIO v1
 \begin_inset Text
 
 \begin_layout Plain Layout
-$107 Billion 
+$107 Billion
+\change_deleted -1263083292 1689690174
+ 
+\change_unchanged
+
 \end_layout
 
 \end_inset
@@ -4368,7 +4537,11 @@ $107 Billion
 \begin_inset Text
 
 \begin_layout Plain Layout
-$42 Billion 
+$42 Billion
+\change_deleted -1263083292 1689690174
+ 
+\change_unchanged
+
 \end_layout
 
 \end_inset
@@ -4377,7 +4550,11 @@ $42 Billion
 \begin_inset Text
 
 \begin_layout Plain Layout
-39% 
+39%
+\change_deleted -1263083292 1689690174
+ 
+\change_unchanged
+
 \end_layout
 
 \end_inset
@@ -4395,7 +4572,11 @@ literal "false"
 
 \end_inset
 
+
+\change_deleted -1263083292 1689690174
  
+\change_unchanged
+
 \end_layout
 
 \end_inset
@@ -4404,7 +4585,11 @@ literal "false"
 \begin_inset Text
 
 \begin_layout Plain Layout
-ARIO v1 
+ARIO v1
+\change_deleted -1263083292 1689690174
+ 
+\change_unchanged
+
 \end_layout
 
 \end_inset
@@ -4413,7 +4598,11 @@ ARIO v1
 \begin_inset Text
 
 \begin_layout Plain Layout
-$1500 Million 
+$1500 Million
+\change_deleted -1263083292 1689690174
+ 
+\change_unchanged
+
 \end_layout
 
 \end_inset
@@ -4422,7 +4611,11 @@ $1500 Million
 \begin_inset Text
 
 \begin_layout Plain Layout
-$425 Million 
+$425 Million
+\change_deleted -1263083292 1689690174
+ 
+\change_unchanged
+
 \end_layout
 
 \end_inset
@@ -4431,7 +4624,11 @@ $425 Million
 \begin_inset Text
 
 \begin_layout Plain Layout
-28% 
+28%
+\change_deleted -1263083292 1689690174
+ 
+\change_unchanged
+
 \end_layout
 
 \end_inset
@@ -4449,7 +4646,11 @@ literal "false"
 
 \end_inset
 
+
+\change_deleted -1263083292 1689690174
  
+\change_unchanged
+
 \end_layout
 
 \end_inset
@@ -4458,7 +4659,11 @@ literal "false"
 \begin_inset Text
 
 \begin_layout Plain Layout
-ARIO v1 
+ARIO v1
+\change_deleted -1263083292 1689690174
+ 
+\change_unchanged
+
 \end_layout
 
 \end_inset
@@ -4467,7 +4672,11 @@ ARIO v1
 \begin_inset Text
 
 \begin_layout Plain Layout
-€1700 - 14500 Millions 
+€1700 - 14500 Millions
+\change_deleted -1263083292 1689690174
+ 
+\change_unchanged
+
 \end_layout
 
 \end_inset
@@ -4476,7 +4685,11 @@ ARIO v1
 \begin_inset Text
 
 \begin_layout Plain Layout
-€14 - 2000 Millions 
+€14 - 2000 Millions
+\change_deleted -1263083292 1689690174
+ 
+\change_unchanged
+
 \end_layout
 
 \end_inset
@@ -4485,7 +4698,11 @@ ARIO v1
 \begin_inset Text
 
 \begin_layout Plain Layout
-0.8% - 13% 
+0.8% - 13%
+\change_deleted -1263083292 1689690174
+ 
+\change_unchanged
+
 \end_layout
 
 \end_inset
@@ -4503,7 +4720,11 @@ literal "false"
 
 \end_inset
 
+
+\change_deleted -1263083292 1689690174
  
+\change_unchanged
+
 \end_layout
 
 \end_inset
@@ -4512,7 +4733,11 @@ literal "false"
 \begin_inset Text
 
 \begin_layout Plain Layout
-ARIO v1 
+ARIO v1
+\change_deleted -1263083292 1689690174
+ 
+\change_unchanged
+
 \end_layout
 
 \end_inset
@@ -4521,7 +4746,11 @@ ARIO v1
 \begin_inset Text
 
 \begin_layout Plain Layout
-CNY 749 Billion 
+CNY 749 Billion
+\change_deleted -1263083292 1689690174
+ 
+\change_unchanged
+
 \end_layout
 
 \end_inset
@@ -4530,7 +4759,11 @@ CNY 749 Billion
 \begin_inset Text
 
 \begin_layout Plain Layout
-CNY 301 Billion 
+CNY 301 Billion
+\change_deleted -1263083292 1689690174
+ 
+\change_unchanged
+
 \end_layout
 
 \end_inset
@@ -4539,7 +4772,11 @@ CNY 301 Billion
 \begin_inset Text
 
 \begin_layout Plain Layout
-40% 
+40%
+\change_deleted -1263083292 1689690174
+ 
+\change_unchanged
+
 \end_layout
 
 \end_inset
@@ -4557,7 +4794,11 @@ literal "false"
 
 \end_inset
 
+
+\change_deleted -1263083292 1689690174
  
+\change_unchanged
+
 \end_layout
 
 \end_inset
@@ -4566,7 +4807,11 @@ literal "false"
 \begin_inset Text
 
 \begin_layout Plain Layout
-ARIO v2 
+ARIO v2
+\change_deleted -1263083292 1689690174
+ 
+\change_unchanged
+
 \end_layout
 
 \end_inset
@@ -4575,7 +4820,11 @@ ARIO v2
 \begin_inset Text
 
 \begin_layout Plain Layout
-$63 Billion 
+$63 Billion
+\change_deleted -1263083292 1689690174
+ 
+\change_unchanged
+
 \end_layout
 
 \end_inset
@@ -4584,7 +4833,11 @@ $63 Billion
 \begin_inset Text
 
 \begin_layout Plain Layout
-$11 Billion 
+$11 Billion
+\change_deleted -1263083292 1689690174
+ 
+\change_unchanged
+
 \end_layout
 
 \end_inset
@@ -4593,7 +4846,11 @@ $11 Billion
 \begin_inset Text
 
 \begin_layout Plain Layout
-17% 
+17%
+\change_deleted -1263083292 1689690174
+ 
+\change_unchanged
+
 \end_layout
 
 \end_inset
@@ -4611,7 +4868,11 @@ literal "false"
 
 \end_inset
 
+
+\change_deleted -1263083292 1689690174
  
+\change_unchanged
+
 \end_layout
 
 \end_inset
@@ -4620,7 +4881,11 @@ literal "false"
 \begin_inset Text
 
 \begin_layout Plain Layout
-ARIO v2 
+ARIO v2
+\change_deleted -1263083292 1689690174
+ 
+\change_unchanged
+
 \end_layout
 
 \end_inset
@@ -4629,7 +4894,11 @@ ARIO v2
 \begin_inset Text
 
 \begin_layout Plain Layout
-€36.1 Billion/year 
+€36.1 Billion/year
+\change_deleted -1263083292 1689690174
+ 
+\change_unchanged
+
 \end_layout
 
 \end_inset
@@ -4638,7 +4907,11 @@ ARIO v2
 \begin_inset Text
 
 \begin_layout Plain Layout
-€23.4 Billion/year 
+€23.4 Billion/year
+\change_deleted -1263083292 1689690174
+ 
+\change_unchanged
+
 \end_layout
 
 \end_inset
@@ -4647,7 +4920,11 @@ ARIO v2
 \begin_inset Text
 
 \begin_layout Plain Layout
-64% 
+64%
+\change_deleted -1263083292 1689690174
+ 
+\change_unchanged
+
 \end_layout
 
 \end_inset
@@ -4665,7 +4942,11 @@ literal "false"
 
 \end_inset
 
+
+\change_deleted -1263083292 1689690174
  
+\change_unchanged
+
 \end_layout
 
 \end_inset
@@ -4674,7 +4955,11 @@ literal "false"
 \begin_inset Text
 
 \begin_layout Plain Layout
-MRIA 
+MRIA
+\change_deleted -1263083292 1689690174
+ 
+\change_unchanged
+
 \end_layout
 
 \end_inset
@@ -4758,7 +5043,11 @@ literal "false"
 
 \end_inset
 
+
+\change_deleted -1263083292 1689690174
  
+\change_unchanged
+
 \end_layout
 
 \end_inset
@@ -4767,7 +5056,11 @@ literal "false"
 \begin_inset Text
 
 \begin_layout Plain Layout
-Flood Footprint Assessment model 
+Flood Footprint Assessment model
+\change_deleted -1263083292 1689690174
+ 
+\change_unchanged
+
 \end_layout
 
 \end_inset
@@ -4776,7 +5069,11 @@ Flood Footprint Assessment model
 \begin_inset Text
 
 \begin_layout Plain Layout
-- 
+-
+\change_deleted -1263083292 1689690174
+ 
+\change_unchanged
+
 \end_layout
 
 \end_inset
@@ -4785,7 +5082,11 @@ Flood Footprint Assessment model
 \begin_inset Text
 
 \begin_layout Plain Layout
-- 
+-
+\change_deleted -1263083292 1689690174
+ 
+\change_unchanged
+
 \end_layout
 
 \end_inset
@@ -4794,7 +5095,11 @@ Flood Footprint Assessment model
 \begin_inset Text
 
 \begin_layout Plain Layout
-150% - 500% 
+150% - 500%
+\change_deleted -1263083292 1689690174
+ 
+\change_unchanged
+
 \end_layout
 
 \end_inset
@@ -4812,7 +5117,11 @@ literal "false"
 
 \end_inset
 
+
+\change_deleted -1263083292 1689690174
  
+\change_unchanged
+
 \end_layout
 
 \end_inset
@@ -4821,7 +5130,11 @@ literal "false"
 \begin_inset Text
 
 \begin_layout Plain Layout
-CGE 
+CGE
+\change_deleted -1263083292 1689690174
+ 
+\change_unchanged
+
 \end_layout
 
 \end_inset
@@ -4830,7 +5143,11 @@ CGE
 \begin_inset Text
 
 \begin_layout Plain Layout
-$14.7 Billion 
+$14.7 Billion
+\change_deleted -1263083292 1689690174
+ 
+\change_unchanged
+
 \end_layout
 
 \end_inset
@@ -4839,7 +5156,11 @@ $14.7 Billion
 \begin_inset Text
 
 \begin_layout Plain Layout
-$10.6 Billion 
+$10.6 Billion
+\change_deleted -1263083292 1689690174
+ 
+\change_unchanged
+
 \end_layout
 
 \end_inset
@@ -4848,7 +5169,11 @@ $10.6 Billion
 \begin_inset Text
 
 \begin_layout Plain Layout
-72% 
+72%
+\change_deleted -1263083292 1689690174
+ 
+\change_unchanged
+
 \end_layout
 
 \end_inset
@@ -4866,7 +5191,11 @@ literal "false"
 
 \end_inset
 
+
+\change_deleted -1263083292 1689690174
  
+\change_unchanged
+
 \end_layout
 
 \end_inset
@@ -4875,7 +5204,11 @@ literal "false"
 \begin_inset Text
 
 \begin_layout Plain Layout
-Gosh IO model 
+Gosh IO model
+\change_deleted -1263083292 1689690174
+ 
+\change_unchanged
+
 \end_layout
 
 \end_inset
@@ -4884,7 +5217,11 @@ Gosh IO model
 \begin_inset Text
 
 \begin_layout Plain Layout
-€33.4 Billion 
+€33.4 Billion
+\change_deleted -1263083292 1689690174
+ 
+\change_unchanged
+
 \end_layout
 
 \end_inset
@@ -4893,7 +5230,11 @@ Gosh IO model
 \begin_inset Text
 
 \begin_layout Plain Layout
-€7 Billion 
+€7 Billion
+\change_deleted -1263083292 1689690174
+ 
+\change_unchanged
+
 \end_layout
 
 \end_inset
@@ -4902,7 +5243,11 @@ Gosh IO model
 \begin_inset Text
 
 \begin_layout Plain Layout
-21% 
+21%
+\change_deleted -1263083292 1689690174
+ 
+\change_unchanged
+
 \end_layout
 
 \end_inset
@@ -4920,7 +5265,11 @@ literal "false"
 
 \end_inset
 
+
+\change_deleted -1263083292 1689690174
  
+\change_unchanged
+
 \end_layout
 
 \end_inset
@@ -4929,7 +5278,11 @@ literal "false"
 \begin_inset Text
 
 \begin_layout Plain Layout
-CGE 
+CGE
+\change_deleted -1263083292 1689690174
+ 
+\change_unchanged
+
 \end_layout
 
 \end_inset
@@ -4938,7 +5291,11 @@ CGE
 \begin_inset Text
 
 \begin_layout Plain Layout
-0.1% GDP growth 
+0.1% GDP growth
+\change_deleted -1263083292 1689690174
+ 
+\change_unchanged
+
 \end_layout
 
 \end_inset
@@ -4947,7 +5304,11 @@ CGE
 \begin_inset Text
 
 \begin_layout Plain Layout
-0.5% GDP growth 
+0.5% GDP growth
+\change_deleted -1263083292 1689690174
+ 
+\change_unchanged
+
 \end_layout
 
 \end_inset
@@ -4956,7 +5317,11 @@ CGE
 \begin_inset Text
 
 \begin_layout Plain Layout
-500% 
+500%
+\change_deleted -1263083292 1689690174
+ 
+\change_unchanged
+
 \end_layout
 
 \end_inset
@@ -4996,7 +5361,11 @@ textheight]
 
 \end_inset
 
+
+\change_deleted -1263083292 1689690174
  
+\change_unchanged
+
 \end_layout
 
 \begin_layout Plain Layout
@@ -5031,7 +5400,11 @@ end{tablenotes}
 
 \end_inset
 
+
+\change_deleted -1263083292 1689690174
  
+\change_unchanged
+
 \end_layout
 
 \end_inset
@@ -5108,8 +5481,12 @@ centering
 
 \series bold
 Psi value
+\change_deleted -1263083292 1689690174
+
 \series default
  
+\change_unchanged
+
 \end_layout
 
 \end_inset
@@ -5121,8 +5498,12 @@ Psi value
 
 \series bold
 Recovery time
+\change_deleted -1263083292 1689690174
+
 \series default
  
+\change_unchanged
+
 \end_layout
 
 \end_inset
@@ -5134,8 +5515,12 @@ Recovery time
 
 \series bold
 Alpha tau value
+\change_deleted -1263083292 1689690174
+
 \series default
  
+\change_unchanged
+
 \end_layout
 
 \end_inset
@@ -5166,7 +5551,11 @@ Recovery scenario
 \begin_inset Text
 
 \begin_layout Plain Layout
-1 
+1
+\change_deleted -1263083292 1689690174
+ 
+\change_unchanged
+
 \end_layout
 
 \end_inset
@@ -5175,7 +5564,11 @@ Recovery scenario
 \begin_inset Text
 
 \begin_layout Plain Layout
-all values under 730 days 
+all values under 730 days
+\change_deleted -1263083292 1689690174
+ 
+\change_unchanged
+
 \end_layout
 
 \end_inset
@@ -5184,7 +5577,11 @@ all values under 730 days
 \begin_inset Text
 
 \begin_layout Plain Layout
-all values 
+all values
+\change_deleted -1263083292 1689690174
+ 
+\change_unchanged
+
 \end_layout
 
 \end_inset
@@ -5193,7 +5590,11 @@ all values
 \begin_inset Text
 
 \begin_layout Plain Layout
-rebuilding 
+rebuilding
+\change_deleted -1263083292 1689690174
+ 
+\change_unchanged
+
 \end_layout
 
 \end_inset
@@ -5213,7 +5614,11 @@ rebuilding
 \begin_inset Text
 
 \begin_layout Plain Layout
-0.97 
+0.97
+\change_deleted -1263083292 1689690174
+ 
+\change_unchanged
+
 \end_layout
 
 \end_inset
@@ -5222,7 +5627,11 @@ rebuilding
 \begin_inset Text
 
 \begin_layout Plain Layout
-90 days 
+90 days
+\change_deleted -1263083292 1689690174
+ 
+\change_unchanged
+
 \end_layout
 
 \end_inset
@@ -5231,7 +5640,11 @@ rebuilding
 \begin_inset Text
 
 \begin_layout Plain Layout
-all values 
+all values
+\change_deleted -1263083292 1689690174
+ 
+\change_unchanged
+
 \end_layout
 
 \end_inset
@@ -5240,7 +5653,11 @@ all values
 \begin_inset Text
 
 \begin_layout Plain Layout
-rebuilding 
+rebuilding
+\change_deleted -1263083292 1689690174
+ 
+\change_unchanged
+
 \end_layout
 
 \end_inset
@@ -5260,7 +5677,11 @@ rebuilding
 \begin_inset Text
 
 \begin_layout Plain Layout
-0.97 
+0.97
+\change_deleted -1263083292 1689690174
+ 
+\change_unchanged
+
 \end_layout
 
 \end_inset
@@ -5269,7 +5690,11 @@ rebuilding
 \begin_inset Text
 
 \begin_layout Plain Layout
-180 days 
+180 days
+\change_deleted -1263083292 1689690174
+ 
+\change_unchanged
+
 \end_layout
 
 \end_inset
@@ -5278,7 +5703,11 @@ rebuilding
 \begin_inset Text
 
 \begin_layout Plain Layout
-all values greater than 90 days 
+all values greater than 90 days
+\change_deleted -1263083292 1689690174
+ 
+\change_unchanged
+
 \end_layout
 
 \end_inset
@@ -5287,7 +5716,11 @@ all values greater than 90 days
 \begin_inset Text
 
 \begin_layout Plain Layout
-rebuilding 
+rebuilding
+\change_deleted -1263083292 1689690174
+ 
+\change_unchanged
+
 \end_layout
 
 \end_inset
@@ -5307,7 +5740,11 @@ rebuilding
 \begin_inset Text
 
 \begin_layout Plain Layout
-0.95 
+0.95
+\change_deleted -1263083292 1689690174
+ 
+\change_unchanged
+
 \end_layout
 
 \end_inset
@@ -5316,7 +5753,11 @@ rebuilding
 \begin_inset Text
 
 \begin_layout Plain Layout
-90 days 
+90 days
+\change_deleted -1263083292 1689690174
+ 
+\change_unchanged
+
 \end_layout
 
 \end_inset
@@ -5325,7 +5766,11 @@ rebuilding
 \begin_inset Text
 
 \begin_layout Plain Layout
-all values greater than 90 days 
+all values greater than 90 days
+\change_deleted -1263083292 1689690174
+ 
+\change_unchanged
+
 \end_layout
 
 \end_inset
@@ -5334,7 +5779,11 @@ all values greater than 90 days
 \begin_inset Text
 
 \begin_layout Plain Layout
-rebuilding 
+rebuilding
+\change_deleted -1263083292 1689690174
+ 
+\change_unchanged
+
 \end_layout
 
 \end_inset
@@ -5370,7 +5819,11 @@ name "tab:removed-params"
 
 \end_inset
 
+
+\change_deleted -1263083292 1689690174
  
+\change_unchanged
+
 \end_layout
 
 \end_inset
@@ -5457,7 +5910,11 @@ name "tab:historic-values"
 
 \end_inset
 
+
+\change_deleted -1263083292 1689690174
  
+\change_unchanged
+
 \end_layout
 
 \end_inset
