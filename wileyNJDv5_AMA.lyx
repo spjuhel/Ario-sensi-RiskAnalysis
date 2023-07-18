@@ -2349,6 +2349,26 @@ gains) to -250% (i.e.
 losses) of the direct losses.
  However, we find that most results are concentrated between -40% and +10%
  of the direct losses.
+\change_inserted 1286759212 1687511021
+
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+
+\change_inserted 1286759212 1687511064
+dans le graphe, on a l'impression que rebuilding demand c'est si tuy regardes
+ juste la demande pour le rebuilding, pas le cout de la catastrophe...
+ mets plutot "with rebuilding demand".
+\change_unchanged
+
+\end_layout
+
+\end_inset
+
+
+\change_unchanged
+
 \end_layout
 
 \begin_layout Standard
@@ -2429,8 +2449,31 @@ literal "false"
 \end_layout
 
 \begin_layout Standard
-For the rebuilding case, we find a mix of positive and negative impacts
- across all MRIOTs.
+For the 
+\color red
+rebuilding case
+\change_inserted 1286759212 1687511100
+
+\color inherit
+
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+
+\change_inserted 1286759212 1687511144
+le nom n'est pas forcément très clair, car on ne regarde pas que le rebuilding.
+ on peut mettre peut être plutot "standard ario" vs ario without rebuilding
+ demand" 
+\change_unchanged
+
+\end_layout
+
+\end_inset
+
+
+\change_unchanged
+, we find a mix of positive and negative impacts across all MRIOTs.
  These outcomes are predominantly driven by the pace of the rebuilding process.
  Notably, excessively rapid path (3 months) tends to lead to shortages,
  thereby driving the occurrence of important negative impacts.
