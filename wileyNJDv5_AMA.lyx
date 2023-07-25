@@ -14,14 +14,67 @@
 {\normalfont\Large\bfseries}{\thesection.}{1em}{\MakeUppercase}
 \providecommand{\keywords}[1]{\textbf{\textit{Index terms---}} #1}
 \usepackage{breakcites}
+
+
+
+
+% use this if you need line numbers
+\usepackage{lineno}
+
+
+\usepackage{eurosym}
+%\usepackage{pdfsync}
+
+%% Hack by Heiko Oberdiek (on de.comp.text.tex)
+\usepackage{tabularx}
+
+\usepackage[T1]{fontenc}
+\usepackage{pslatex}
+
+% Redefine the standard table
+%\let\ORIGtabular\tabular
+%\let\ORIGendtabular\endtabular
+%\let\ORIGtabularx\tabularx
+%\renewcommand*{\tabularx}{%
+%  \def\tabular{%
+  %  \let\endtabular\ORIGendtabular
+   % \ORIGtabular
+  %}%
+  %\ORIGtabularx
+%}
+
+%\usepackage[title,titletoc,toc]{appendix}
+%\renewcommand{\appendixname }{Annex }
+%\renewcommand{\appendixpagename }{Annex }
+%\renewcommand{\appendixtocname }{Annex }
+\renewcommand*{\appendixname}{}
+
+\renewcommand{\labelenumi}{(\roman{enumi})} 
+
+%sert à numeroter toutes les equations
+%\renewcommand\[{\begin{equation}}
+%\renewcommand\]{\end{equation}} 
+%\renewcommand{€}{\EUR}
+
+%\DeclareMathOperator*{\argmax}{arg\,max}
+
+%pour ecrire une watermark sur les pages
+%\usepackage{draftwatermark}
+
+\usepackage{esint}
+\usepackage{url}
+\usepackage{multirow}
+\usepackage{amsthm}
+\usepackage{verbatim}
+\usepackage{array}
 \end_preamble
-\options letter
+\options authoryear, 3p,12pt
 \use_default_options false
 \maintain_unincluded_children false
 \language english
 \language_package none
 \inputencoding auto
-\fontencoding default
+\fontencoding global
 \font_roman "default" "default"
 \font_sans "default" "default"
 \font_typewriter "default" "default"
@@ -36,21 +89,22 @@
 \use_dash_ligatures true
 \graphics default
 \default_output_format default
-\output_sync 0
+\output_sync 1
 \bibtex_command default
 \index_command default
 \paperfontsize default
-\spacing double
-\use_hyperref true
+\spacing single
+\use_hyperref false
 \pdf_bookmarks false
 \pdf_bookmarksnumbered false
 \pdf_bookmarksopen false
 \pdf_bookmarksopenlevel 1
-\pdf_breaklinks false
+\pdf_breaklinks true
 \pdf_pdfborder false
-\pdf_colorlinks false
+\pdf_colorlinks true
 \pdf_backref section
 \pdf_pdfusetitle false
+\pdf_quoted_options "linkcolor=blue,"
 \papersize default
 \use_geometry true
 \use_package amsmath 1
@@ -63,9 +117,9 @@
 \use_package stackrel 0
 \use_package stmaryrd 0
 \use_package undertilde 0
-\cite_engine basic
-\cite_engine_type default
-\biblio_style plain
+\cite_engine natbib
+\cite_engine_type authoryear
+\biblio_style plainnat
 \use_bibtopic false
 \use_indices false
 \paperorientation portrait
@@ -94,6 +148,7 @@
 \html_css_as_file 0
 \html_be_strict false
 \author -1263083292 "Samuel Juhel"
+\author 1286759212 "Vincent Viguié"
 \end_header
 
 \begin_body
@@ -103,37 +158,16 @@ Robustness of the evaluation of indirect costs of natural disasters: example
  of the ARIO model
 \end_layout
 
-\begin_layout Standard
-\begin_inset Newpage newpage
-\end_inset
-
-
+\begin_layout Author
+Samuel Juhel, Vincent Viguié
 \end_layout
 
-\begin_layout Standard
-\begin_inset ERT
-status collapsed
-
-\begin_layout Plain Layout
-
-
-\backslash
-abstract
+\begin_layout Address
+CIRED, Ecole des Ponts, AgroParisTech, EHESS, CIRAD, CNRS, Université Paris-Sacl
+ay, Nogent-sur-Marne, France
 \end_layout
 
-\end_inset
-
-
-\begin_inset ERT
-status collapsed
-
-\begin_layout Plain Layout
-
-{
-\end_layout
-
-\end_inset
-
+\begin_layout Abstract
 Natural disasters have historically had significant economic consequences,
  but the increasing frequency and severity of these events due to climate
  change brings this issue to the forefront.
@@ -160,20 +194,9 @@ Natural disasters have historically had significant economic consequences,
  To ensure the robustness of their results, future studies on indirect economic
  impacts should incorporate several scenarios and employ data from various
  sources.
-\begin_inset ERT
-status collapsed
-
-\begin_layout Plain Layout
-
-}
 \end_layout
 
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
+\begin_layout Abstract
 \begin_inset ERT
 status collapsed
 
@@ -201,18 +224,6 @@ status collapsed
 \end_layout
 
 \begin_layout Standard
-\begin_inset Newpage newpage
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset FormulaMacro
-\newcommand{\thefootnote}{}
-\end_inset
-
- 
 \begin_inset ERT
 status collapsed
 
@@ -237,27 +248,6 @@ status collapsed
 \begin_layout Plain Layout
 
 }
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset FormulaMacro
-\renewcommand{\thefootnote}{\fnsymbol{footnote}}
-\end_inset
-
- 
-\begin_inset ERT
-status collapsed
-
-\begin_layout Plain Layout
-
-
-\backslash
-setcounter{footnote}{1}
 \end_layout
 
 \end_inset
@@ -416,16 +406,6 @@ To our knowledge, no study exists on the sensitivity to the selection of
  multi-regional input-output tables (MRIOT)
 \color inherit
  from different sources.
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-c'est fait dans les papiers sur les flood globales, non? SJ: Oui mais seulement
- entre différente années de la même source
-\end_layout
-
-\end_inset
-
  This contrasts with the fact that such tables serve as crucial input economic
  data for these models and that there is an increasing availability of them
  
@@ -515,12 +495,8 @@ literal "false"
 
 , over events whose indirect consequences are by nature not observed.
  This also calls for improvements in the collection of detailed economic
- data after present day natural disasters, 
-\change_deleted -1263083292 1689690174
- 
-\change_unchanged
-to better anticipate the economic cost of future natural disasters caused
- by climate change.
+ data after present day natural disasters, to better anticipate the economic
+ cost of future natural disasters caused by climate change.
 \end_layout
 
 \begin_layout Section
@@ -1567,7 +1543,7 @@ $
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-MRIOT used in this sutdy and their specificities
+MRIOT used in this study and their specificities
 \end_layout
 
 \end_inset
@@ -1721,11 +1697,6 @@ If
  is close to 0, an inventory reduction in an industry is homogeneously distribut
 ed among its firms: inventory reduction impacts industry production only
  if its large enough to affect a sufficiently large part of the firms.
-
-\change_deleted -1263083292 1689690174
- 
-\change_unchanged
-
 \end_layout
 
 \begin_layout Itemize
@@ -1736,11 +1707,6 @@ If
  is close to 1, an inventory reduction in an industry is concentrated in
  a few firms and forces them to stop producing which directly impact production
  on the industry level.
-
-\change_deleted -1263083292 1689690174
- 
-\change_unchanged
-
 \end_layout
 
 \begin_layout Standard
@@ -1788,10 +1754,6 @@ name "subsubsec423"
 
 \begin_layout Standard
 We also consider two options for recovery of destroyed productive capital:
-\change_deleted -1263083292 1689690174
- 
-\change_unchanged
-
 \end_layout
 
 \begin_layout Description
@@ -1806,11 +1768,6 @@ Recovery case
 \end_inset
 
  Exogenous linear recovery.
-
-\change_deleted -1263083292 1689690174
- 
-\change_unchanged
-
 \end_layout
 
 \begin_layout Description
@@ -1856,11 +1813,6 @@ noprefix "false"
 \end_inset
 
 .
-
-\change_deleted -1263083292 1689690174
- 
-\change_unchanged
-
 \end_layout
 
 \begin_layout Standard
@@ -1986,10 +1938,6 @@ ROW
 \family default
  region (i.e., the affected region, a geographically close region, two geographica
 lly far and major economies, and the rest of the world)
-\change_deleted -1263083292 1689690174
- 
-\change_unchanged
-
 \end_layout
 
 \begin_layout Itemize
@@ -1997,12 +1945,6 @@ lly far and major economies, and the rest of the world)
 \family typewriter
 Agriculture, Construction, Energy and Utilities and Mining, Manufacture,
  Sales, Transports and Services, Others
-\change_deleted -1263083292 1689690174
-
-\family default
- 
-\change_unchanged
-
 \end_layout
 
 \begin_layout Standard
@@ -2598,6 +2540,7 @@ status open
 \begin_layout Plain Layout
 \begin_inset Graphics
 	filename imgs/no_outliers_per_sectors.png
+	lyxscale 40
 	width 100text%
 
 \end_inset
@@ -2712,6 +2655,7 @@ status open
 \begin_layout Plain Layout
 \begin_inset Graphics
 	filename imgs/no_outliers_shortage_compare.png
+	lyxscale 10
 	width 100text%
 
 \end_inset
