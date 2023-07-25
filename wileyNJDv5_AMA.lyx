@@ -4124,7 +4124,11 @@ Recovery time
 \begin_inset Formula $\alpha$
 \end_inset
 
- and 
+ 
+\series bold
+and
+\series default
+ 
 \begin_inset Formula $\tau$
 \end_inset
 
