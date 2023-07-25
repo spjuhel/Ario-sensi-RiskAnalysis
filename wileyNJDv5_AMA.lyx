@@ -1534,7 +1534,7 @@ Input-Output tables
 \begin_layout Standard
 We use three different MRIOT sources for this study, namely EXIOBASE 3,
  EUREGIO and EORA26
-\change_inserted 1286759212 1690303319
+\change_inserted 1286759212 1690308853
  
 \begin_inset Note Note
 status open
@@ -1550,7 +1550,14 @@ ajoute refs + une courte présentation pour chacune (qui la fait, résulution
 
 \end_inset
 
+ (table 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "tab:mriot"
 
+\end_inset
+
+)
 \change_unchanged
 .
  We choose these three MRIOTs for their specificities.
@@ -1562,7 +1569,7 @@ ajoute refs + une courte présentation pour chacune (qui la fait, résulution
  In addition, we compare results using both year 2000 and 2010 (which is
  the largest gap in time common to all three MRIOTs), to assess how this
  influence the results.
-\change_inserted 1286759212 1690303366
+\change_inserted 1286759212 1690308852
 
 \end_layout
 
@@ -4084,10 +4091,13 @@ small
 
 \begin_layout Plain Layout
 
-\change_inserted 1286759212 1690308114
+\change_inserted 1286759212 1690308947
 
 \series bold
-Psi value
+\begin_inset Formula $\Psi$
+\end_inset
+
+
 \end_layout
 
 \end_inset
@@ -4110,10 +4120,15 @@ Recovery time
 
 \begin_layout Plain Layout
 
-\change_inserted 1286759212 1690308114
+\change_inserted 1286759212 1690308980
+\begin_inset Formula $\alpha$
+\end_inset
 
-\series bold
-Alpha tau value
+ and 
+\begin_inset Formula $\tau$
+\end_inset
+
+
 \end_layout
 
 \end_inset
