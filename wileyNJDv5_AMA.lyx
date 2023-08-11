@@ -135,6 +135,7 @@ theorems-ams
 \html_math_output 0
 \html_css_as_file 0
 \html_be_strict false
+\author -1263083292 "Samuel Juhel"
 \author 1286759212 "Vincent Viguié"
 \end_header
 
@@ -176,6 +177,7 @@ status open
 
 \begin_layout Plain Layout
 At least one Email address is required.
+ Le draft à envoyer à Risk Analysis doit être entièrement anonymisé.
 \end_layout
 
 \end_inset
@@ -247,51 +249,14 @@ cired
 \end_layout
 
 \begin_layout Abstract
-
-\change_deleted 1286759212 1689944406
-Natural disasters have historically had significant economic consequences,
- but the increasing frequency and severity of these events due to climate
- change brings this issue to the forefront.
-
-\change_unchanged
- Given the interconnectedness of economies and the prevalence of just-in-time
+Given the interconnectedness of economies and the prevalence of just-in-time
  production processes, even small interruptions to production caused by
- natural disasters 
-\change_deleted 1286759212 1690299433
-could
-\change_inserted 1286759212 1690299434
-can
-\change_unchanged
- lead to great
-\change_deleted 1286759212 1690299437
-er
-\change_unchanged
- indirect economic impacts.
+ natural disasters can lead to great indirect economic impacts.
  A substantial body of literature on this subject exists, notably with the
  help of input-output analysis, CGE and agent-based models.
  However, such models rely on parameters and data which are often unobserved
- empirically 
-\change_deleted 1286759212 1690299458
-and
-\change_inserted 1286759212 1690299458
-or
-\change_unchanged
- estimated with wide margins of uncertainty
-\change_inserted 1286759212 1690299462
-.
-
-\change_unchanged
- 
-\change_inserted 1286759212 1690299488
-The reliability of the models is therefore 
-\change_deleted 1286759212 1690299493
-which makes it 
-\change_unchanged
-difficult to assess
-\change_deleted 1286759212 1690299497
- results reliability
-\change_unchanged
-.
+ empirically or estimated with wide margins of uncertainty.
+ The reliability of the models is therefore difficult to assess.
  Here, taking the example of the July 2021 floods in Germany, we analyze
  to what extent the results of the ARIO model are robust to input data and
  parameter choices.
@@ -336,6 +301,8 @@ linenumbers
 lineno
 \series default
  in the preamble if you need line numbers.
+ La soumission du draft génère automatiquement un document avec les numéro
+ de ligne.
 \end_layout
 
 \end_inset
@@ -564,34 +531,23 @@ literal "false"
 \end_layout
 
 \begin_layout Standard
-In this study, we focus on the July 2021 floods in Germany
-\change_inserted 1286759212 1690299853
- (see
-\change_unchanged
+In this study, we focus on the July 2021 floods in Germany (see section
  
-\change_inserted 1286759212 1690299861
-section 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "sec2"
 
 \end_inset
 
-) 
-\change_unchanged
-as a case study to conduct an in-depth examination of the sensitivity of
- the Adaptive Regional Input-Output model (ARIO)
-\change_inserted 1286759212 1690299886
- (see section 
+) as a case study to conduct an in-depth examination of the sensitivity
+ of the Adaptive Regional Input-Output model (ARIO) (see section 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "sec3"
 
 \end_inset
 
-)
-\change_unchanged
-, which extends an input-output (IO) framework with additional adaptive
+), which extends an input-output (IO) framework with additional adaptive
  dynamics 
 \begin_inset CommandInset citation
 LatexCommand citep
@@ -622,31 +578,24 @@ literal "false"
 .
  We explore a set of parameters and input data that align its simulation
  outcomes with existing empirical evidence of the economic consequences
- of the event
-\change_inserted 1286759212 1690299918
- (see section 
+ of the event (see section 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "sec4"
 
 \end_inset
 
-)
-\change_unchanged
-.
+).
  Through this analysis, we demonstrate that a wide range of simulation outcomes
- can be achieved while remaining coherent with empirical data
-\change_inserted 1286759212 1690299936
- (see section 
+ can be achieved while remaining coherent with empirical data (see section
+ 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "sec5"
 
 \end_inset
 
-)
-\change_unchanged
-.
+).
 \end_layout
 
 \begin_layout Standard
@@ -698,8 +647,6 @@ literal "false"
  This also calls for improvements in the collection of detailed economic
  data after present day natural disasters, to better anticipate the economic
  cost of future natural disasters caused by climate change.
-\change_inserted 1286759212 1690299834
-
 \end_layout
 
 \begin_layout Section
@@ -726,9 +673,7 @@ Our case study is the flood event that affected Germany in July 2021.
  Rhine-Westphalia.
  The disaster also resulted in significant damages in Bavaria and Saxony.
  The event claimed the lives of more than 180 people, making it one of the
- deadliest natural disaster since 1962
-\change_inserted 1286759212 1690300277
- 
+ deadliest natural disaster since 1962 
 \begin_inset CommandInset citation
 LatexCommand citep
 key "copernicus_2021_FloodingEuropeCopernicus,lehmkuhl_2022_Assessment2021Summer"
@@ -736,11 +681,6 @@ literal "false"
 
 \end_inset
 
-
-\change_deleted 1286759212 1690300245
-.
- 
-\change_inserted 1286759212 1690301962
 .
  Correlation between climate change and the occurrence of this event have
  been established in 
@@ -754,19 +694,13 @@ literal "false"
 .
  They show the probability of occurrence to be from 1.2 to 9 times more likely
  with climate change.
-\change_unchanged
-
 \end_layout
 
 \begin_layout Standard
-This flood 
-\change_deleted 1286759212 1690301967
-also
-\change_unchanged
- has been identified as the costliest single event in post-war history in
- Germany: the direct financial damage caused by the flooding has been estimated
- to be around €33.4 billion, €14 billion of which are attributed to households
- 
+This flood has been identified as the costliest single event in post-war
+ history in Germany: the direct financial damage caused by the flooding
+ has been estimated to be around €33.4 billion, €14 billion of which are
+ attributed to households 
 \begin_inset CommandInset citation
 LatexCommand citep
 key "bmi-2022-beric-hochw,munich_re_hurricanes_2022"
@@ -775,84 +709,20 @@ literal "false"
 \end_inset
 
 .
- 
-\change_deleted 1286759212 1690302980
-Additionally, an estimated €7.1 billion in indirect damage (21% of the direct
- damages), such as interruptions to supply chains and losses in industrial
- production, resulted from the extreme weather event 
-\begin_inset CommandInset citation
-LatexCommand citep
-key "trenczek-2022-schaed-sturz"
-literal "false"
-
-\end_inset
-
-.
-
-\change_unchanged
- 
-\change_deleted 1286759212 1690301956
-Correlation between climate change and the occurrence of this event have
- been established in 
-\begin_inset CommandInset citation
-LatexCommand citep
-key "kreienkamp_rapid_2021"
-literal "false"
-
-\end_inset
-
-.
- They show the probability of occurrence to be from 1.2 to 9 times more likely
- with climate change.
-\change_unchanged
-
 \end_layout
 
 \begin_layout Standard
-
-\change_inserted 1286759212 1690302155
 In this study, we use these figures as input to ARIO model to simulate the
  indirect economic damages of the floods.
- More precisely, w
-\change_deleted 1286759212 1690302155
-W
-\change_unchanged
-e express the direct damages as a share of the 2021 Gross Value Added (GVA)
- of Germany
-\change_inserted 1286759212 1690302882
- or of each affected Lander (depending on the geograpic resolution of the
- MRIOT we use), and
-\change_deleted 1286759212 1690302210
-,
-\change_unchanged
- 
-\change_deleted 1286759212 1690302218
-as we compare different MRIOTs based on different years, in order to get
- damages proportional to the size of the economy and comparable between
- MRIOTs.
- We
-\change_unchanged
- distribute these damages to the sectors of the different MRIOT
-\change_inserted 1286759212 1690302631
-s
-\change_unchanged
- 
-\change_deleted 1286759212 1690302892
-we used
-\change_unchanged
-, using their contribution to the affected region
-\change_inserted 1286759212 1690302237
-s
-\change_unchanged
- GDP as a proxy
-\change_inserted 1286759212 1690302761
-.
+ More precisely, we express the direct damages as a share of the 2021 Gross
+ Value Added (GVA) of Germany or of each affected Lander (depending on the
+ geograpic resolution of the MRIOT we use), and distribute these damages
+ to the sectors of the different MRIOTs, using their contribution to the
+ affected regions GDP as a proxy.
 \begin_inset Foot
 status open
 
 \begin_layout Plain Layout
-
-\change_inserted 1286759212 1690302613
 Later in the article, we compare the simulated indirect economic impact
  for different MRIOTs based on different years.
  As the German GVA is different for each year, to get comparable results,
@@ -860,32 +730,16 @@ Later in the article, we compare the simulated indirect economic impact
  the economy (i.e.
  we suppose that the direct damages amount to the same share of the GVA
  in all our simulations).
-\change_unchanged
-
 \end_layout
 
 \end_inset
 
-
-\change_deleted 1286759212 1690302840
-.
- For the EUREGIO MRIOT and its more precise geographic definition, we distribute
- the damages according to per Lander values in the report, and then equally
- between all MRIOT regions of each affected Lander.
-
-\change_unchanged
  Detailed distribution choices are available in the supplementary materials.
-\change_inserted 1286759212 1690302983
-
 \begin_inset Note Note
 status open
 
 \begin_layout Plain Layout
-
-\change_inserted 1286759212 1690302909
-où? j'ai l'impression que cette partie manque dans les appendix? 
-\change_unchanged
-
+où? j'ai l'impression que cette partie manque dans les appendix?
 \end_layout
 
 \end_inset
@@ -894,18 +748,14 @@ où? j'ai l'impression que cette partie manque dans les appendix?
 \end_layout
 
 \begin_layout Standard
-
-\change_inserted 1286759212 1690303187
-Using a XXX approach 
+Using a static IO approach 
 \begin_inset Note Note
 status open
 
 \begin_layout Plain Layout
-
-\change_inserted 1286759212 1690303059
-un modèle CGE, c'est bien ça? ils se basent sur quelle table IO?
-\change_unchanged
-
+un modèle CGE, c'est bien ça? ils se basent sur quelle table IO? SJ: Ils
+ utilisent des multiplicateurs de dommages directs calculer à partir d'une
+ méthode IO
 \end_layout
 
 \end_inset
@@ -929,8 +779,6 @@ reference "subsec52"
 \end_inset
 
 ).
-\change_unchanged
-
 \end_layout
 
 \begin_layout Section
@@ -962,17 +810,7 @@ name "subsec31"
 \end_layout
 
 \begin_layout Standard
-The ARIO model
-\change_deleted 1286759212 1690300972
-,
-\change_unchanged
- was first developed 
-\change_inserted 1286759212 1690300980
-by
-\change_deleted 1286759212 1690300979
-in
-\change_unchanged
- 
+The ARIO model was first developed by 
 \begin_inset CommandInset citation
 LatexCommand citet
 key "hallegatte08_adapt_region_input_output_model"
@@ -981,23 +819,7 @@ literal "false"
 \end_inset
 
  to study the economic consequences of hurricane Katrina in Louisiana.
- 
-\change_deleted 1286759212 1690301069
-Since then, ARIO has been used in several local case studies on the effect
- of various natural disasters (or economic shocks in general) see Figure~
-\backslash
-ref{fig1}.
- ARIO
-\change_inserted 1286759212 1690301069
-It
-\change_unchanged
- was later improved 
-\change_inserted 1286759212 1690301025
-by
-\change_deleted 1286759212 1690301024
-in
-\change_unchanged
- 
+ It was later improved by 
 \begin_inset CommandInset citation
 LatexCommand citet
 key "hallegatte13_model_role_inven_heter_asses"
@@ -1005,34 +827,17 @@ literal "false"
 
 \end_inset
 
- to integrate inventory mechanisms and 
-\change_deleted 1286759212 1690301113
-is now part the most widely used models to simulate the indirect economic
- costs and for a wide range of possible shocks
-\change_inserted 1286759212 1690301189
-has, since, been used in close to 20 articles studying the indirect economic
- costs of various natural disasters (or economic shocks in general) (Figure
- 
+ to integrate inventory mechanisms and has, since, been used in close to
+ 20 articles studying the indirect economic costs of various natural disasters
+ (or economic shocks in general) (Figure 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "fig1"
 
 \end_inset
 
-)
-\change_unchanged
-.
- 
-\change_deleted 1286759212 1690301210
-More
-\change_unchanged
- 
-\change_inserted 1286759212 1690301212
-R
-\change_deleted 1286759212 1690301211
-r
-\change_unchanged
-ecently, 
+).
+ Recently, 
 \begin_inset CommandInset citation
 LatexCommand citet
 key "huang-2020-asses-econom"
@@ -1040,17 +845,8 @@ literal "false"
 
 \end_inset
 
- used 
-\change_inserted 1286759212 1690301223
-it for instance 
-\change_deleted 1286759212 1690301227
-the ARIO model 
-\change_unchanged
-to assess the economic cascading effect
-\change_inserted 1286759212 1690301233
-s
-\change_unchanged
- of future climate change on agriculture in China.
+ used it for instance to assess the economic cascading effects of future
+ climate change on agriculture in China.
  
 \begin_inset CommandInset citation
 LatexCommand citet
@@ -1059,26 +855,10 @@ literal "false"
 
 \end_inset
 
- assessed the 
-\change_deleted 1286759212 1690301277
-flood
-\change_inserted 1286759212 1690301280
-economic consequences
-\change_unchanged
- 
-\change_deleted 1286759212 1690301284
-footprint 
-\change_unchanged
-of the 2009 Central European floods using the ARIO model coupled with an
- inequalities model and found that more developed economies
-\change_deleted 1286759212 1690301298
- would
-\change_unchanged
- suffer
-\change_inserted 1286759212 1690301300
-ed
-\change_unchanged
- more from indirect costs than less developed ones.
+ assessed the economic consequences of the 2009 Central European floods
+ using the ARIO model coupled with an inequalities model and found that
+ more developed economies suffered more from indirect costs than less developed
+ ones.
  
 \begin_inset CommandInset citation
 LatexCommand citet
@@ -1087,24 +867,10 @@ literal "false"
 
 \end_inset
 
- analyze
-\change_inserted 1286759212 1690301309
-d
-\change_unchanged
- the supply-chain effects of a set of idealized COVID19 lockdown scenarios.
- 
-\change_inserted 1286759212 1690301518
-The mechanisms of 
-\change_unchanged
-ARIO 
-\change_deleted 1286759212 1690301525
-also 
-\change_inserted 1286759212 1690301591
-were also used as important theoretical foundations 
-\change_deleted 1286759212 1690301597
-lead some of the theoretical foundations 
-\change_unchanged
-for several other models, such as Acclimate 
+ analyzed the supply-chain effects of a set of idealized COVID19 lockdown
+ scenarios.
+ The mechanisms of ARIO were also used as theoretical foundations for several
+ other models, such as Acclimate 
 \begin_inset CommandInset citation
 LatexCommand citep
 key "otto17_model_loss_propag_global_suppl_networ"
@@ -1120,15 +886,7 @@ literal "false"
 
 \end_inset
 
- or the hybrid urban-trade model 
-\change_deleted 1286759212 1690301447
-presented
-\change_inserted 1286759212 1690301453
-developed by
-\change_deleted 1286759212 1690301455
- in
-\change_unchanged
- 
+ or the hybrid urban-trade model developed by 
 \begin_inset CommandInset citation
 LatexCommand citet
 key "shughrue20_global_spread_local_cyclon_damag,shughrue18_system_vulner_global_urban_indus"
@@ -1137,11 +895,7 @@ literal "false"
 \end_inset
 
 .
- 
-\change_deleted 1286759212 1690301616
-See 
-\change_unchanged
-Figure
+ Figure
 \begin_inset space ~
 \end_inset
 
@@ -1155,13 +909,7 @@ noprefix "false"
 
 \end_inset
 
- 
-\change_inserted 1286759212 1690301621
-presents a
-\change_deleted 1286759212 1690301624
-Chronology for
-\change_unchanged
- a comprehensive chronology of studies related to ARIO.
+ presents a comprehensive chronology of studies related to ARIO.
 \end_layout
 
 \begin_layout Standard
@@ -1362,7 +1110,11 @@ Notably, if the inventory of an input appears insufficient to maintain the
 \begin_inset Quotes eld
 \end_inset
 
-shortage regime
+
+\shape italic
+shortage
+\shape default
+
 \begin_inset Quotes erd
 \end_inset
 
@@ -1405,29 +1157,7 @@ As a consequence, if
 \end_layout
 
 \begin_layout Standard
-
-\change_deleted 1286759212 1690301809
-We describe how the values of these parameters are chosen in Sec
-\begin_inset space ~
-\end_inset
-
-
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "subsec42"
-plural "false"
-caps "false"
-noprefix "false"
-
-\end_inset
-
-, moreover, 
-\change_inserted 1286759212 1690301810
-F
-\change_deleted 1286759212 1690301809
-f
-\change_unchanged
-or an in depth description of the model, please refer to Appendix
+For an in depth description of the model, please refer to Appendix
 \begin_inset space ~
 \end_inset
 
@@ -1462,8 +1192,6 @@ name "sec4"
 We study ARIO's sensitivity to both the economic data used as input (the
  MRIOTs) — as multiple readily available sources exist, and to the parameters
  of the model.
-
-\change_inserted 1286759212 1690304886
  To do this, we first run simulations of the indirect cost of German 2021
  floods using 3 different MRIOTs (section 
 \begin_inset CommandInset ref
@@ -1498,21 +1226,10 @@ reference "subsec44"
 \end_inset
 
 ).
- 
-\change_unchanged
-
 \end_layout
 
 \begin_layout Subsection
-
-\change_inserted 1286759212 1690304368
-Multi-Regional 
-\change_unchanged
-Input-Output tables 
-\change_inserted 1286759212 1690303383
-and inventory sizes 
-\change_unchanged
-used as inputs
+Multi-Regional Input-Output tables and inventory sizes used as inputs
 \end_layout
 
 \begin_layout Standard
@@ -1526,40 +1243,19 @@ name "subsec41"
 \end_layout
 
 \begin_layout Paragraph
-
-\change_inserted 1286759212 1690303303
 Input-Output tables
 \end_layout
 
 \begin_layout Standard
 We use three different MRIOT sources for this study, namely EXIOBASE 3,
- EUREGIO and EORA26
-\change_inserted 1286759212 1690308853
- 
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-
-\change_inserted 1286759212 1690303348
-ajoute refs + une courte présentation pour chacune (qui la fait, résulution
- en nombre de r';egion et de secteurs etc.)
-\change_unchanged
-
-\end_layout
-
-\end_inset
-
- (table 
+ EUREGIO and EORA26 (see table 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "tab:mriot"
 
 \end_inset
 
-)
-\change_unchanged
-.
+).
  We choose these three MRIOTs for their specificities.
  EXIOBASE 3, for instance, has a very precise typologies of sectors, whereas
  EORA26 contains data for almost all countries.
@@ -1569,22 +1265,25 @@ reference "tab:mriot"
  In addition, we compare results using both year 2000 and 2010 (which is
  the largest gap in time common to all three MRIOTs), to assess how this
  influence the results.
-\change_inserted 1286759212 1690308852
-
 \end_layout
 
 \begin_layout Paragraph
-
-\change_inserted 1286759212 1690303373
 Inventory sizes
-\change_unchanged
-
 \end_layout
 
 \begin_layout Standard
-
-\change_inserted 1286759212 1690303487
 The average inventory size of firms in each economic sector is a key parameter
+ 
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+SJ: C'est tendre une belle perche à la critique que de dire que c'est un
+ paramêtre clef alors qu'on ne le fait pas varier dans l'analyse...
+\end_layout
+
+\end_inset
+
  of ARIO 
 \begin_inset CommandInset citation
 LatexCommand citep
@@ -1594,45 +1293,16 @@ literal "false"
 \end_inset
 
 .
- 
-\change_unchanged
-We set the initial inventory size for all inputs to 90 days
-\change_inserted 1286759212 1690303515
- of pre-disaster economic activity
-\change_unchanged
-, and the characteristic time for inventory resupply 
-\change_inserted 1286759212 1690303633
-(see section 
+ We set the initial inventory size for all inputs to 90 days of pre-disaster
+ economic activity, and the characteristic time for inventory resupply (see
+ section 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "subsec32"
 
 \end_inset
 
-) to
-\change_deleted 1286759212 1690303531
-is
-\change_unchanged
- 60 days, which are coherent
-\change_inserted 1286759212 1690303645
-
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-
-\change_inserted 1286759212 1690303659
-qu'est-ce que tu veux dire par coherent? ce sonnt les valeurs de ce papier
- ou non?
-\change_unchanged
-
-\end_layout
-
-\end_inset
-
-
-\change_unchanged
- with 
+) to 60 days same as in 
 \begin_inset CommandInset citation
 LatexCommand citet
 key "hallegatte13_model_role_inven_heter_asses"
@@ -1643,33 +1313,23 @@ literal "false"
 .
  We also define a list of sectors which we consider non-constraining inputs
  in the short term (i.e.
- a shortage of these input
-\change_inserted 1286759212 1690303683
-s
-\change_unchanged
- has no effect on production capacity) :
+ a shortage of these inputs has no effect on production capacity) :
 \end_layout
 
 \begin_layout Itemize
 Activities of membership organization n.e.c.
  (91)
-\change_inserted 1286759212 1690303690
-
 \begin_inset Note Note
 status open
 
 \begin_layout Plain Layout
-
-\change_inserted 1286759212 1690303693
-c'est quoi ce code?
-\change_unchanged
-
+c'est quoi ce code? SJ: Reliquat de code NACE2 du secteur.
+ Il n'est pas présent pour tout les secteur d'EXIOBASE.
+ On peut le retirer.
 \end_layout
 
 \end_inset
 
-
-\change_unchanged
 
 \end_layout
 
@@ -1698,18 +1358,10 @@ Activities auxiliary to financial intermediation (67)
 \end_layout
 
 \begin_layout Standard
-We estimate productive capital per industry by adapting 
-\change_inserted 1286759212 1690303720
-the ratios of 
-\change_unchanged
-
+We estimate productive capital per industry by adapting the ratios of 
 \emph on
 capital to value added
 \emph default
- 
-\change_deleted 1286759212 1690303730
-ratio
-\change_unchanged
  used in 
 \begin_inset CommandInset citation
 LatexCommand citet
@@ -1719,27 +1371,8 @@ literal "false"
 \end_inset
 
  to EXIOBASE 3 sectors.
+ The full list of these different choices is available for each MRIOT in
  
-\change_inserted 1286759212 1690303854
-The f
-\change_deleted 1286759212 1690303854
-F
-\change_unchanged
-ull 
-\change_deleted 1286759212 1690303856
-definition
-\change_inserted 1286759212 1690303857
-list
-\change_unchanged
- of these different choices is available for each MRIOT in 
-\change_deleted 1286759212 1690303744
-Appendix
-\begin_inset space ~
-\end_inset
-
-
-\change_unchanged
-
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "app2.2"
@@ -1763,14 +1396,6 @@ noprefix "false"
  Moreover, a comparison of the technical coefficients matrix of these MRIOTs,
  which can be considered as a normalized representation of economic structure,
  is presented in 
-\change_deleted 1286759212 1690303871
-Appendix
-\begin_inset space ~
-\end_inset
-
-
-\change_unchanged
-
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "app4"
@@ -1780,25 +1405,33 @@ noprefix "false"
 
 \end_inset
 
-
-\change_inserted 1286759212 1690303911
 .
 \begin_inset Note Note
-status collapsed
+status open
 
 \begin_layout Plain Layout
-
-\change_inserted 1286759212 1690303934
 idem, il faut en dire plus: c'est quoi ce que tu conclues en regardant les
- figures D.15 et suivantes?
-\change_unchanged
+ figures D.15 et suivantes? SJ: C'est assez risqué de conclure davantage
+ que 
+\begin_inset Quotes eld
+\end_inset
 
+il y a des différence majeures entre les tables
+\begin_inset Quotes erd
+\end_inset
+
+.
+ Il n'y a pas de méthodologie de comparaison de table IO (ou alors je n'ai
+ pas trouvé).
+ Une partie de la divergence entre les tables vient de la non cohérence
+ entre les secteurs aggrégés (Le secteur Other en particulier).
+ À l'inverse on sait qu'il y a des différences qui ne viennent pas de l'aggrégat
+ion (par exemple le secteur de la Construction est présent de base dans
+ toutes les tables).
 \end_layout
 
 \end_inset
 
-
-\change_unchanged
 
 \end_layout
 
@@ -1811,11 +1444,12 @@ status open
 
 \begin_layout Plain Layout
 \begin_inset Tabular
-<lyxtabular version="3" rows="4" columns="4">
+<lyxtabular version="3" rows="4" columns="5">
 <features booktabs="true" tabularvalignment="middle" tabularwidth="100text%">
 <column alignment="none" valignment="top" special="@{\extracolsep\fill}l">
 <column alignment="left" valignment="top">
 <column alignment="left" valignment="top">
+<column alignment="none" valignment="top" special="l@{}">
 <column alignment="none" valignment="top" special="l@{}">
 <row>
 <cell alignment="none" valignment="top" topline="true" usebox="none">
@@ -1858,6 +1492,15 @@ Number of regions
 
 \series bold
 Other characteristics
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Article
 \end_layout
 
 \end_inset
@@ -1930,6 +1573,22 @@ Basic prices,
 \end_inset
 
 €
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset CommandInset citation
+LatexCommand citep
+key "stadler18_exiob"
+literal "false"
+
+\end_inset
+
+
 \end_layout
 
 \end_inset
@@ -2058,6 +1717,30 @@ disaggregation for EU,
 
 \end_inset
 </cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset CommandInset citation
+LatexCommand citet
+key "thissen_euregio_2018"
+literal "false"
+
+\end_inset
+
+
+\begin_inset CommandInset citation
+LatexCommand citet
+key "thissen_euregio_2018"
+literal "false"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
 </row>
 <row>
 <cell alignment="none" valignment="top" topline="true" bottomline="true" usebox="none">
@@ -2096,6 +1779,30 @@ Basic prices,
 \end_inset
 
 $
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset CommandInset citation
+LatexCommand citet
+key "lenzen12_mappin_struc_world_econom"
+literal "false"
+
+\end_inset
+
+
+\begin_inset CommandInset citation
+LatexCommand citet
+key "lenzen12_mappin_struc_world_econom"
+literal "false"
+
+\end_inset
+
+
 \end_layout
 
 \end_inset
@@ -2165,14 +1872,6 @@ This parameter determines how an industry can ramp up its production when
  The magnitude of this parameter is linked to a scarcity index, meaning
  that as the gap between production and demand widens, the industry accelerates
  its overproduction at a faster pace (See 
-\change_deleted 1286759212 1690303956
-Appendix
-\begin_inset space ~
-\end_inset
-
-
-\change_unchanged
-
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "app1.1.2 overprod"
@@ -2186,13 +1885,8 @@ noprefix "false"
 \end_layout
 
 \begin_layout Standard
-The most common value for this parameter in the 
-\change_deleted 1286759212 1690303979
-latest
-\change_inserted 1286759212 1690303980
-recent
-\change_unchanged
- literature is 365 days 
+The most common value for this parameter in the recent literature is 365
+ days 
 \begin_inset CommandInset citation
 LatexCommand citep
 key "guan20_global_suppl_chain_effec_covid_contr_measur,koks14_integ_direc_indir_flood_risk_model,hallegatte13_model_role_inven_heter_asses"
@@ -2232,17 +1926,7 @@ name "subsubsec422"
 
 \begin_layout Standard
 As we describe in Sec.
-
-\change_inserted 1286759212 1690303998
  
-\change_deleted 1286759212 1690303998
-
-\begin_inset space ~
-\end_inset
-
-
-\change_unchanged
-
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "subsec32"
@@ -2288,13 +1972,6 @@ If
 \end_layout
 
 \begin_layout Standard
-
-\change_deleted 1286759212 1690304014
-Hallegatte
-\change_unchanged
- 
-\change_inserted 1286759212 1690304040
-
 \begin_inset CommandInset citation
 LatexCommand citep
 key "hallegatte13_model_role_inven_heter_asses"
@@ -2302,25 +1979,12 @@ literal "false"
 
 \end_inset
 
- 
-\change_unchanged
-evaluates his model sensitivity to 
+ evaluates his model sensitivity to 
 \begin_inset Formula $\psi$
 \end_inset
 
- on five different values: 0.5, 0.7, 0.8 0.9 and 1 
-\change_deleted 1286759212 1690304037
-
-\begin_inset CommandInset citation
-LatexCommand citet
-key "hallegatte13_model_role_inven_heter_asses"
-literal "false"
-
-\end_inset
-
- 
-\change_unchanged
-and shows the model to be highly sensitive to this parameter.
+ on five different values: 0.5, 0.7, 0.8 0.9 and 1 and shows the model to be
+ highly sensitive to this parameter.
  As 0.5 and 0.7 values show no forward propagation of the initial shock, we
  assume evaluating for a lower value is not necessary.
  Moreover, in the same study, he suggests that for the case of a region
@@ -2551,21 +2215,34 @@ Our analysis primarily focuses on the region directly affected by the natural
  within each sector.
 \end_layout
 
-\begin_layout Standard
-
-\change_deleted 1286759212 1690304139
-We aim to shed light on the economic implications of the natural disaster
- in Germany and provide valuable insights into the relative importance of
- indirect damages compared to direct damages, both in terms of total losses
- and within specific sectors.
-\change_unchanged
-
-\end_layout
-
 \begin_layout Subsection
 
 \change_inserted 1286759212 1690304176
 Defining a subset of parameters range coherent with empirical data
+\change_inserted -1263083292 1691748055
+ 
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+
+\change_inserted -1263083292 1691748188
+Il n'y a pas de 
+\begin_inset Quotes eld
+\end_inset
+
+données empiriques
+\begin_inset Quotes erd
+\end_inset
+
+.
+\change_unchanged
+
+\end_layout
+
+\end_inset
+
+
 \change_deleted 1286759212 1690304185
 Aiming for reliable indirect damages
 \change_unchanged
@@ -2583,93 +2260,59 @@ name "subsec44"
 \end_layout
 
 \begin_layout Standard
-
-\change_deleted 1286759212 1690304966
-In the introduction section, we have discussed the challenges associated
- with assessing the reliability of indirect damages estimates obtained through
- modeling techniques, especially due to the scarcity of empirical data to
- compare to.
- Thus, 
-\change_inserted 1286759212 1690305062
 Not all parameter choices lead to simulations which seem coherent with the
  reality.
- A
-\change_deleted 1286759212 1690304966
-a
-\change_unchanged
-s
-\change_inserted 1286759212 1690305076
- our objective is to 
-\change_deleted 1286759212 1690305076
- an initial and simplified approach to 
-\change_unchanged
-estimate the reliability of 
-\change_inserted 1286759212 1690304972
-ARIO 
-\change_unchanged
-results
-\change_deleted 1286759212 1690305175
-,
-\change_unchanged
- 
+ As our objective is to estimate the reliability of ARIO results 
 \change_inserted 1286759212 1690305168
-in a situation similar to a typical academic research project , 
-\change_unchanged
-we 
-\change_inserted 1286759212 1690305296
-remove from our input parameter set the values which lead to indirect economic
- costs 
-\change_deleted 1286759212 1690305301
-differentiate between results
-\change_unchanged
+in a situation similar to a typical academic research project
+\change_inserted -1263083292 1691748286
  
-\change_inserted 1286759212 1690305320
-which seem 
-\change_unchanged
-at odds with 
-\change_inserted 1286759212 1690305304
-empirical 
-\change_unchanged
-observation
-\change_inserted 1286759212 1690305340
-s
-\change_unchanged
- (such as a
-\change_inserted 1286759212 1690305358
- sudden
-\change_unchanged
- 
-\change_deleted 1286759212 1690305343
-crash
-\change_inserted 1286759212 1690305344
-collapse
-\change_unchanged
- of the 
-\change_inserted 1286759212 1690305348
-whole 
-\change_unchanged
-German economy
-\change_inserted 1286759212 1690305362
- after the floods
-\change_unchanged
-) 
-\change_inserted 1286759212 1690305405
-or with the literature.
- 
-\change_deleted 1286759212 1690305399
-and results coherent with existing studies.
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+
+\change_inserted -1263083292 1691748323
+Je ne comprend pas ce que cela apporte...
 \change_unchanged
 
 \end_layout
 
-\begin_layout Standard
+\end_inset
 
-\change_inserted 1286759212 1690305497
-More precisely, 
-\change_deleted 1286759212 1690305499
-As such, 
+
 \change_unchanged
-Table
+, we remove from our input parameter set the values which lead to indirect
+ economic costs which seem at odds with 
+\change_inserted 1286759212 1690305304
+empirical
+\change_inserted -1263083292 1691748160
+ 
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+
+\change_inserted -1263083292 1691748242
+Je trouve extrêmement trompeur de rajouter ce terme.
+ On ne se compare pas à une étude empirique.
+ 
+\change_unchanged
+
+\end_layout
+
+\end_inset
+
+
+\change_inserted 1286759212 1690305304
+ 
+\change_unchanged
+observations (such as a sudden collapse of the whole German economy after
+ the floods) or with the literature.
+\end_layout
+
+\begin_layout Standard
+More precisely, Table
 \begin_inset space ~
 \end_inset
 
@@ -2683,75 +2326,12 @@ noprefix "false"
 
 \end_inset
 
- 
-\change_deleted 1286759212 1690305834
-in Appendix
-\begin_inset space ~
-\end_inset
-
-
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "app3.1"
-plural "false"
-caps "false"
-noprefix "false"
-
-\end_inset
-
-
-\change_unchanged
  shows the ratio of indirect losses over direct damage in several studies
- on indirect economic losses
-\change_inserted 1286759212 1690305527
-.
- These studies 
-\change_deleted 1286759212 1690305531
-: both ones that 
-\change_unchanged
-use 
-\change_inserted 1286759212 1690305533
-either 
-\change_unchanged
-ARIO 
-\change_deleted 1286759212 1690305538
-and ones that use
-\change_inserted 1286759212 1690305539
-or
-\change_unchanged
- a different methodology.
- 
-\change_deleted 1286759212 1690305601
-We remind here that these values have not been validated using empirical
- data, thus cannot be used to validate results in a strict sense.
- They do agree, however, that indirect losses are of a similar magnitude
- as direct losses.
- Hence, 
-\change_inserted 1286759212 1690305602
-O
-\change_deleted 1286759212 1690305601
-o
-\change_unchanged
-ur criterion for considering indirect losses to be unrealistic is that they
- exceed direct damages by more than 500%
-\change_inserted 1286759212 1690306101
-,
-\change_unchanged
- 
-\change_deleted 1286759212 1690306100
-(
-\change_unchanged
-corresponding to the highest estimate we found in the literature
-\change_inserted 1286759212 1690305586
- 
-\change_deleted 1286759212 1690305586
-
-\begin_inset space ~
-\end_inset
-
-
-\change_unchanged
-
+ on indirect economic losses.
+ These studies use either ARIO or a different methodology.
+ Our criterion for considering indirect losses to be unrealistic is that
+ they exceed direct damages by more than 500%, corresponding to the highest
+ estimate we found in the literature 
 \begin_inset CommandInset citation
 LatexCommand citep
 key "carvalho-2020-suppl-chain-disrup"
@@ -2759,37 +2339,24 @@ literal "false"
 
 \end_inset
 
-
-\change_deleted 1286759212 1690306103
-)
-\change_unchanged
 .
-\change_inserted 1286759212 1690305822
-
 \begin_inset Foot
-status collapsed
+status open
 
 \begin_layout Plain Layout
-
-\change_inserted 1286759212 1690305640
 We remind here that these values have not been validated using empirical
  data, thus cannot be used to validate results in a strict sense.
  They do agree, however, that indirect losses are of a similar magnitude
  as direct losses.
- 
-\change_unchanged
-
 \end_layout
 
 \end_inset
 
- 
+
 \end_layout
 
 \begin_layout Standard
 \align center
-
-\change_inserted 1286759212 1690305822
 \begin_inset Float table
 placement !h
 wide true
@@ -2797,13 +2364,9 @@ sideways false
 status open
 
 \begin_layout Plain Layout
-
-\change_inserted 1286759212 1690305822
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-
-\change_inserted 1286759212 1690305822
 Indirect over direct damage ratio in the literature.
 \begin_inset CommandInset label
 LatexCommand label
@@ -2821,8 +2384,6 @@ name "tab:iei-review"
 status open
 
 \begin_layout Plain Layout
-
-\change_inserted 1286759212 1690306020
 
 
 \backslash
@@ -2848,8 +2409,6 @@ small
 
 \begin_layout Plain Layout
 
-\change_inserted 1286759212 1690305822
-
 \series bold
 Study
 \end_layout
@@ -2860,8 +2419,6 @@ Study
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\change_inserted 1286759212 1690305822
 
 \series bold
 Method
@@ -2874,8 +2431,6 @@ Method
 
 \begin_layout Plain Layout
 
-\change_inserted 1286759212 1690305822
-
 \series bold
 Direct damages estimate
 \end_layout
@@ -2887,8 +2442,6 @@ Direct damages estimate
 
 \begin_layout Plain Layout
 
-\change_inserted 1286759212 1690305822
-
 \series bold
 Indirect damage estimate
 \end_layout
@@ -2899,8 +2452,6 @@ Indirect damage estimate
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\change_inserted 1286759212 1690305822
 
 \series bold
 Ratio indirect/direct
@@ -2914,8 +2465,6 @@ Ratio indirect/direct
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\change_inserted 1286759212 1690305822
 \begin_inset CommandInset citation
 LatexCommand citep
 key "hallegatte08_adapt_region_input_output_model"
@@ -2932,8 +2481,6 @@ literal "false"
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\change_inserted 1286759212 1690305822
 ARIO v1
 \end_layout
 
@@ -2943,8 +2490,6 @@ ARIO v1
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\change_inserted 1286759212 1690305822
 $107 Billion
 \end_layout
 
@@ -2954,8 +2499,6 @@ $107 Billion
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\change_inserted 1286759212 1690305822
 $42 Billion
 \end_layout
 
@@ -2965,8 +2508,6 @@ $42 Billion
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\change_inserted 1286759212 1690305822
 39%
 \end_layout
 
@@ -2978,8 +2519,6 @@ $42 Billion
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\change_inserted 1286759212 1690305822
 \begin_inset CommandInset citation
 LatexCommand citep
 key "ranger10_asses_poten_impac_climat_chang"
@@ -2996,8 +2535,6 @@ literal "false"
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\change_inserted 1286759212 1690305822
 ARIO v1
 \end_layout
 
@@ -3007,8 +2544,6 @@ ARIO v1
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\change_inserted 1286759212 1690305822
 $1500 Million
 \end_layout
 
@@ -3018,8 +2553,6 @@ $1500 Million
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\change_inserted 1286759212 1690305822
 $425 Million
 \end_layout
 
@@ -3029,8 +2562,6 @@ $425 Million
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\change_inserted 1286759212 1690305822
 28%
 \end_layout
 
@@ -3042,8 +2573,6 @@ $425 Million
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\change_inserted 1286759212 1690305822
 \begin_inset CommandInset citation
 LatexCommand citep
 key "hallegatte-2010-asses-climat"
@@ -3060,8 +2589,6 @@ literal "false"
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\change_inserted 1286759212 1690305822
 ARIO v1
 \end_layout
 
@@ -3071,8 +2598,6 @@ ARIO v1
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\change_inserted 1286759212 1690305822
 €1700 - 14500 Millions
 \end_layout
 
@@ -3082,8 +2607,6 @@ ARIO v1
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\change_inserted 1286759212 1690305822
 €14 - 2000 Millions
 \end_layout
 
@@ -3093,8 +2616,6 @@ ARIO v1
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\change_inserted 1286759212 1690305822
 0.8% - 13%
 \end_layout
 
@@ -3106,8 +2627,6 @@ ARIO v1
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\change_inserted 1286759212 1690305822
 \begin_inset CommandInset citation
 LatexCommand citep
 key "wu11_region_indir_econom_impac_evaluat_wench_earth"
@@ -3124,8 +2643,6 @@ literal "false"
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\change_inserted 1286759212 1690305822
 ARIO v1
 \end_layout
 
@@ -3135,8 +2652,6 @@ ARIO v1
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\change_inserted 1286759212 1690305822
 CNY 749 Billion
 \end_layout
 
@@ -3146,8 +2661,6 @@ CNY 749 Billion
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\change_inserted 1286759212 1690305822
 CNY 301 Billion
 \end_layout
 
@@ -3157,8 +2670,6 @@ CNY 301 Billion
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\change_inserted 1286759212 1690305822
 40%
 \end_layout
 
@@ -3170,8 +2681,6 @@ CNY 301 Billion
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\change_inserted 1286759212 1690305822
 \begin_inset CommandInset citation
 LatexCommand citep
 key "hallegatte13_model_role_inven_heter_asses"
@@ -3188,8 +2697,6 @@ literal "false"
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\change_inserted 1286759212 1690305822
 ARIO v2
 \end_layout
 
@@ -3199,8 +2706,6 @@ ARIO v2
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\change_inserted 1286759212 1690305822
 $63 Billion
 \end_layout
 
@@ -3210,8 +2715,6 @@ $63 Billion
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\change_inserted 1286759212 1690305822
 $11 Billion
 \end_layout
 
@@ -3221,8 +2724,6 @@ $11 Billion
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\change_inserted 1286759212 1690305822
 17%
 \end_layout
 
@@ -3234,8 +2735,6 @@ $11 Billion
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\change_inserted 1286759212 1690305822
 \begin_inset CommandInset citation
 LatexCommand citep
 key "koks14_integ_direc_indir_flood_risk_model"
@@ -3252,8 +2751,6 @@ literal "false"
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\change_inserted 1286759212 1690305822
 ARIO v2
 \end_layout
 
@@ -3263,8 +2760,6 @@ ARIO v2
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\change_inserted 1286759212 1690305822
 €36.1 Billion/year
 \end_layout
 
@@ -3274,8 +2769,6 @@ ARIO v2
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\change_inserted 1286759212 1690305822
 €23.4 Billion/year
 \end_layout
 
@@ -3285,8 +2778,6 @@ ARIO v2
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\change_inserted 1286759212 1690305822
 64%
 \end_layout
 
@@ -3298,8 +2789,6 @@ ARIO v2
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\change_inserted 1286759212 1690305822
 \begin_inset CommandInset citation
 LatexCommand citep
 key "koks19_macroec_impac_futur_river_flood_europ"
@@ -3316,8 +2805,6 @@ literal "false"
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\change_inserted 1286759212 1690305822
 MRIA
 \end_layout
 
@@ -3327,15 +2814,11 @@ MRIA
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\change_inserted 1286759212 1690305822
 Mean ratio of 50% increasing to 80% in the future
 \begin_inset ERT
 status collapsed
 
 \begin_layout Plain Layout
-
-\change_inserted 1286759212 1690305822
 
 
 \backslash
@@ -3349,8 +2832,6 @@ tnote
 status collapsed
 
 \begin_layout Plain Layout
-
-\change_inserted 1286759212 1690305822
 
 {
 \end_layout
@@ -3366,8 +2847,6 @@ status collapsed
 status collapsed
 
 \begin_layout Plain Layout
-
-\change_inserted 1286759212 1690305822
 
 }
 \end_layout
@@ -3403,8 +2882,6 @@ status collapsed
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\change_inserted 1286759212 1690305822
 \begin_inset CommandInset citation
 LatexCommand citep
 key "mendoza-tinoco-2020-flood-footp-asses"
@@ -3421,8 +2898,6 @@ literal "false"
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\change_inserted 1286759212 1690305822
 Flood Footprint Assessment model
 \end_layout
 
@@ -3432,8 +2907,6 @@ Flood Footprint Assessment model
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\change_inserted 1286759212 1690305822
 -
 \end_layout
 
@@ -3443,8 +2916,6 @@ Flood Footprint Assessment model
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\change_inserted 1286759212 1690305822
 -
 \end_layout
 
@@ -3454,8 +2925,6 @@ Flood Footprint Assessment model
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\change_inserted 1286759212 1690305822
 150% - 500%
 \end_layout
 
@@ -3467,8 +2936,6 @@ Flood Footprint Assessment model
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\change_inserted 1286759212 1690305822
 \begin_inset CommandInset citation
 LatexCommand citep
 key "tanoue-2020-estim-direc"
@@ -3485,8 +2952,6 @@ literal "false"
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\change_inserted 1286759212 1690305822
 CGE
 \end_layout
 
@@ -3496,8 +2961,6 @@ CGE
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\change_inserted 1286759212 1690305822
 $14.7 Billion
 \end_layout
 
@@ -3507,8 +2970,6 @@ $14.7 Billion
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\change_inserted 1286759212 1690305822
 $10.6 Billion
 \end_layout
 
@@ -3518,8 +2979,6 @@ $10.6 Billion
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\change_inserted 1286759212 1690305822
 72%
 \end_layout
 
@@ -3531,8 +2990,6 @@ $10.6 Billion
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\change_inserted 1286759212 1690305822
 \begin_inset CommandInset citation
 LatexCommand citep
 key "trenczek-2022-schaed-sturz"
@@ -3549,8 +3006,6 @@ literal "false"
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\change_inserted 1286759212 1690305822
 Gosh IO model
 \end_layout
 
@@ -3560,8 +3015,6 @@ Gosh IO model
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\change_inserted 1286759212 1690305822
 €33.4 Billion
 \end_layout
 
@@ -3571,8 +3024,6 @@ Gosh IO model
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\change_inserted 1286759212 1690305822
 €7 Billion
 \end_layout
 
@@ -3582,8 +3033,6 @@ Gosh IO model
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\change_inserted 1286759212 1690305822
 21%
 \end_layout
 
@@ -3595,8 +3044,6 @@ Gosh IO model
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\change_inserted 1286759212 1690305822
 \begin_inset CommandInset citation
 LatexCommand citep
 key "carvalho-2020-suppl-chain-disrup"
@@ -3613,8 +3060,6 @@ literal "false"
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\change_inserted 1286759212 1690305822
 CGE
 \end_layout
 
@@ -3624,8 +3069,6 @@ CGE
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\change_inserted 1286759212 1690305822
 0.1% GDP growth
 \end_layout
 
@@ -3635,8 +3078,6 @@ CGE
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\change_inserted 1286759212 1690305822
 0.5% GDP growth
 \end_layout
 
@@ -3646,8 +3087,6 @@ CGE
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\change_inserted 1286759212 1690305822
 500%
 \end_layout
 
@@ -3664,8 +3103,6 @@ status collapsed
 
 \begin_layout Plain Layout
 
-\change_inserted 1286759212 1690305822
-
 
 \backslash
 begin{tablenotes}
@@ -3679,16 +3116,12 @@ status collapsed
 
 \begin_layout Plain Layout
 
-\change_inserted 1286759212 1690305822
-
 %%[
 \backslash
 textheight]
 \end_layout
 
 \begin_layout Plain Layout
-
-\change_inserted 1286759212 1690305822
 
 \end_layout
 
@@ -3698,14 +3131,10 @@ textheight]
 \end_layout
 
 \begin_layout Plain Layout
-
-\change_inserted 1286759212 1690305822
 \begin_inset ERT
 status collapsed
 
 \begin_layout Plain Layout
-
-\change_inserted 1286759212 1690305822
 
 
 \backslash
@@ -3726,8 +3155,6 @@ status open
 
 \begin_layout Plain Layout
 
-\change_inserted 1286759212 1690305822
-
 
 \backslash
 end{tablenotes}
@@ -3741,19 +3168,13 @@ end{tablenotes}
 \end_inset
 
 
-\change_unchanged
-
 \end_layout
 
 \begin_layout Standard
-
-\change_inserted 1286759212 1690305747
 \begin_inset Note Comment
 status collapsed
 
 \begin_layout Plain Layout
-
-\change_inserted 1286759212 1690305747
 Note that studies utilizing the ARIO model indicate that indirect losses
  exhibit a non-linear relationship with direct losses.
  Therefore, results that do not fall in the same order of magnitude as the
@@ -3761,8 +3182,6 @@ Note that studies utilizing the ARIO model indicate that indirect losses
 \end_layout
 
 \begin_layout Plain Layout
-
-\change_inserted 1286759212 1690305747
 Especially, depending on the time windows considered after the event, indirect
  losses can vary importantly as recovery/rebuilding dynamics can last for
  more than one year after the event, and short-term losses (a few months
@@ -3784,45 +3203,10 @@ literal "false"
 \end_inset
 
 .
-\change_unchanged
-
 \end_layout
 
 \end_inset
 
-
-\change_deleted 1286759212 1690305747
-Note that studies utilizing the ARIO model indicate that indirect losses
- exhibit a non-linear relationship with direct losses.
- Therefore, results that do not fall in the same order of magnitude as the
- direct damages should not automatically be deemed unrealistic.
-\end_layout
-
-\begin_layout Standard
-
-\change_deleted 1286759212 1690305747
-Especially, depending on the time windows considered after the event, indirect
- losses can vary importantly as recovery/rebuilding dynamics can last for
- more than one year after the event, and short-term losses (a few months
- after the event) may be compensated or on the contrary aggravated in the
- medium term (up to two year after the event).
- Notably, several studies show that depending on the amount of direct damage,
- the choice of parameters (in relevant cases) and the amount of time after
- the event considered, indirect losses can be negative (i.e., net production
- gains)
-\begin_inset space ~
-\end_inset
-
-
-\begin_inset CommandInset citation
-LatexCommand citep
-key "noth-2019-badly-hurt,tanoue-2020-estim-direc,koks19_macroec_impac_futur_river_flood_europ,fatica-2022-flood-firms"
-literal "false"
-
-\end_inset
-
-.
-\change_unchanged
 
 \end_layout
 
@@ -3838,13 +3222,9 @@ name "sec5"
 \end_inset
 
 
-\change_inserted 1286759212 1690306278
-
 \end_layout
 
 \begin_layout Standard
-
-\change_inserted 1286759212 1690306429
 Section 
 \begin_inset CommandInset ref
 LatexCommand ref
@@ -3897,18 +3277,7 @@ noprefix "false"
 
 \end_inset
 
- 
-\change_deleted 1286759212 1690306482
-
-\end_layout
-
-\begin_layout Standard
-
-\change_inserted 1286759212 1690306503
 examine the resulting spread of ARIO results.
- 
-\change_unchanged
-
 \end_layout
 
 \begin_layout Standard
@@ -4001,56 +3370,18 @@ All sets where
 \end_layout
 
 \begin_layout Standard
-A list of the sets removed is available in 
-\change_inserted 1286759212 1690308129
-table 
+A list of the sets removed is available in table 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "tab:removed-params"
 
 \end_inset
 
-
-\change_deleted 1286759212 1690308126
-Appendix
-\begin_inset space ~
-\end_inset
-
-
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "app3.2"
-plural "false"
-caps "false"
-noprefix "false"
-
-\end_inset
-
-
-\change_unchanged
 .
- 
-\change_deleted 1286759212 1690306239
-We note here that
-\change_unchanged
- 
-\change_inserted 1286759212 1690308128
-O
-\change_deleted 1286759212 1690306241
-o
-\change_unchanged
-ur criterion removes 
-\change_deleted 1286759212 1690306244
-only
-\change_unchanged
- about 10% of the sets we tested.
-\change_inserted 1286759212 1690308128
-
+ Our criterion removes about 10% of the sets we tested.
 \end_layout
 
 \begin_layout Standard
-
-\change_inserted 1286759212 1690308114
 \begin_inset Float table
 placement !h
 wide true
@@ -4058,14 +3389,10 @@ sideways false
 status open
 
 \begin_layout Plain Layout
-
-\change_inserted 1286759212 1690308114
 \begin_inset ERT
 status open
 
 \begin_layout Plain Layout
-
-\change_inserted 1286759212 1690308139
 
 
 \backslash
@@ -4091,8 +3418,6 @@ small
 
 \begin_layout Plain Layout
 
-\change_inserted 1286759212 1690308947
-
 \series bold
 \begin_inset Formula $\Psi$
 \end_inset
@@ -4107,8 +3432,6 @@ small
 
 \begin_layout Plain Layout
 
-\change_inserted 1286759212 1690308114
-
 \series bold
 Recovery time
 \end_layout
@@ -4119,8 +3442,6 @@ Recovery time
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\change_inserted 1286759212 1690308980
 \begin_inset Formula $\alpha$
 \end_inset
 
@@ -4142,8 +3463,6 @@ and
 
 \begin_layout Plain Layout
 
-\change_inserted 1286759212 1690308114
-
 \series bold
 Recovery scenario
 \end_layout
@@ -4155,8 +3474,6 @@ Recovery scenario
 
 \begin_layout Plain Layout
 
-\change_inserted 1286759212 1690308114
-
 \end_layout
 
 \end_inset
@@ -4167,8 +3484,6 @@ Recovery scenario
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\change_inserted 1286759212 1690308114
 1
 \end_layout
 
@@ -4178,8 +3493,6 @@ Recovery scenario
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\change_inserted 1286759212 1690308114
 all values under 730 days
 \end_layout
 
@@ -4189,8 +3502,6 @@ all values under 730 days
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\change_inserted 1286759212 1690308114
 all values
 \end_layout
 
@@ -4200,8 +3511,6 @@ all values
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\change_inserted 1286759212 1690308114
 rebuilding
 \end_layout
 
@@ -4211,8 +3520,6 @@ rebuilding
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\change_inserted 1286759212 1690308114
 
 \end_layout
 
@@ -4224,8 +3531,6 @@ rebuilding
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\change_inserted 1286759212 1690308114
 0.97
 \end_layout
 
@@ -4235,8 +3540,6 @@ rebuilding
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\change_inserted 1286759212 1690308114
 90 days
 \end_layout
 
@@ -4246,8 +3549,6 @@ rebuilding
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\change_inserted 1286759212 1690308114
 all values
 \end_layout
 
@@ -4257,8 +3558,6 @@ all values
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\change_inserted 1286759212 1690308114
 rebuilding
 \end_layout
 
@@ -4268,8 +3567,6 @@ rebuilding
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\change_inserted 1286759212 1690308114
 
 \end_layout
 
@@ -4281,8 +3578,6 @@ rebuilding
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\change_inserted 1286759212 1690308114
 0.97
 \end_layout
 
@@ -4292,8 +3587,6 @@ rebuilding
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\change_inserted 1286759212 1690308114
 180 days
 \end_layout
 
@@ -4303,8 +3596,6 @@ rebuilding
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\change_inserted 1286759212 1690308114
 all values greater than 90 days
 \end_layout
 
@@ -4314,8 +3605,6 @@ all values greater than 90 days
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\change_inserted 1286759212 1690308114
 rebuilding
 \end_layout
 
@@ -4325,8 +3614,6 @@ rebuilding
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\change_inserted 1286759212 1690308114
 
 \end_layout
 
@@ -4338,8 +3625,6 @@ rebuilding
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\change_inserted 1286759212 1690308114
 0.95
 \end_layout
 
@@ -4349,8 +3634,6 @@ rebuilding
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\change_inserted 1286759212 1690308114
 90 days
 \end_layout
 
@@ -4360,8 +3643,6 @@ rebuilding
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\change_inserted 1286759212 1690308114
 all values greater than 90 days
 \end_layout
 
@@ -4371,8 +3652,6 @@ all values greater than 90 days
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\change_inserted 1286759212 1690308114
 rebuilding
 \end_layout
 
@@ -4382,8 +3661,6 @@ rebuilding
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\change_inserted 1286759212 1690308114
 
 \end_layout
 
@@ -4398,8 +3675,6 @@ rebuilding
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-
-\change_inserted 1286759212 1690308114
 Set of parameters removed after selecting simulations with indirect losses
  less than 5 times the direct damages.
 \end_layout
@@ -4419,20 +3694,6 @@ name "tab:removed-params"
 \end_inset
 
 
-\change_unchanged
-
-\end_layout
-
-\begin_layout Standard
-
-\change_deleted 1286759212 1690306273
-We then examine the spread of ARIO results after removing these specific
- parameter sets.
- We conduct our assessment by observing the total and per sector production
- change in Germany two years after the event, for all remaining simulations,
- and compare results for the different MRIOT used.
-\change_unchanged
-
 \end_layout
 
 \begin_layout Subsection
@@ -4447,33 +3708,28 @@ name "subsec52"
 \end_inset
 
 
-\change_inserted 1286759212 1690306594
-
 \end_layout
 
 \begin_layout Standard
-
-\change_inserted 1286759212 1690307064
 We examine here the spread of ARIO results after removing these specific
  parameter sets.
  We conduct our assessment by observing the total and per sector production
  change in Germany two years after the event, for all remaining simulations.
+
+\change_inserted -1263083292 1691748690
+ We compare 
+\change_unchanged
+
 \begin_inset Note Note
 status open
 
 \begin_layout Plain Layout
-
-\change_inserted 1286759212 1690307091
 ajoute un peu de texte pour expliquer que tu vas regarder avec et sans rebuildin
 g demand.
-\change_unchanged
-
 \end_layout
 
 \end_inset
 
-
-\change_unchanged
 
 \end_layout
 
@@ -4492,8 +3748,6 @@ name "subsubsec521"
 \end_layout
 
 \begin_layout Standard
-
-\change_inserted 1286759212 1690306708
 Figure 
 \begin_inset CommandInset ref
 LatexCommand ref
@@ -4504,40 +3758,9 @@ noprefix "false"
 
 \end_inset
 
- presents the 
-\change_deleted 1286759212 1690306648
-First, we observe the 
-\change_inserted 1286759212 1690306650
-simulated 
-\change_unchanged
-aggregated production change
-\change_inserted 1286759212 1690306764
- , for the different MRIOT used
-\change_unchanged
-.
- 
-\change_deleted 1286759212 1690306732
-We find large spread of the results (see Figure
-\begin_inset space ~
-\end_inset
-
-
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "fig2"
-plural "false"
-caps "false"
-noprefix "false"
-
-\end_inset
-
-), as 
-\change_inserted 1286759212 1690306734
-T
-\change_deleted 1286759212 1690306732
-t
-\change_unchanged
-otal production change ranges from about +40% (i.e.
+ presents the simulated aggregated production change, for the different
+ MRIOT used.
+ Total production change ranges from about +40% (i.e.
 \begin_inset space ~
 \end_inset
 
@@ -4546,25 +3769,8 @@ gains) to -250% (i.e.
 \end_inset
 
 losses) of the direct losses.
- However, we find that most results 
-\change_inserted 1286759212 1690306909
-
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-
-\change_inserted 1286759212 1690306915
-c'est à dire quel pourcentge?
-\change_unchanged
-
-\end_layout
-
-\end_inset
-
-
-\change_unchanged
-are concentrated between -40% and +10% of the direct losses.
+ However, we find that more than 90% of the results fall between -40% and
+ +10% of the direct losses.
 \begin_inset Note Note
 status open
 
@@ -4630,23 +3836,15 @@ name "fig2"
 \end_inset
 
 
-\change_inserted 1286759212 1690306843
-
 \begin_inset Note Note
 status open
 
 \begin_layout Plain Layout
-
-\change_inserted 1286759212 1690306950
 le box plot montre quoi, les quantiles à 25% et 75%? il faut le préciser)
-\change_unchanged
-
 \end_layout
 
 \end_inset
 
-
-\change_unchanged
 
 \end_layout
 
@@ -4675,9 +3873,9 @@ literal "false"
 \end_layout
 
 \begin_layout Standard
-For the 
+When considering 
 \color black
-rebuilding case
+rebuilding demand
 \color inherit
 
 \begin_inset Note Note
@@ -4686,7 +3884,16 @@ status open
 \begin_layout Plain Layout
 le nom n'est pas forcément très clair, car on ne regarde pas que le rebuilding.
  on peut mettre peut être plutot "standard ario" vs ario without rebuilding
- demand"
+ demand".
+ SJ: 
+\begin_inset Quotes eld
+\end_inset
+
+Standard ARIO
+\begin_inset Quotes erd
+\end_inset
+
+ c'est encore moins explicite...
 \end_layout
 
 \end_inset
@@ -4717,26 +3924,18 @@ Furthermore, our analysis confirms that the sensitivity to parameters and
  This observation aligns with the non-linear relationship between indirect
  losses and direct losses, indicating that the magnitude of the indirect
  impacts amplifies the sensitivity of the results.
-\change_inserted 1286759212 1690307004
-
 \begin_inset Note Note
 status open
 
 \begin_layout Plain Layout
-
-\change_inserted 1286759212 1690307108
 il faut que tu commentes tout ce qui apparait dans la figure, en donnant
  les chiffres.
  Tu dois commenter le role du choix de MRIOT et de la date, et comparer
  ça à ce que cela change d'avoir le rebuilding demand ou non.
-\change_unchanged
-
 \end_layout
 
 \end_inset
 
-
-\change_unchanged
 
 \end_layout
 
@@ -4825,27 +4024,19 @@ Manufacture
 \end_inset
 
  sectors exhibit relatively lower variations.
-\change_inserted 1286759212 1690307123
-
 \begin_inset Note Note
 status open
 
 \begin_layout Plain Layout
-
-\change_inserted 1286759212 1690307209
 idem, tu dois commenter plus, et dire quoi retenir : est-ce qu'il y a plus
  de chose à dire que quand on regarde de manière agregee, ou est-ce que
  ce que dit le modèle sur un secteur comparé aux autres a l'aier robuste,
  càd que les chiffres absolus sont moins fiables que les chiffres relatifs
  ?
-\change_unchanged
-
 \end_layout
 
 \end_inset
 
-
-\change_unchanged
 
 \end_layout
 
@@ -4881,23 +4072,15 @@ name "fig3"
 \end_inset
 
 
-\change_inserted 1286759212 1690307219
-
 \begin_inset Note Note
 status open
 
 \begin_layout Plain Layout
-
-\change_inserted 1286759212 1690307231
 idem, explique ce que d;écrivent les box plot: 25/50% de percentile?
-\change_unchanged
-
 \end_layout
 
 \end_inset
 
-
-\change_unchanged
 
 \end_layout
 
@@ -4926,8 +4109,6 @@ name "subsec53"
 \end_layout
 
 \begin_layout Standard
-
-\change_inserted 1286759212 1690307328
 Due to the high impact of 
 \emph on
 shortages, 
@@ -4939,39 +4120,8 @@ reference "subsec32"
 
 \end_inset
 
-), w
-\change_deleted 1286759212 1690307328
-W
-\change_unchanged
-e look at the
-\change_inserted 1286759212 1690307372
-ir frequency of
-\change_unchanged
- occurrence
-\change_inserted 1286759212 1690307364
- 
-\change_deleted 1286759212 1690307362
- of shortages 
-\change_unchanged
-and 
-\change_inserted 1286759212 1690307355
-at 
-\change_unchanged
-their impact on the results (
-\change_deleted 1286759212 1690307378
-see 
-\change_unchanged
-Figure
-\change_inserted 1286759212 1690307376
- 
-\change_deleted 1286759212 1690307375
-
-\begin_inset space ~
-\end_inset
-
-
-\change_unchanged
-
+), we look at their frequency of occurrence and at their impact on the results
+ (Figure 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "fig4"
@@ -4982,17 +4132,13 @@ noprefix "false"
 \end_inset
 
 ).
- Overall, 
-\change_deleted 1286759212 1690307384
-it is observed that 
-\change_unchanged
-simulations with shortages are less frequent than without.
+ Overall, simulations with shortages are less frequent than without.
 \end_layout
 
 \begin_layout Standard
 In the recovery case, shortages are absent
 \begin_inset Foot
-status collapsed
+status open
 
 \begin_layout Plain Layout
 Some rare shortages appear when looking at the sectoral level, but have
@@ -5067,11 +4213,7 @@ literal "false"
 \end_inset
 
 .
-
-\change_inserted 1286759212 1690307581
  Note that in the recovery case, shortages are absent.
-\change_unchanged
-
 \begin_inset CommandInset label
 LatexCommand label
 name "fig4"
@@ -5180,26 +4322,8 @@ name "subsec54"
 \end_layout
 
 \begin_layout Standard
-We describe here the most noticeable effects on results 
-\change_deleted 1286759212 1690307460
-per
-\change_inserted 1286759212 1690307460
-of each
-\change_unchanged
- parameter
-\change_deleted 1286759212 1690307463
-s
-\change_unchanged
-.
+We describe here the most noticeable effects on results of each parameter.
  See 
-\change_deleted 1286759212 1690307468
-Appendix
-\begin_inset space ~
-\end_inset
-
-
-\change_unchanged
-
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "app3"
@@ -5453,12 +4577,8 @@ Our findings emphasize the importance of comparing results obtained from
 \begin_layout Standard
 The rebuilding path is a crucial factor that significantly influences the
  outcomes.
- This highlight
-\change_inserted 1286759212 1690307691
-s
-\change_unchanged
- the importance of its precise modelling and greater care on the assumptions
- made.
+ This highlights the importance of its precise modelling and greater care
+ on the assumptions made.
 \end_layout
 
 \begin_layout Standard
@@ -5478,14 +4598,8 @@ literal "false"
 \end_layout
 
 \begin_layout Standard
-
-\change_deleted 1286759212 1690307736
-Overall
-\change_inserted 1286759212 1690307742
-Our results show that
-\change_unchanged
-, the results are heavily dependent on assumptions about recovery and the
- rigidity of constraints on the actors.
+Our results show that, the results are heavily dependent on assumptions
+ about recovery and the rigidity of constraints on the actors.
  This aligns with existing studies that have shown both positive and negative
  indirect impacts following a shock.
  Interestingly, the ARIO model's dynamics can both lead to negative and
@@ -5583,25 +4697,6 @@ name "sec7"
 
 \begin_layout Subsection
 BoARIO python package
-\end_layout
-
-\begin_layout Standard
-
-\change_deleted 1286759212 1690307825
-We chose to implement ARIO in python because of its versatility and its
- relative ease of learning for people without computer science background.
- Another advantage of using python is that it is easily extensible and upgradabl
-e.
- Moreover, Python's package management system, which includes tools like
- pip and conda, facilitates installation and management of third-party packages
- and dependencies.
- This enables seamless integration of new libraries or tools into the model
- as needed.
- Additionally, the ability to track changes to the codebase and version
- the model through package versioning enhances reproducibility and facilitates
- collaboration.
-\change_unchanged
-
 \end_layout
 
 \begin_layout Standard
@@ -5791,9 +4886,7 @@ name "app1.1.1"
 Adaptive Regional Input-Output (ARIO) is an I-O model, designed to compute
  indirect costs from exogenous shocks.
  Its first version dates back to 2008 and has originally been developed
- to assess the indirect costs of natural disasters
-\change_inserted 1286759212 1690307871
- 
+ to assess the indirect costs of natural disasters 
 \begin_inset CommandInset citation
 LatexCommand citep
 key "hallegatte08_adapt_region_input_output_model"
@@ -5801,12 +4894,6 @@ literal "false"
 
 \end_inset
 
-
-\change_unchanged
- 
-\change_deleted 1286759212 1690307875
-(Hallegatte 2008)
-\change_unchanged
 .
  In this paper we present BoARIO, a generic
 \begin_inset Foot
@@ -5818,13 +4905,7 @@ In the sense that it is not specifically designed for this study.
 
 \end_inset
 
- python implementation, similar to the one described 
-\change_deleted 1286759212 1690307885
-in
-\change_inserted 1286759212 1690307886
-by
-\change_unchanged
- 
+ python implementation, similar to the one described by 
 \begin_inset CommandInset citation
 LatexCommand citet
 key "hallegatte13_model_role_inven_heter_asses"
@@ -5833,9 +4914,7 @@ literal "false"
 \end_inset
 
  with some additions (e.g.
- inspired by
-\change_inserted 1286759212 1690307905
- 
+ inspired by 
 \begin_inset CommandInset citation
 LatexCommand citet
 key "guan20_global_suppl_chain_effec_covid_contr_measur"
@@ -5843,18 +4922,6 @@ literal "false"
 
 \end_inset
 
-
-\change_deleted 1286759212 1690307907
- 
-\begin_inset CommandInset citation
-LatexCommand citep
-key "guan20_global_suppl_chain_effec_covid_contr_measur"
-literal "false"
-
-\end_inset
-
-
-\change_unchanged
 ).
 \end_layout
 
@@ -6593,23 +5660,8 @@ name "app1.3"
 Building agent-based models such as ARIO requires a trade-off between the
  simplicity of the mechanisms described and the amount of parameters to
  calibrate, and therefore the transparency of modeled impacts.
- 
-\change_deleted 1286759212 1690308046
-Conceptually, the ARIO model offers a good tradeoff, and BoARIO's purpose
- is to provide an easy-to-use implementation allowing comparison between
- different parameters values and variants.
-
-\change_unchanged
  Considering both the conceptual model or its implementation, several hypotheses
- are 
-\change_deleted 1286759212 1690308061
-required
-\change_inserted 1286759212 1690308082
-made, leading to important limits:
-\change_deleted 1286759212 1690308065
-, and some limitations are induced.
-\change_unchanged
-
+ are made, leading to important limits.
 \end_layout
 
 \begin_layout Subsubsection
@@ -6678,25 +5730,16 @@ The implementation does (yet) not account for the role of labor (notably
 
 \begin_layout Section
 Input details
-\change_inserted 1286759212 1690303771
-
 \begin_inset Note Note
 status open
 
 \begin_layout Plain Layout
-
-\change_inserted 1286759212 1690303821
 il faut que tu mettes plus d'explication, ou alors enleve cette section
  et mets directement dans le texte principal: see the following files etc.
- 
-\change_unchanged
-
 \end_layout
 
 \end_inset
 
-
-\change_unchanged
 
 \end_layout
 
@@ -6828,1207 +5871,6 @@ name "app3"
 
 \end_layout
 
-\begin_layout Standard
-
-\change_deleted 1286759212 1690305845
-Indirect economic impacts in the literature
-\end_layout
-
-\begin_layout Standard
-
-\change_deleted 1286759212 1690305845
-\begin_inset CommandInset label
-LatexCommand label
-name "app3.1"
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-
-\change_deleted 1286759212 1690305845
-Table
-\begin_inset space ~
-\end_inset
-
-
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "tab:iei-review"
-plural "false"
-caps "false"
-noprefix "false"
-
-\end_inset
-
- shows indirect economic impact over direct economic impact ratio in ARIO
- literature, as well as other indirect impact studies.
-\change_unchanged
-
-\end_layout
-
-\begin_layout Standard
-\align center
-
-\change_deleted 1286759212 1690305816
-\begin_inset Float table
-placement !h
-wide true
-sideways false
-status collapsed
-
-\begin_layout Plain Layout
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-Indirect over direct damage ratio in the literature.
-\begin_inset CommandInset label
-LatexCommand label
-name "tab:iei-review"
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\begin_inset ERT
-status collapsed
-
-\begin_layout Plain Layout
-
-
-\backslash
-centering
-\end_layout
-
-\end_inset
-
- 
-\begin_inset Tabular
-<lyxtabular version="3" rows="12" columns="5">
-<features booktabs="true" tabularvalignment="middle" tabularwidth="100text%">
-<column alignment="none" valignment="top" special="@{\extracolsep\fill}p{3cm}">
-<column alignment="none" valignment="top" width="2.5cm">
-<column alignment="none" valignment="top" width="3.2cm">
-<column alignment="none" valignment="top" width="3.5cm">
-<column alignment="none" valignment="top" special="p{2cm}@{}">
-<row>
-<cell alignment="none" valignment="top" topline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\series bold
-Study
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="none" valignment="top" topline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\series bold
-Method
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="none" valignment="top" topline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\series bold
-Direct damages estimate
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="none" valignment="top" topline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\series bold
-Indirect damage estimate
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="none" valignment="top" topline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\series bold
-Ratio indirect/direct
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="none" valignment="top" topline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-\begin_inset CommandInset citation
-LatexCommand citep
-key "hallegatte08_adapt_region_input_output_model"
-literal "false"
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="none" valignment="top" topline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-ARIO v1
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="none" valignment="top" topline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-$107 Billion
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="none" valignment="top" topline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-$42 Billion
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="none" valignment="top" topline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-39%
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="none" valignment="top" topline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-\begin_inset CommandInset citation
-LatexCommand citep
-key "ranger10_asses_poten_impac_climat_chang"
-literal "false"
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="none" valignment="top" topline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-ARIO v1
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="none" valignment="top" topline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-$1500 Million
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="none" valignment="top" topline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-$425 Million
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="none" valignment="top" topline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-28%
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="none" valignment="top" topline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-\begin_inset CommandInset citation
-LatexCommand citep
-key "hallegatte-2010-asses-climat"
-literal "false"
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="none" valignment="top" topline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-ARIO v1
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="none" valignment="top" topline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-€1700 - 14500 Millions
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="none" valignment="top" topline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-€14 - 2000 Millions
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="none" valignment="top" topline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-0.8% - 13%
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="none" valignment="top" topline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-\begin_inset CommandInset citation
-LatexCommand citep
-key "wu11_region_indir_econom_impac_evaluat_wench_earth"
-literal "false"
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="none" valignment="top" topline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-ARIO v1
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="none" valignment="top" topline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-CNY 749 Billion
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="none" valignment="top" topline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-CNY 301 Billion
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="none" valignment="top" topline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-40%
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="none" valignment="top" topline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-\begin_inset CommandInset citation
-LatexCommand citep
-key "hallegatte13_model_role_inven_heter_asses"
-literal "false"
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="none" valignment="top" topline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-ARIO v2
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="none" valignment="top" topline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-$63 Billion
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="none" valignment="top" topline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-$11 Billion
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="none" valignment="top" topline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-17%
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="none" valignment="top" topline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-\begin_inset CommandInset citation
-LatexCommand citep
-key "koks14_integ_direc_indir_flood_risk_model"
-literal "false"
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="none" valignment="top" topline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-ARIO v2
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="none" valignment="top" topline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-€36.1 Billion/year
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="none" valignment="top" topline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-€23.4 Billion/year
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="none" valignment="top" topline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-64%
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="none" valignment="top" topline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-\begin_inset CommandInset citation
-LatexCommand citep
-key "koks19_macroec_impac_futur_river_flood_europ"
-literal "false"
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="none" valignment="top" topline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-MRIA
-\end_layout
-
-\end_inset
-</cell>
-<cell multicolumn="1" alignment="none" valignment="top" topline="true" usebox="none" special="c">
-\begin_inset Text
-
-\begin_layout Plain Layout
-Mean ratio of 50% increasing to 80% in the future
-\begin_inset ERT
-status collapsed
-
-\begin_layout Plain Layout
-
-
-\backslash
-tnote
-\end_layout
-
-\end_inset
-
-
-\begin_inset ERT
-status collapsed
-
-\begin_layout Plain Layout
-
-{
-\end_layout
-
-\end_inset
-
-
-\begin_inset Formula $\dagger$
-\end_inset
-
-
-\begin_inset ERT
-status collapsed
-
-\begin_layout Plain Layout
-
-}
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-</cell>
-<cell multicolumn="2" alignment="center" valignment="top" topline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell multicolumn="2" alignment="center" valignment="top" topline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="none" valignment="top" topline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-\begin_inset CommandInset citation
-LatexCommand citep
-key "mendoza-tinoco-2020-flood-footp-asses"
-literal "false"
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="none" valignment="top" topline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-Flood Footprint Assessment model
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="none" valignment="top" topline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
--
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="none" valignment="top" topline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
--
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="none" valignment="top" topline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-150% - 500%
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="none" valignment="top" topline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-\begin_inset CommandInset citation
-LatexCommand citep
-key "tanoue-2020-estim-direc"
-literal "false"
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="none" valignment="top" topline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-CGE
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="none" valignment="top" topline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-$14.7 Billion
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="none" valignment="top" topline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-$10.6 Billion
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="none" valignment="top" topline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-72%
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="none" valignment="top" topline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-\begin_inset CommandInset citation
-LatexCommand citep
-key "trenczek-2022-schaed-sturz"
-literal "false"
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="none" valignment="top" topline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-Gosh IO model
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="none" valignment="top" topline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-€33.4 Billion
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="none" valignment="top" topline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-€7 Billion
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="none" valignment="top" topline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-21%
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="none" valignment="top" topline="true" bottomline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-\begin_inset CommandInset citation
-LatexCommand citep
-key "carvalho-2020-suppl-chain-disrup"
-literal "false"
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="none" valignment="top" topline="true" bottomline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-CGE
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="none" valignment="top" topline="true" bottomline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-0.1% GDP growth
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="none" valignment="top" topline="true" bottomline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-0.5% GDP growth
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="none" valignment="top" topline="true" bottomline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-500%
-\end_layout
-
-\end_inset
-</cell>
-</row>
-</lyxtabular>
-
-\end_inset
-
-
-\begin_inset ERT
-status collapsed
-
-\begin_layout Plain Layout
-
-
-\backslash
-begin{tablenotes}
-\end_layout
-
-\end_inset
-
-
-\begin_inset ERT
-status collapsed
-
-\begin_layout Plain Layout
-
-%%[
-\backslash
-textheight]
-\end_layout
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset ERT
-status collapsed
-
-\begin_layout Plain Layout
-
-
-\backslash
-item
-\end_layout
-
-\end_inset
-
-[
-\begin_inset Formula $^{\dagger}$
-\end_inset
-
-] We consider the first-order estimated annual output losses (EAOL) of the
- study which designate indirect impact of events on the impacted region
- 
-\begin_inset ERT
-status collapsed
-
-\begin_layout Plain Layout
-
-
-\backslash
-end{tablenotes}
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\change_unchanged
-
-\end_layout
-
-\begin_layout Standard
-
-\change_deleted 1286759212 1690308146
-Removed sets of parameters
-\end_layout
-
-\begin_layout Standard
-
-\change_deleted 1286759212 1690308146
-\begin_inset CommandInset label
-LatexCommand label
-name "app3.2"
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-
-\change_deleted 1286759212 1690308146
-Table
-\begin_inset space ~
-\end_inset
-
-
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "tab:removed-params"
-plural "false"
-caps "false"
-noprefix "false"
-
-\end_inset
-
- shows the sets of parameters removed after applying our selection criterion.
-\end_layout
-
-\begin_layout Standard
-
-\change_deleted 1286759212 1690308146
-\begin_inset Float table
-placement !h
-wide true
-sideways false
-status collapsed
-
-\begin_layout Plain Layout
-\begin_inset ERT
-status collapsed
-
-\begin_layout Plain Layout
-
-
-\backslash
-centering
-\end_layout
-
-\end_inset
-
- 
-\begin_inset Tabular
-<lyxtabular version="3" rows="5" columns="5">
-<features booktabs="true" tabularvalignment="middle" tabularwidth="80text%">
-<column alignment="none" valignment="top" special="@{\extracolsep\fill}l">
-<column alignment="left" valignment="top">
-<column alignment="left" valignment="top">
-<column alignment="left" valignment="top">
-<column alignment="none" valignment="top" special="l@{}">
-<row>
-<cell alignment="none" valignment="top" topline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\series bold
-Psi value
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="left" valignment="top" topline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\series bold
-Recovery time
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="left" valignment="top" topline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\series bold
-Alpha tau value
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="left" valignment="top" topline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\series bold
-Recovery scenario
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="none" valignment="top" topline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="none" valignment="top" topline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-1
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="left" valignment="top" topline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-all values under 730 days
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="left" valignment="top" topline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-all values
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="left" valignment="top" topline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-rebuilding
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="none" valignment="top" topline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="none" valignment="top" topline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-0.97
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="left" valignment="top" topline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-90 days
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="left" valignment="top" topline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-all values
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="left" valignment="top" topline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-rebuilding
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="none" valignment="top" topline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="none" valignment="top" topline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-0.97
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="left" valignment="top" topline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-180 days
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="left" valignment="top" topline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-all values greater than 90 days
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="left" valignment="top" topline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-rebuilding
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="none" valignment="top" topline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="none" valignment="top" topline="true" bottomline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-0.95
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="left" valignment="top" topline="true" bottomline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-90 days
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="left" valignment="top" topline="true" bottomline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-all values greater than 90 days
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="left" valignment="top" topline="true" bottomline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-rebuilding
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="none" valignment="top" topline="true" bottomline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-</row>
-</lyxtabular>
-
-\end_inset
-
-
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-Set of parameters removed after selecting simulations with indirect losses
- less than 5 times the direct damages.
-\end_layout
-
-\end_inset
-
-
-\begin_inset CommandInset label
-LatexCommand label
-name "tab:removed-params"
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\change_unchanged
-
-\end_layout
-
 \begin_layout Subsection
 Results for common parameters values
 \end_layout
@@ -8059,11 +5901,7 @@ noprefix "false"
 \end_inset
 
  shows the results of simulations restricted to historical parameter values
- found in 
-\change_inserted 1286759212 1690308223
-the article by 
-\change_unchanged
-
+ found in the article by 
 \begin_inset CommandInset citation
 LatexCommand citet
 key "hallegatte13_model_role_inven_heter_asses"
@@ -8072,25 +5910,17 @@ literal "false"
 \end_inset
 
 .
-\change_inserted 1286759212 1690308225
-
 \begin_inset Note Note
 status open
 
 \begin_layout Plain Layout
-
-\change_inserted 1286759212 1690308244
 liste les valeurs de ces paramètres.
  AU fait, tu fais référence à cette swection quelque part dans le texte
  principal?
-\change_unchanged
-
 \end_layout
 
 \end_inset
 
-
-\change_unchanged
 
 \end_layout
 
@@ -8193,6 +6023,17 @@ the
 \change_inserted 1286759212 1690308268
 some
 \change_unchanged
+
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Techniquement c'est l'ensemble des autres régions (ROW contient le reste
+ du monde)
+\end_layout
+
+\end_inset
+
  regions not directly affected by the event, both aggregated results over
  all sectors, and per economic sector results.
 \end_layout
