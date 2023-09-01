@@ -4779,38 +4779,6 @@ name "sec6"
 \end_layout
 
 \begin_layout Standard
-
-\change_inserted 1286759212 1690307672
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-
-\change_inserted 1286759212 1690307791
-commence par résumer le papier et les résultats.
- explique ensuite ce que ça change de coinsidérer différentes MRIOT, puis
- différents paramettres, puis différents mécanismes.
-\change_unchanged
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-
-\change_deleted 1286759212 1690307728
-Our findings emphasize the importance of comparing results obtained from
- different MRIOTs and different parameters values.
-\change_inserted -1263083292 1693492597
-
-\end_layout
-
-\begin_layout Standard
-
-\change_inserted -1263083292 1693495357
 In this paper we conducted an analysis of the responses of the ARIO model
  to the use of different MRIOTs, a wide range of values for its main parameters,
  and two shock recovery mecanisms.
@@ -4822,19 +4790,6 @@ In this paper we conducted an analysis of the responses of the ARIO model
  recovery scenarios when using ARIO.
  Furthermore, transparent justifications for these choices are imperative,
  as they can alter the qualitative nature of results.
-\change_unchanged
-
-\end_layout
-
-\begin_layout Standard
-
-\change_deleted -1263083292 1693495425
-The rebuilding path is a crucial factor that significantly influences the
- outcomes.
- This highlights the importance of its precise modelling and greater care
- on the assumptions made.
-\change_inserted -1263083292 1693495427
-
 \end_layout
 
 \begin_layout Standard
@@ -4869,39 +4824,56 @@ The use of different MRIOTs showed important variation in results (when
 
 \begin_layout Standard
 
-\change_inserted -1263083292 1693498016
-As for the MRIOT choice, parameters values have more influence on the results
- when considering rebuilding demand, as simulations show high sensitivity
- to parameter 
+\change_inserted -1263083292 1693579455
+Similar to the influence of the MRIOT choice, changes in parameters values
+ have more influence on the results when considering rebuilding demand.
+ Simulations show high sensitivity to parameter 
 \begin_inset Formula $\psi$
 \end_inset
 
  and rebuilding duration in this case.
-\end_layout
-
-\begin_layout Standard
-Our results also suggest that historic values of 
+ Rebuilding duration that are too short lead to excessive indirect impact
+ due to the important shortage it creates: as rebuilding demand per step
+ is higher, intermediate demand is more rationned which quickly results
+ in shortages.
+ High 
 \begin_inset Formula $\psi$
 \end_inset
 
- and alpha tau from 
-\begin_inset CommandInset citation
-LatexCommand citep
-key "hallegatte13_model_role_inven_heter_asses"
-literal "false"
+ values are also associated with important shortages and indirect impact
+ as such values effectively reduce the buffering effect of inventories.
+ We found that values higher than 0.97 lead to unreasonnable results when
+ rebuilding demand is considered while this is not the case when no rebuilding
+ demand is considered, as the rationning is less prononced in this case.
+\change_unchanged
 
-\end_inset
-
- can be generally applicable as no results using these values were outliers.
 \end_layout
 
 \begin_layout Standard
-Our results show that, the results are heavily dependent on assumptions
- about recovery and the rigidity of constraints on the actors.
+
+\change_inserted -1263083292 1693579649
+These elements show that
+\change_unchanged
+ results are heavily dependent on assumptions about 
+\change_inserted -1263083292 1693579663
+rebuilding
+\change_unchanged
+ and the rigidity of constraints on the actors.
  This aligns with existing studies that have shown both positive and negative
  indirect impacts following a shock.
- Interestingly, the ARIO model's dynamics can both lead to negative and
- positive impacts (the 
+ 
+\change_inserted -1263083292 1693579697
+We observe that
+\change_unchanged
+ 
+\change_inserted -1263083292 1693579711
+the 
+\change_unchanged
+ARIO 
+\change_inserted -1263083292 1693579713
+model 
+\change_unchanged
+can both lead to negative and positive impacts (the 
 \begin_inset Quotes eld
 \end_inset
 
@@ -4911,14 +4883,18 @@ creative destruction
 
  hypothesis).
  While this provides versatility in representing economic dynamics, it highlight
-s the importance of carefully selecting parameters and interpreting the
- results due to the wide range of possible outcomes.
-\end_layout
-
-\begin_layout Standard
-Considering these findings, we suggest that the ARIO model is best used
- when examining different recovery story-lines from a shock defined by different
- sets of parameters.
+s the importance of carefully exploring the range of possible outcomes
+\change_inserted -1263083292 1693579855
+ and avoid limiting studies to one set of parameters values, scenario and
+ MRIOT
+\change_unchanged
+.
+ 
+\change_inserted -1263083292 1693579903
+In particular, 
+\change_unchanged
+we suggest that the ARIO model is best used when examining different recovery
+ story-lines from a shock.
  For instance, comparing results obtained assuming an 
 \begin_inset Quotes eld
 \end_inset
@@ -4944,7 +4920,7 @@ struggling recovery path
 In addition, integrating detailed empirical data on indirect losses following
  a shock can further refine and reduce the uncertainty of the ARIO model's
  results by calibrating better each parameter.
- This approach would contribute to enhancing the accuracy and reliability
+ This approach would contribute to enhance the accuracy and reliability
  of the model's outcomes.
 \end_layout
 
@@ -4953,20 +4929,18 @@ Our analysis did not include parameters related to inventories, such as
  size and resupply time and sectoral (or even regional) heterogeneity, due
  to the complexity it would introduce, especially on a per-sector and per-MRIOT
  basis.
- However, this paper and the BoARIO package, both provide a starting point
- toward such an analysis.
-\end_layout
 
-\begin_layout Standard
-Further research steps should also involve analyzing the effects of other
+\change_inserted -1263083292 1693580255
+ Future studies should focus on this aspect to account for dissimilarities
+ across different sectors or regions, especially on inventories management.
+
+\change_unchanged
+ Further research steps should also involve analyzing the effects of other
  events using our methodology and conducting an inter-comparison with other
  models to enhance the robustness and consistency of our findings.
-\end_layout
-
-\begin_layout Standard
-The recent events such as the COVID19 pandemic and the war in Ukraine also
- show how trade relations can changes in the face of such events and how
- supply chains are put in difficulty 
+ Recent events such as the COVID19 pandemic and the war in Ukraine also
+ show how trade relations can changes quickly and how supply chains are
+ put in difficulty 
 \begin_inset CommandInset citation
 LatexCommand citep
 key "guenette-2022-implic-war,maital-2020-global-econom"
@@ -4977,6 +4951,10 @@ literal "false"
 .
  This raise the importance of looking at deeper changes in MRIOTs and how
  it can influence vulnerability to indirect economics impacts.
+ This paper and the BoARIO package, both provide a starting point toward
+ such studies.
+\change_inserted -1263083292 1693580787
+
 \end_layout
 
 \begin_layout Section
@@ -5061,7 +5039,7 @@ literal "false"
 We defined a pipeline that automates the execution of our experiments.
  This pipeline, hosted on a GitHub repository
 \begin_inset Foot
-status collapsed
+status open
 
 \begin_layout Plain Layout
 which will be made available after publication
@@ -6331,6 +6309,10 @@ some
 status open
 
 \begin_layout Plain Layout
+
+\change_inserted -1263083292 1693579318
+SJ: 
+\change_unchanged
 Techniquement c'est l'ensemble des autres régions (ROW contient le reste
  du monde)
 \end_layout
