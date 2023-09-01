@@ -8,53 +8,16 @@
 \begin_preamble
 \usepackage{threeparttable}
 
-
-% specify here the journal
-\journal{ }
-
-% use this if you need line numbers
-%\usepackage{lineno}
+\journal{Risk Analysis}
 
 \usepackage[colorlinks=true,linkcolor=blue,breaklinks,citecolor=green]{hyperref}
 \usepackage{lineno}
 \usepackage{eurosym}
-%\usepackage{pdfsync}
-
-%% Hack by Heiko Oberdiek (on de.comp.text.tex)
 \usepackage{tabularx}
-
 \usepackage[T1]{fontenc}
 \usepackage{pslatex}
-
-% Redefine the standard table
-%\let\ORIGtabular\tabular
-%\let\ORIGendtabular\endtabular
-%\let\ORIGtabularx\tabularx
-%\renewcommand*{\tabularx}{%
-%  \def\tabular{%
-  %  \let\endtabular\ORIGendtabular
-   % \ORIGtabular
-  %}%
-  %\ORIGtabularx
-%}
-
-%\usepackage[title,titletoc,toc]{appendix}
-%\renewcommand{\appendixname }{Annex }
-%\renewcommand{\appendixpagename }{Annex }
-%\renewcommand{\appendixtocname }{Annex }
 \renewcommand*{\appendixname}{}
-
 \renewcommand{\labelenumi}{(\roman{enumi})} 
-
-%sert à numeroter toutes les equations
-%\renewcommand\[{\begin{equation}}
-%\renewcommand\]{\end{equation}} 
-%\renewcommand{€}{\EUR}
-
-%\DeclareMathOperator*{\argmax}{arg\,max}
-
-%pour ecrire une watermark sur les pages
-%\usepackage{draftwatermark}
 
 \usepackage{esint}
 \usepackage{url}
@@ -177,7 +140,7 @@ status open
 
 \begin_layout Plain Layout
 At least one Email address is required.
- Le draft à envoyer à Risk Analysis doit être entièrement anonymisé.
+ Le draft a envoyer a Risk Analysis doit être entièrement anonymisé.
 \end_layout
 
 \end_inset
@@ -301,6 +264,10 @@ linenumbers
 lineno
 \series default
  in the preamble if you need line numbers.
+
+\change_inserted -1263083292 1692171727
+ SJ:
+\change_unchanged
  La soumission du draft génère automatiquement un document avec les numéro
  de ligne.
 \end_layout
@@ -1278,8 +1245,14 @@ The average inventory size of firms in each economic sector is a key parameter
 status open
 
 \begin_layout Plain Layout
-SJ: C'est tendre une belle perche à la critique que de dire que c'est un
- paramêtre clef alors qu'on ne le fait pas varier dans l'analyse...
+SJ: C'est tendre une belle perche 
+\change_inserted -1263083292 1692172613
+a
+\change_deleted -1263083292 1692172613
+à
+\change_unchanged
+ la critique que de dire que c'est un paramêtre clef alors qu'on ne le fait
+ pas varier dans l'analyse...
 \end_layout
 
 \end_inset
@@ -1406,6 +1379,36 @@ noprefix "false"
 \end_inset
 
 .
+
+\change_inserted -1263083292 1692175619
+ The figures show substantial variations in the relative differences between
+ technical coefficients across the different MRIOTs, spanning a range of
+ 10 to 1000.
+ While part of the variations can be attributed to dissimilarities in the
+ composition of the aggregated sectors for the different MRIOTs (notably
+ the "Other" sector), there are variations exceeding a factor of 10, even
+ among sectors that are expected to be closely aligned across MRIOTS, such
+ as the "Construction" and "Agriculture and other" sectors.
+ Discrepancies between two consecutive years within the same MRIO framework
+ are shown for EXIOBASE3.
+ As anticipated, variations in technical coefficients occur less frequently
+ when comparing two years of the same MRIO, especially when looking the
+ domestic trade links.
+ However, some international trade connections shift by factors ranging
+ from 5 to 1000, notably the "Agriculture and other" input for "Construction"
+ and "Energy and Utilities and "Mining" sectors.
+ 
+\end_layout
+
+\begin_layout Standard
+
+\change_inserted -1263083292 1692175675
+These findings underscore the nontrivial nature of MRIOT selection.
+ The variations in technical coefficients across different MRIOTs we find,
+ appear anything but inconsequential.
+\end_layout
+
+\begin_layout Standard
 \begin_inset Note Note
 status open
 
@@ -2293,9 +2296,9 @@ status open
 
 \begin_layout Plain Layout
 
-\change_inserted -1263083292 1691748242
+\change_inserted -1263083292 1692172613
 Je trouve extrêmement trompeur de rajouter ce terme.
- On ne se compare pas à une étude empirique.
+ On ne se compare pas a une étude empirique.
  
 \change_unchanged
 
@@ -3716,20 +3719,20 @@ We examine here the spread of ARIO results after removing these specific
  We conduct our assessment by observing the total and per sector production
  change in Germany two years after the event, for all remaining simulations.
 
-\change_inserted -1263083292 1691748690
- We compare 
-\change_unchanged
-
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-ajoute un peu de texte pour expliquer que tu vas regarder avec et sans rebuildin
-g demand.
-\end_layout
+\change_inserted -1263083292 1692186263
+ We compare two scenarios of for the recovery of the productive capital
+ destroyed by the event: with and without rebuilding demand (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "subsubsec423"
+plural "false"
+caps "false"
+noprefix "false"
 
 \end_inset
 
+).
+\change_unchanged
 
 \end_layout
 
@@ -3771,18 +3774,6 @@ gains) to -250% (i.e.
 losses) of the direct losses.
  However, we find that more than 90% of the results fall between -40% and
  +10% of the direct losses.
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-dans le graphe, on a l'impression que rebuilding demand c'est si tuy regardes
- juste la demande pour le rebuilding, pas le cout de la catastrophe...
- mets plutot "with rebuilding demand".
-\end_layout
-
-\end_inset
-
-
 \end_layout
 
 \begin_layout Standard
@@ -3794,7 +3785,7 @@ status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename imgs/no_outliers_aggregated.png
+	filename imgs/no_outliers_aggregated_influence_of_MRIOT Year.png
 	lyxscale 40
 	width 100text%
 
@@ -3818,7 +3809,12 @@ Comparison of aggregated production net cumulative change between the different
  Results are expressed as a percentage of the direct damages.
  Each dot represents a different simulation.
  Color indicates the year of the MRIOT used.
- The left side shows simulations for the recovery case, whereas the right
+ 
+\change_inserted -1263083292 1693302637
+The boxplot shows the 25% and 75% quartiles.
+ 
+\change_unchanged
+The left side shows simulations for the recovery case, whereas the right
  side shows simulations for the rebuilding case.
  The dashed line shows the indirect losses estimated in 
 \begin_inset CommandInset citation
@@ -3860,7 +3856,7 @@ le box plot montre quoi, les quantiles à 25% et 75%? il faut le préciser)
 
 \begin_layout Standard
 In the recovery case, we consistently observe negative impacts, comprised
- between -50% and 0% of the direct losses, most results being lower than
+ between -50% and -10% of the direct losses, most results being lower than
  the -21% found by 
 \begin_inset CommandInset citation
 LatexCommand citep
@@ -3893,37 +3889,112 @@ Standard ARIO
 \begin_inset Quotes erd
 \end_inset
 
- c'est encore moins explicite...
+ est encore moins explicite...
 \end_layout
 
 \end_inset
 
-, we find a mix of positive and negative impacts across all MRIOTs.
- These outcomes are predominantly driven by the pace of the rebuilding process.
+, we find a mix of positive and negative impacts across all MRIOTs
+\change_inserted -1263083292 1693303356
+ and a much wider range of impacts (from 34% gains to -280% losses)
+\change_unchanged
+.
+\change_inserted -1263083292 1692187829
+
+\end_layout
+
+\begin_layout Standard
+
+\change_inserted -1263083292 1693303906
+The choice of the year of MRIOT data used (2000 or 2010) shows noticeable
+ changes in the results for EUREGIO only in rebuilding demand case (where
+ negatives extremes shift from -134% to -173%) and to a lesser extent, for
+ the EORA26 MRIOT in both rebuilding and no rebuilding cases (negative extremes
+ shift from -40% to -45% without rebuilding demand, and from -250% to -280%
+ with rebuilding demand).
+ Results for EXIOBASE 3 deviate by less than 2% when changing the year,
+ both when considering and not considering rebuilding demand.
+\end_layout
+
+\begin_layout Standard
+
+\change_inserted -1263083292 1693307370
+When not considering rebuilding demand, the sensitivity to MRIOT choice
+ does not change the results by more than 5%.
+ Highest losses by MRIOT are -49% (EUREGIO - 2000), -47% (EORA26 - 2010),
+ and -40% (EXIOBASE3 - 2010), and average results are comprised between
+ -28% (EORA - 2010) and -23% (EXIOBASE 3 - both year).
+ Minimum losses (no simulation results in gains in this scenario) differ
+ by at most 3% (-13% for EORA 26 - 2010 and -10% for EXIOBASE3 - both year).
+ Conversely, when considering a rebuilding demand, results are more sensitive
+ to the MRIOTs used.
+ For instance, maximum gains for EUREGIO (2000) are 26%, while they amount
+ to 34% for EXIOBASE 3 (2010).
+ 75% quartile is respectively at 10%, -2% and -18% for EXIOBASE 3, EORA26
+ and EUREGIO.
+ Average results are respectively at -11%, -31% and -48% for EXIOBASE 3,
+ EORA26 and EUREGIO, finally 25% quartile is -32% for EXIOBASE 3, -47% for
+ EORA26 and -67% for EUREGIO.
+\end_layout
+
+\begin_layout Standard
+
+\change_inserted -1263083292 1693307361
+We investigate what drives the negative impacts in the rebuilding case and
+ find that outcomes are predominantly related to the pace of the rebuilding
+ process.
  Notably, excessively rapid path (3 months) tends to lead to shortages,
  thereby driving the occurrence of important negative impacts.
- On the other hand, prolonged rebuilding paths (2 years) induce negative
- impacts from the prolonged reduced production and although less frequent,
- shortages can also manifest in this scenario.
+ On the other hand, longest rebuilding paths (2 years) induce negative impacts
+ from the prolonged reduced production and although less frequent, shortages
+ can also manifest in this scenario.
  Conversely, rebuilding paths that do not result in shortages, or only lead
  to marginal shortages, generate production gains.
  These gains are driven by the demand generated through the rebuilding process.
+ 
+\change_unchanged
+
 \end_layout
 
 \begin_layout Standard
-We also observe that the variation in results between different MRIOTs becomes
- more pronounced for sets of parameters which lead to important negative
- indirect impacts.
+
+\change_inserted -1263083292 1692188331
+Furthermore we
+\change_unchanged
+ observe that
+\change_inserted -1263083292 1693307074
+, in the rebuilding case,
+\change_unchanged
+ the variation in results between different MRIOTs becomes more pronounced
+ for sets of parameters which lead to important negative indirect impacts.
  This indicates a higher sensitivity to both the chosen parameters and the
- specific MRIOT employed for pessimistic assumptions on the parameters.
-\end_layout
+ specific MRIOT employed
+\change_inserted -1263083292 1693307170
+, when considering rebuilding demand and making
+\change_unchanged
+ pessimistic assumptions on the parameters.
+ This observation echoes
+\change_inserted -1263083292 1693307178
+ with
+\change_deleted -1263083292 1693306077
+ 
+\change_unchanged
+the non-linear relationship between indirect losses and direct losses
+\change_inserted -1263083292 1693307285
+ found by 
+\begin_inset CommandInset citation
+LatexCommand citealp
+key "hallegatte13_model_role_inven_heter_asses"
+literal "false"
 
-\begin_layout Standard
-Furthermore, our analysis confirms that the sensitivity to parameters and
- MRIOTs increases as indirect losses escalate.
- This observation aligns with the non-linear relationship between indirect
- losses and direct losses, indicating that the magnitude of the indirect
- impacts amplifies the sensitivity of the results.
+\end_inset
+
+: given a specific direct shock and a set of assumptions (e.g., parameters
+ value) that give rise to indirect losses at a magnitude equal to or surpassing
+ that of the direct losses, even minor adjustments in these assumptions
+ lead to non-linear changes in the indirect losses.
+\change_unchanged
+
 \begin_inset Note Note
 status open
 
@@ -3931,7 +4002,7 @@ status open
 il faut que tu commentes tout ce qui apparait dans la figure, en donnant
  les chiffres.
  Tu dois commenter le role du choix de MRIOT et de la date, et comparer
- ça à ce que cela change d'avoir le rebuilding demand ou non.
+ ça a ce que cela change d'avoir le rebuilding demand ou non.
 \end_layout
 
 \end_inset
@@ -3969,61 +4040,63 @@ noprefix "false"
 \end_inset
 
 ).
- In the absence of considering rebuilding demand, all sectors experience
- a relatively uniform decline of approximately -0.1% in their yearly production.
- The spread of results across sectors remains relatively low in this scenario.
- However, when taking into account the rebuilding demand, the construction
- sector exhibits a significant range of changes spanning from losses surpassing
- -0.5% to gains exceeding +1.5% of yearly production.
+ In the absence of rebuilding demand, all sectors except the Construction
+ sector, experience a decline
+\change_inserted -1263083292 1693316029
+ in their yearly production
+\change_unchanged
+ ranging from
+\change_inserted -1263083292 1693385609
+ less than
+\change_unchanged
+ 0
+\change_inserted -1263083292 1693385611
+.01%
+\change_unchanged
+ to 0.
+\change_inserted -1263083292 1693385586
+3
+\change_unchanged
+%
+\change_inserted -1263083292 1693385649
+.
+
+\change_deleted -1263083292 1693385208
+ 
+\change_inserted -1263083292 1693385663
+Differences between MRIOT in average results are less than 0.03%
+\change_unchanged
+.
+ 
+\change_inserted -1263083292 1693385864
+We observe a greater difference for the Construction sector which declines
+ at most by 0.03% for EORA26 and EUREGIO 3, and by 0.4% for EUREGIO.
+ In line with our previous results, in the case without rebuilding demand,
+ we do not observe much differences with different MRIOTs.
 \end_layout
 
 \begin_layout Standard
-For other sectors, the results primarily reflect losses, with variations
- ranging from -1.5% to -1% in declines, and gains of less than +0.1%.
- We find that results obtained from the EXIOBASE3 MRIOT demonstrate a narrower
- range, limited to losses of -0.5% and gains of +0.1%.
- In the case of the EORA26 and EUREGIO MRIOTs, the sectors experiencing
- the highest spread of results are 
-\begin_inset Quotes eld
-\end_inset
+Conversely, when we consider the rebuilding demand,
+\change_inserted -1263083292 1693387403
+ the overall range of outcomes for each sector within each MRIOT significantly
+ widens.
+ For instance, the Manufacturing sector has maximum losses reaching 1.1%
+ and maximum gains of 0.2%, as opposed to the narrower range of 0.2% and 0.05%
+ observed without considering rebuilding.
+ Moreover, disparities in outcomes between sectors across different MRIOTs
+ become more pronounced.
+ For instance, using the EUREGIO MRIOT, the Agriculture and Other sectors
+ exhibit results ranging from -1.5% to -0.02%, whereas the range narrows to
+ -0.26% to 0.06% when employing the EXIOBASE 3 MRIOT.
+ On average, losses per sector are comparable to, or greater than, those
+ obtained without accounting for rebuilding demand, with the notable exception
+ of the Construction sector, which registers an average gain of 0.6%.
+ The Manufacturing, "Sales, Transports and Services," and to a lesser extent,
+ Agriculture sectors, portray select simulations yielding gains of under
+ 0.5% of yearly production.
+\end_layout
 
-Agriculture
-\begin_inset Quotes erd
-\end_inset
-
-, 
-\begin_inset Quotes eld
-\end_inset
-
-Others
-\begin_inset Quotes erd
-\end_inset
-
- and 
-\begin_inset Quotes eld
-\end_inset
-
-Sales, Transports, and Services
-\begin_inset Quotes erd
-\end_inset
-
- whereas the 
-\begin_inset Quotes eld
-\end_inset
-
-Energy, Utilities, and Mining
-\begin_inset Quotes erd
-\end_inset
-
- and 
-\begin_inset Quotes eld
-\end_inset
-
-Manufacture
-\begin_inset Quotes erd
-\end_inset
-
- sectors exhibit relatively lower variations.
+\begin_layout Standard
 \begin_inset Note Note
 status open
 
@@ -4031,7 +4104,7 @@ status open
 idem, tu dois commenter plus, et dire quoi retenir : est-ce qu'il y a plus
  de chose à dire que quand on regarde de manière agregee, ou est-ce que
  ce que dit le modèle sur un secteur comparé aux autres a l'aier robuste,
- càd que les chiffres absolus sont moins fiables que les chiffres relatifs
+ cad que les chiffres absolus sont moins fiables que les chiffres relatifs
  ?
 \end_layout
 
@@ -4063,7 +4136,12 @@ Comparison of per sector production net cumulative change between the different
  MRIOTs after applying selection criterion.
  Values are expressed as a percentage of the yearly production of each sector.
  Color indicates the MRIOT used.
- The left side shows simulations for the recovery case, whereas the right
+ 
+\change_inserted -1263083292 1693402688
+Boxplot shows the 25% and 75% quartiles.
+ 
+\change_unchanged
+The left side shows simulations for the recovery case, whereas the right
  side shows simulations for the rebuilding case.
 \begin_inset CommandInset label
 LatexCommand label
@@ -4132,26 +4210,55 @@ noprefix "false"
 \end_inset
 
 ).
- Overall, simulations with shortages are less frequent than without.
-\end_layout
+ Overall, simulations with shortages are less frequent than without
+\change_inserted -1263083292 1693403544
+ (less than 14% of the simulations)
+\change_unchanged
+.
 
-\begin_layout Standard
-In the recovery case, shortages are absent
+\change_inserted -1263083292 1693390022
+ 
+\change_unchanged
+In the recovery case, shortages are 
+\change_inserted -1263083292 1693400644
+almost 
+\change_unchanged
+absent
+\change_inserted -1263083292 1693403567
+ (less than 1.4% of the simulations).
+ 
+\change_unchanged
+
 \begin_inset Foot
 status open
 
 \begin_layout Plain Layout
-Some rare shortages appear when looking at the sectoral level, but have
- negligible influence on the aggregated results
+Note that some shortages appear when looking at the sectoral level, but
+ have negligible influence on the aggregated results
 \end_layout
 
 \end_inset
 
 .
- Conversely, simulations considering rebuilding demand show a higher incidence
- of shortages, outlier results are all associated with this case.
- The occurrence and extent of shortages is particularly pronounced when
- a combination of factors is present: a 
+\end_layout
+
+\begin_layout Standard
+Conversely, simulations considering rebuilding demand show a higher incidence
+ of shortages
+\change_inserted -1263083292 1693403601
+ (22% of the simulations) 
+\change_unchanged
+and outlier results are all associated with this case.
+
+\change_deleted -1263083292 1693403687
+ 
+\change_inserted -1263083292 1693403686
+
+\end_layout
+
+\begin_layout Standard
+The occurrence and extent of shortages is particularly pronounced when a
+ combination of factors is present: a 
 \begin_inset Formula $\psi$
 \end_inset
 
@@ -4163,8 +4270,23 @@ Some rare shortages appear when looking at the sectoral level, but have
 \end_layout
 
 \begin_layout Standard
-Among the different MRIOTs, EXIOBASE 3 demonstrates greater resilience to
- shortages.
+Among the different MRIOTs, EXIOBASE 3 demonstrates greater 
+\change_inserted -1263083292 1693390237
+
+\begin_inset Quotes eld
+\end_inset
+
+
+\change_unchanged
+resilience
+\change_inserted -1263083292 1693390238
+
+\begin_inset Quotes erd
+\end_inset
+
+
+\change_unchanged
+ to shortages.
  Very few simulations within this framework exhibit shortages, and there
  are no outlier results associated with this MRIOT.
  In contrast, the EORA26 and EUREGIO MRIOTs exhibit a higher susceptibility
@@ -4201,10 +4323,15 @@ Influence of shortages
 
 Influence of the occurrence of shortage on results.
  Results are expressed as a percentage of the direct damages.
- Color indicates the year of the MRIOT used.
+ Color indicates if a shortage happened during the simulation.
  The left side shows simulations for the recovery case, whereas the right
  side shows simulations for the rebuilding case.
- The dashed line shows the indirect losses estimated in 
+ 
+\change_inserted -1263083292 1693402680
+Boxplot shows the 25% and 75% quartiles.
+ 
+\change_unchanged
+The dashed line shows the indirect losses estimated in 
 \begin_inset CommandInset citation
 LatexCommand citep
 key "trenczek-2022-schaed-sturz"
@@ -4213,7 +4340,6 @@ literal "false"
 \end_inset
 
 .
- Note that in the recovery case, shortages are absent.
 \begin_inset CommandInset label
 LatexCommand label
 name "fig4"
@@ -4273,7 +4399,7 @@ noprefix "false"
  losses exceeding €15 billion in the rebuilding case.
 \end_layout
 
-\begin_layout Standard
+\begin_layout Itemize
 Although the core of our results tends to be lower than
 \begin_inset space ~
 \end_inset
@@ -4286,7 +4412,11 @@ literal "false"
 
 \end_inset
 
- estimate, there is still considerable variability in the outcomes.
+ estimate, there is still variability in the outcomes
+\change_inserted -1263083292 1692188899
+, which range from gains equal to 1-2% to losses of 60% of the direct losses
+\change_unchanged
+.
 \change_inserted 1286759212 1690307427
 
 \begin_inset Note Note
@@ -4450,36 +4580,116 @@ name "subsec55"
 \end_layout
 
 \begin_layout Standard
+
+\change_deleted -1263083292 1693488013
 When examining other regions the analysis reveals the following.
+\change_inserted -1263083292 1693488308
+We also examine the indirect impacts in other regions to account for cross-borde
+r impacts.
+ When not considering a rebuilding demand, we find that most simulations
+ result in production gains although these gains do not exceed +3% of the
+ direct damages.
+ In rare instances where indirect impacts result in losses, they represent
+ less than -0.5% of the direct damages.
+\change_deleted -1263083292 1693488310
+
 \end_layout
 
 \begin_layout Standard
+
+\change_deleted -1263083292 1693488310
 In the recovery case, overall, gains are observed.
  However, these gains do not exceed +3% of the direct damages.
  In rare instances where indirect impacts result in losses, they represent
  less than -0.5% of the direct damages.
+\change_unchanged
+
 \end_layout
 
 \begin_layout Standard
-In the rebuilding case, most outcomes are also gain, and tend to be significantl
-y higher than in the recovery case.
- For instance, these gains can reach up to +25% of the direct damages in
- the 
+
+\change_deleted -1263083292 1693488343
+In the rebuilding case,
+\change_inserted -1263083292 1693488348
+In simulations with
+\change_unchanged
+ 
+\change_inserted -1263083292 1693488352
+rebuilding demand, 
+\change_unchanged
+most outcomes are also gain
+\change_inserted -1263083292 1693488355
+s
+\change_unchanged
+, and 
+\change_inserted -1263083292 1693488364
+in this case 
+\change_unchanged
+tend to be significantly higher than in the recovery case.
+ For instance, these gains 
+\change_inserted -1263083292 1693488516
+(aggregated over all sectors)
+\change_deleted -1263083292 1693488374
+can 
+\change_unchanged
+reach up to 
+\change_inserted -1263083292 1693488546
++5% in France of the direct damages, 
+\change_unchanged
++25% 
+\change_deleted -1263083292 1693488543
+of the direct damages 
+\change_unchanged
+in the 
+\change_deleted -1263083292 1693488397
+
+\family typewriter
+ROW
+\change_unchanged
+
+\family default
+ 
+\change_inserted -1263083292 1693489012
+Rest Of the World (
 \family typewriter
 ROW
 \family default
- region.
+) 
+\change_unchanged
+region
+\change_inserted -1263083292 1693489003
+, +10% in China
+\change_unchanged
+.
 \end_layout
 
 \begin_layout Standard
-Although less simulation lead to losses for not directly affected regions,
- there are still several outliers ranging which show significant losses.
+Although less simulation lead to losses for not directly affected regions
+\change_inserted -1263083292 1693488580
+ than for Germany
+\change_unchanged
+, there are still several 
+\change_deleted -1263083292 1693488765
+outliers ranging
+\change_inserted -1263083292 1693488767
+simulations
+\change_unchanged
+ which 
+\change_deleted -1263083292 1693488770
+show significant
+\change_inserted -1263083292 1693488783
+result in significant
+\change_unchanged
+ losses.
  For instance in the 
 \family typewriter
 ROW
 \family default
- region, more than 10 simulations lead to losses higher than -50%, half
- of them higher than -100%.
+ region, more than 10 simulations lead to losses higher than -50%
+\change_inserted -1263083292 1693488824
+ of the direct losses
+\change_unchanged
+.
  Note here, that 
 \family typewriter
 ROW
@@ -4491,11 +4701,35 @@ ROW
 \family default
  economy, the highest indirect damages represent less than -0.2% of yearly
  production.
- For France (
+ For France, highest indirect impacts are less than -0.3% of yearly production.
+\change_inserted -1263083292 1693489178
+
+\end_layout
+
+\begin_layout Standard
+
+\change_inserted -1263083292 1693492344
+Next we look at the variation of results across the different MRIOTs.
+ Contrary to Germany, there is a higher variability of results between MRIOTs
+ when not considering rebuilding demand.
+ For instance, simulation with EORA26 lead to gains in china that are ten
+ times higher in average than with EUREGIO or EXIOBASE 3.
+ Noticeably, simulations with EUREGIO show slightly higher gains in France
+ and slightly lower gains in USA and 
 \family typewriter
-FRA
+ROW 
 \family default
-), highest indirect impacts are less than -0.3% of yearly production.
+compared to EORA26 and EXIOBASE 3.
+\change_unchanged
+
+\end_layout
+
+\begin_layout Standard
+
+\change_inserted -1263083292 1693492460
+When considering rebuilding demand, results spread is lowest for EXIOBASE
+ 3 and highest for EORA26 when considering rebuilding demand in all regions,
+ similar to Germany.
 \end_layout
 
 \begin_layout Standard
@@ -4570,15 +4804,79 @@ commence par résumer le papier et les résultats.
 \change_deleted 1286759212 1690307728
 Our findings emphasize the importance of comparing results obtained from
  different MRIOTs and different parameters values.
+\change_inserted -1263083292 1693492597
+
+\end_layout
+
+\begin_layout Standard
+
+\change_inserted -1263083292 1693495357
+In this paper we conducted an analysis of the responses of the ARIO model
+ to the use of different MRIOTs, a wide range of values for its main parameters,
+ and two shock recovery mecanisms.
+ Globally, we found the responses to be very sensitive to those choices,
+ with simulations leading to indirect gains of up to 40% of the direct losses
+ and other to indirect losses of more than 250% of the direct losses.
+ Our findings highlight the importance of employing and comparing multiple
+ MRIOTs, exploring different parameter configurations, and assessing various
+ recovery scenarios when using ARIO.
+ Furthermore, transparent justifications for these choices are imperative,
+ as they can alter the qualitative nature of results.
 \change_unchanged
 
 \end_layout
 
 \begin_layout Standard
+
+\change_deleted -1263083292 1693495425
 The rebuilding path is a crucial factor that significantly influences the
  outcomes.
  This highlights the importance of its precise modelling and greater care
  on the assumptions made.
+\change_inserted -1263083292 1693495427
+
+\end_layout
+
+\begin_layout Standard
+
+\change_inserted -1263083292 1693497152
+In particular, we found that whether a rebuilding demand is considered or
+ not, and how long it takes to answer this demand, appears to be a main
+ factor in possible outcomes.
+ If the model is set to rebuild 
+\begin_inset Quotes eld
+\end_inset
+
+too fast
+\begin_inset Quotes erd
+\end_inset
+
+ (e.g.
+ 3 months for our case study), indirect impacts are unreasonable.
+ Note that this behavior supports the importance of carefull ressources
+ allocation after a disaster in order to avoid supply chains struggle.
+\end_layout
+
+\begin_layout Standard
+
+\change_inserted -1263083292 1693497602
+The use of different MRIOTs showed important variation in results (when
+ considering a rebuilding demand), with EXIOBASE 3 leading to indirect impacts
+ lower in average than EUREGIO and EORA26, which also show more variability
+ in the results, tied with the presence of important negative outcomes for
+ some simulation using EUREGIO and EORA26.
+\end_layout
+
+\begin_layout Standard
+
+\change_inserted -1263083292 1693498016
+As for the MRIOT choice, parameters values have more influence on the results
+ when considering rebuilding demand, as simulations show high sensitivity
+ to parameter 
+\begin_inset Formula $\psi$
+\end_inset
+
+ and rebuilding duration in this case.
 \end_layout
 
 \begin_layout Standard
@@ -5915,8 +6213,13 @@ status open
 
 \begin_layout Plain Layout
 liste les valeurs de ces paramètres.
- AU fait, tu fais référence à cette swection quelque part dans le texte
- principal?
+ AU fait, tu fais référence 
+\change_inserted -1263083292 1692172613
+a
+\change_deleted -1263083292 1692172613
+à
+\change_unchanged
+ cette swection quelque part dans le texte principal?
 \end_layout
 
 \end_inset
