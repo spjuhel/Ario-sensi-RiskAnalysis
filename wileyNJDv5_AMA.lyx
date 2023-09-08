@@ -98,8 +98,6 @@ theorems-ams
 \html_math_output 0
 \html_css_as_file 0
 \html_be_strict false
-\author -1263083292 "Samuel Juhel"
-\author 1286759212 "Vincent Viguié"
 \end_header
 
 \begin_body
@@ -445,8 +443,7 @@ literal "false"
 \end_layout
 
 \begin_layout Standard
-In this study, we focus on the July 2021 floods in Germany (see section
- 
+In this study, we focus on the July 2021 floods in Germany (Section 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "sec2"
@@ -454,7 +451,7 @@ reference "sec2"
 \end_inset
 
 ) as a case study to conduct an in-depth examination of the sensitivity
- of the Adaptive Regional Input-Output model (ARIO) (see section 
+ of the Adaptive Regional Input-Output model (ARIO) (Section 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "sec3"
@@ -492,7 +489,7 @@ literal "false"
 .
  We explore a set of parameters and input data that align its simulation
  outcomes with existing empirical evidence of the economic consequences
- of the event (see section 
+ of the event (Section 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "sec4"
@@ -501,8 +498,7 @@ reference "sec4"
 
 ).
  Through this analysis, we demonstrate that a wide range of simulation outcomes
- can be achieved while remaining coherent with empirical data (see section
- 
+ can be achieved while remaining coherent with empirical data (Section 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "sec5"
@@ -648,36 +644,27 @@ Later in the article, we compare the simulated indirect economic impact
 
 \end_inset
 
- Detailed distribution choices are available in the supplementary materials.
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-
-\change_inserted 1286759212 1694104253
-VV 
-\change_unchanged
-où? j'ai l'impression que cette partie manque dans les appendix?
-\end_layout
-
-\end_inset
-
-
+ Detailed distribution choices are available as files in the supplementary
+ materials.
 \end_layout
 
 \begin_layout Standard
 Using a static IO approach 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "sieg19_integ_asses_short_term_direc"
+literal "false"
+
+\end_inset
+
+, based on 2013 Germany National IO table
 \begin_inset Note Note
-status open
+status collapsed
 
 \begin_layout Plain Layout
 un modèle CGE, c'est bien ça? ils se basent sur quelle table IO? SJ: Ils
  utilisent des multiplicateurs de dommages directs calculer à partir d'une
- méthode IO
-\change_inserted 1286759212 1694104263
- VV indique quelle table c'est
-\change_unchanged
-
+ méthode IO VV indique quelle table c'est
 \end_layout
 
 \end_inset
@@ -693,7 +680,7 @@ literal "false"
  estimated that the floods lead to indirect economic approximately equal
  to €7.1 billion (21% of the direct damages), due to interruptions to supply
  chains and losses in industrial production.
- We use this estimation as a benchmark later in the paper (section 
+ We use this estimation as a benchmark later in the paper (Section 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "subsec52"
@@ -751,14 +738,7 @@ literal "false"
 
  to integrate inventory mechanisms and has, since, been used in close to
  20 articles studying the indirect economic costs of various natural disasters
- (or economic shocks in general) (Figure 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "fig1"
-
-\end_inset
-
-).
+ (or economic shocks in general).
  Recently, 
 \begin_inset CommandInset citation
 LatexCommand citet
@@ -831,7 +811,7 @@ noprefix "false"
 
 \end_inset
 
- presents a comprehensive chronology of studies related to ARIO.
+ presents a comprehensive chronology of studies using or related to ARIO.
 \end_layout
 
 \begin_layout Standard
@@ -944,7 +924,7 @@ noprefix "false"
 
 \end_inset
 
- and Appendix
+ and
 \begin_inset space ~
 \end_inset
 
@@ -1079,7 +1059,7 @@ As a consequence, if
 \end_layout
 
 \begin_layout Standard
-For an in depth description of the model, please refer to Appendix
+For an in depth description of the model, please refer to
 \begin_inset space ~
 \end_inset
 
@@ -1115,7 +1095,7 @@ We study ARIO's sensitivity to both the economic data used as input (the
  MRIOTs) — as multiple readily available sources exist, and to the parameters
  of the model.
  To do this, we first run simulations of the indirect cost of German 2021
- floods using 3 different MRIOTs (section 
+ floods using 3 different MRIOTs (Section 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "subsec41"
@@ -1140,7 +1120,7 @@ reference "subsec43"
  presents the outputs of the model that we analyze.
  To get meaningful estimates of the uncertainty of the model, we then reduce
  the set of parameter values by excluding the values that produce results
- at odds with empirical observations (section 
+ at odds with empirical observations (Section 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "subsec44"
@@ -1187,14 +1167,9 @@ reference "tab:mriot"
  In addition, we compare results using both year 2000 and 2010 (which is
  the largest gap in time common to all three MRIOTs), to assess how this
  influence the results.
- 
-\change_inserted 1286759212 1694102253
-
 \end_layout
 
 \begin_layout Standard
-
-\change_inserted 1286759212 1694102257
 A comparison of the technical coefficients matrix of these MRIOTs, which
  can be considered as a normalized representation of economic structure,
  is presented in 
@@ -1225,8 +1200,6 @@ noprefix "false"
  from 5 to 1000, notably the "Agriculture and other" input for "Construction"
  and "Energy and Utilities and "Mining" sectors.
  These findings underscore the nontrivial nature of MRIOT selection.
-\change_unchanged
-
 \end_layout
 
 \begin_layout Paragraph
@@ -1234,40 +1207,9 @@ Inventory sizes
 \end_layout
 
 \begin_layout Standard
-The average inventory size of firms in each economic sector is a key parameter
+We set the initial inventory size for all inputs to 90 days of pre-disaster
+ economic activity, and the characteristic time for inventory resupply (Section
  
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-SJ: C'est tendre une belle perche 
-\change_inserted -1263083292 1692172613
-a
-\change_deleted -1263083292 1692172613
-à
-\change_unchanged
- la critique que de dire que c'est un paramêtre clef alors qu'on ne le fait
- pas varier dans l'analyse...
-\change_inserted 1286759212 1694104282
-VV explique ici pourquoi on ne le fait pas varier
-\change_unchanged
-
-\end_layout
-
-\end_inset
-
- of ARIO 
-\begin_inset CommandInset citation
-LatexCommand citep
-key "hallegatte13_model_role_inven_heter_asses"
-literal "false"
-
-\end_inset
-
-.
- We set the initial inventory size for all inputs to 90 days of pre-disaster
- economic activity, and the characteristic time for inventory resupply (see
- section 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "subsec32"
@@ -1283,30 +1225,30 @@ literal "false"
 \end_inset
 
 .
- We also define a list of sectors which we consider non-constraining inputs
+ We chose not to vary these parameters: a sensitivity analysis considering
+ identical values for all sector already exists in 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "hallegatte13_model_role_inven_heter_asses"
+literal "false"
+
+\end_inset
+
+, hence further analysis would require to define per sector values which
+ was not computationally feasible in the scope of this study.
+ The extent of simulations required to comprehensively explore the influence
+ of these inventory parameters being too great for the scope of the present
+ study.
+\end_layout
+
+\begin_layout Standard
+We also define a list of sectors which we consider non-constraining inputs
  in the short term (i.e.
  a shortage of these inputs has no effect on production capacity) :
 \end_layout
 
 \begin_layout Itemize
 Activities of membership organization n.e.c.
- (91)
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-c'est quoi ce code? SJ: Reliquat de code NACE2 du secteur.
- Il n'est pas présent pour tout les secteur d'EXIOBASE.
- On peut le retirer.
-\change_inserted 1286759212 1694104291
-VV oui enleve les
-\change_unchanged
-
-\end_layout
-
-\end_inset
-
-
 \end_layout
 
 \begin_layout Itemize
@@ -1314,23 +1256,23 @@ Extra-territorial organizations and bodies
 \end_layout
 
 \begin_layout Itemize
-Financial intermediation, except insurance and pension funding (65)
+Financial intermediation, except insurance and pension funding
 \end_layout
 
 \begin_layout Itemize
-Insurance and pension funding, except compulsory social security (66)
+Insurance and pension funding, except compulsory social security
 \end_layout
 
 \begin_layout Itemize
-Real estate activities (70)
+Real estate activities
 \end_layout
 
 \begin_layout Itemize
-Recreational, cultural and sporting activities (92)
+Recreational, cultural and sporting activities
 \end_layout
 
 \begin_layout Itemize
-Activities auxiliary to financial intermediation (67)
+Activities auxiliary to financial intermediation
 \end_layout
 
 \begin_layout Standard
@@ -1347,28 +1289,8 @@ literal "false"
 \end_inset
 
  to EXIOBASE 3 sectors.
- The full list of these different choices is available for each MRIOT in
- 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "app2.2"
-plural "false"
-caps "false"
-noprefix "false"
-
-\end_inset
-
- and 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "app2.3"
-plural "false"
-caps "false"
-noprefix "false"
-
-\end_inset
-
-.
+ The full details of these different choices are available for each MRIOT
+ in files given as supplementary materials.
 \end_layout
 
 \begin_layout Standard
@@ -1380,31 +1302,32 @@ status open
 
 \begin_layout Plain Layout
 \begin_inset Tabular
-<lyxtabular version="3" rows="4" columns="5">
+<lyxtabular version="3" rows="8" columns="4">
 <features booktabs="true" tabularvalignment="middle" tabularwidth="100text%">
-<column alignment="none" valignment="top" special="@{\extracolsep\fill}l">
+<column alignment="left" valignment="top" width="0pt" special="@{\extracolsep\fill}l">
 <column alignment="left" valignment="top">
 <column alignment="left" valignment="top">
-<column alignment="none" valignment="top" special="l@{}">
 <column alignment="none" valignment="top" special="l@{}">
 <row>
-<cell alignment="none" valignment="top" topline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\series bold
-Name
-\end_layout
-
-\end_inset
-</cell>
 <cell alignment="left" valignment="top" topline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
 
 \series bold
+\size small
+Name
+\end_layout
+
+\end_inset
+</cell>
+<cell multirow="3" alignment="left" valignment="middle" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+\size small
 Number of sectors
 \end_layout
 
@@ -1416,6 +1339,7 @@ Number of sectors
 \begin_layout Plain Layout
 
 \series bold
+\size small
 Number of regions
 \end_layout
 
@@ -1427,44 +1351,42 @@ Number of regions
 \begin_layout Plain Layout
 
 \series bold
+\size small
 Other characteristics
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-Article
 \end_layout
 
 \end_inset
 </cell>
 </row>
 <row>
-<cell alignment="none" valignment="top" topline="true" usebox="none">
+<cell alignment="center" valignment="top" topline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size small
 EXIOBASE 3
 \end_layout
 
 \end_inset
 </cell>
-<cell alignment="left" valignment="top" topline="true" usebox="none">
+<cell multirow="3" alignment="left" valignment="middle" topline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size small
 163
 \end_layout
 
 \end_inset
 </cell>
-<cell alignment="left" valignment="top" topline="true" usebox="none">
+<cell multirow="3" alignment="left" valignment="middle" topline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size small
 \begin_inset Tabular
 <lyxtabular version="3" rows="2" columns="1">
 <features tabularvalignment="middle">
@@ -1474,6 +1396,8 @@ EXIOBASE 3
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size small
 49 = 44 Countries
 \end_layout
 
@@ -1485,6 +1409,8 @@ EXIOBASE 3
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size small
 + 5 rest of the world regions
 \end_layout
 
@@ -1500,10 +1426,12 @@ EXIOBASE 3
 
 \end_inset
 </cell>
-<cell alignment="none" valignment="top" topline="true" usebox="none">
+<cell multirow="3" alignment="none" valignment="middle" topline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size small
 Basic prices, 
 \begin_inset Formula $10^{6}$
 \end_inset
@@ -1513,10 +1441,14 @@ Basic prices,
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" usebox="none">
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size small
 \begin_inset CommandInset citation
 LatexCommand citep
 key "stadler18_exiob"
@@ -1529,30 +1461,63 @@ literal "false"
 
 \end_inset
 </cell>
-</row>
-<row>
-<cell alignment="none" valignment="top" topline="true" usebox="none">
+<cell multirow="4" alignment="center" valignment="top" topline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell multirow="4" alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell multirow="4" alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size small
 EUREGIO
 \end_layout
 
 \end_inset
 </cell>
-<cell alignment="left" valignment="top" topline="true" usebox="none">
+<cell multirow="3" alignment="left" valignment="middle" topline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size small
 14
 \end_layout
 
 \end_inset
 </cell>
-<cell alignment="left" valignment="top" topline="true" usebox="none">
+<cell multirow="3" alignment="left" valignment="middle" topline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size small
 \begin_inset Tabular
 <lyxtabular version="3" rows="3" columns="1">
 <features tabularvalignment="middle">
@@ -1562,6 +1527,8 @@ EUREGIO
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size small
 264 = 247 UE NUTS2 regions
 \end_layout
 
@@ -1573,6 +1540,8 @@ EUREGIO
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size small
 + 16 Countries
 \end_layout
 
@@ -1584,6 +1553,8 @@ EUREGIO
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size small
 + 1 Rest of the world
 \end_layout
 
@@ -1599,10 +1570,12 @@ EUREGIO
 
 \end_inset
 </cell>
-<cell alignment="none" valignment="top" topline="true" usebox="none">
+<cell multirow="3" alignment="none" valignment="middle" topline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size small
 \begin_inset Tabular
 <lyxtabular version="3" rows="3" columns="1">
 <features tabularvalignment="middle">
@@ -1612,7 +1585,9 @@ EUREGIO
 \begin_inset Text
 
 \begin_layout Plain Layout
-WIOD based,
+
+\size small
+WIOD based, with NUTS2
 \end_layout
 
 \end_inset
@@ -1623,7 +1598,9 @@ WIOD based,
 \begin_inset Text
 
 \begin_layout Plain Layout
-with NUTS2 regional
+
+\size small
+regional disaggregation
 \end_layout
 
 \end_inset
@@ -1634,7 +1611,9 @@ with NUTS2 regional
 \begin_inset Text
 
 \begin_layout Plain Layout
-disaggregation for EU, 
+
+\size small
+for EU, 
 \begin_inset Formula $10^{6}$
 \end_inset
 
@@ -1653,25 +1632,48 @@ disaggregation for EU,
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" usebox="none">
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size small
 \begin_inset CommandInset citation
-LatexCommand citet
+LatexCommand citep
 key "thissen_euregio_2018"
 literal "false"
 
 \end_inset
 
 
-\begin_inset CommandInset citation
-LatexCommand citet
-key "thissen_euregio_2018"
-literal "false"
+\end_layout
 
 \end_inset
+</cell>
+<cell multirow="4" alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
 
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell multirow="4" alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell multirow="4" alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
 
 \end_layout
 
@@ -1679,37 +1681,83 @@ literal "false"
 </cell>
 </row>
 <row>
-<cell alignment="none" valignment="top" topline="true" bottomline="true" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size small
 EORA26
 \end_layout
 
 \end_inset
 </cell>
-<cell alignment="left" valignment="top" topline="true" bottomline="true" usebox="none">
+<cell multirow="3" alignment="left" valignment="middle" topline="true" bottomline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size small
 26
 \end_layout
 
 \end_inset
 </cell>
-<cell alignment="left" valignment="top" topline="true" bottomline="true" usebox="none">
+<cell multirow="3" alignment="left" valignment="middle" topline="true" bottomline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size small
 189
 \end_layout
 
 \end_inset
 </cell>
-<cell alignment="none" valignment="top" topline="true" bottomline="true" usebox="none">
+<cell multirow="3" alignment="none" valignment="middle" topline="true" bottomline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size small
 Basic prices, 
 \begin_inset Formula $10^{3}$
 \end_inset
@@ -1719,25 +1767,46 @@ $
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" usebox="none">
+</row>
+<row>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
 \begin_inset CommandInset citation
-LatexCommand citet
+LatexCommand citep
 key "lenzen12_mappin_struc_world_econom"
 literal "false"
 
 \end_inset
 
 
-\begin_inset CommandInset citation
-LatexCommand citet
-key "lenzen12_mappin_struc_world_econom"
-literal "false"
+\end_layout
 
 \end_inset
+</cell>
+<cell multirow="4" alignment="center" valignment="top" topline="true" bottomline="true" usebox="none">
+\begin_inset Text
 
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell multirow="4" alignment="center" valignment="top" topline="true" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell multirow="4" alignment="center" valignment="top" topline="true" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
 
 \end_layout
 
@@ -1861,8 +1930,11 @@ name "subsubsec422"
 \end_layout
 
 \begin_layout Standard
-As we describe in Sec.
- 
+As we describe in Section
+\begin_inset space \thinspace{}
+\end_inset
+
+
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "subsec32"
@@ -1909,7 +1981,7 @@ If
 
 \begin_layout Standard
 \begin_inset CommandInset citation
-LatexCommand citep
+LatexCommand citet
 key "hallegatte13_model_role_inven_heter_asses"
 literal "false"
 
@@ -1982,7 +2054,7 @@ Rebuilding case
  Endogenous recovery through the answer to a rebuilding demand equal to
  the direct damages
 \begin_inset Foot
-status collapsed
+status open
 
 \begin_layout Plain Layout
 See Appendix 
@@ -1995,17 +2067,8 @@ noprefix "false"
 
 \end_inset
 
- and 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "app2.2"
-plural "false"
-caps "false"
-noprefix "false"
-
-\end_inset
-
- for details on how this demand is distributed among sectors
+ and supplementary materials for details on how this demand is distributed
+ among sectors
 \end_layout
 
 \end_inset
@@ -2153,29 +2216,6 @@ Our analysis primarily focuses on the region directly affected by the natural
 
 \begin_layout Subsection
 Defining a subset of parameters range coherent with empirical data
-\change_inserted -1263083292 1691748055
- 
-\change_unchanged
-
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-Il n'y a pas de 
-\begin_inset Quotes eld
-\end_inset
-
-données empiriques
-\begin_inset Quotes erd
-\end_inset
-
-.VV le fait de savoir que l'économie allemande n'a pas disparu est une "empirical
- data"...
-\end_layout
-
-\end_inset
-
-
 \end_layout
 
 \begin_layout Standard
@@ -2191,23 +2231,11 @@ name "subsec44"
 \begin_layout Standard
 Not all parameter choices lead to simulations which seem coherent with the
  reality.
- As our objective is to estimate the reliability of ARIO results 
-\change_inserted 1286759212 1690305168
-in a situation similar to a typical academic research project
-\change_inserted -1263083292 1691748286
- 
-\change_unchanged
-, we remove from our input parameter set the values which lead to indirect
- economic costs which seem at odds with 
-\change_inserted 1286759212 1690305304
-empirical
-\change_inserted -1263083292 1691748160
- 
-\change_deleted 1286759212 1694104359
- 
-\change_unchanged
-observations (such as a sudden collapse of the whole German economy after
- the floods) or with the literature.
+ As our objective is to estimate the reliability of ARIO results in a situation
+ similar to a typical academic research project , we remove from our input
+ parameter set the values which lead to indirect economic costs which seem
+ at odds with empirical observations (such as a sudden collapse of the whole
+ German economy after the floods) or with the literature.
 \end_layout
 
 \begin_layout Standard
@@ -2238,9 +2266,9 @@ literal "false"
 
 \end_inset
 
-.
+
 \begin_inset Foot
-status open
+status collapsed
 
 \begin_layout Plain Layout
 We remind here that these values have not been validated using empirical
@@ -2251,11 +2279,7 @@ We remind here that these values have not been validated using empirical
 
 \end_inset
 
-
-\end_layout
-
-\begin_layout Standard
-\align center
+.
 \begin_inset Float table
 placement !h
 wide true
@@ -2263,22 +2287,6 @@ sideways false
 status open
 
 \begin_layout Plain Layout
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-Indirect over direct damage ratio in the literature.
-\begin_inset CommandInset label
-LatexCommand label
-name "tab:iei-review"
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
 \begin_inset ERT
 status open
 
@@ -2998,7 +3006,7 @@ CGE
 
 
 \begin_inset ERT
-status collapsed
+status open
 
 \begin_layout Plain Layout
 
@@ -3011,7 +3019,7 @@ begin{tablenotes}
 
 
 \begin_inset ERT
-status collapsed
+status open
 
 \begin_layout Plain Layout
 
@@ -3021,6 +3029,25 @@ textheight]
 \end_layout
 
 \begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Indirect over direct damage ratio in the literature.
+\begin_inset CommandInset label
+LatexCommand label
+name "tab:iei-review"
+
+\end_inset
+
 
 \end_layout
 
@@ -3124,7 +3151,11 @@ name "sec5"
 \end_layout
 
 \begin_layout Standard
-Section 
+Section
+\begin_inset space \thinspace{}
+\end_inset
+
+
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "subsec51"
@@ -3176,7 +3207,7 @@ noprefix "false"
 
 \end_inset
 
-examine the resulting spread of ARIO results.
+ examine the variation in results.
 \end_layout
 
 \begin_layout Standard
@@ -3269,7 +3300,11 @@ All sets where
 \end_layout
 
 \begin_layout Standard
-A list of the sets removed is available in table 
+A list of the sets removed is available in Table
+\begin_inset space \thinspace{}
+\end_inset
+
+
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "tab:removed-params"
@@ -3305,9 +3340,9 @@ small
  
 \begin_inset Tabular
 <lyxtabular version="3" rows="5" columns="5">
-<features booktabs="true" tabularvalignment="middle" tabularwidth="80text%">
+<features booktabs="true" tabularvalignment="middle" tabularwidth="90text%">
 <column alignment="none" valignment="top" special="@{\extracolsep\fill}l">
-<column alignment="left" valignment="top">
+<column alignment="left" valignment="top" width="0pt">
 <column alignment="left" valignment="top">
 <column alignment="left" valignment="top">
 <column alignment="none" valignment="top" special="l@{}">
@@ -3363,7 +3398,7 @@ and
 \begin_layout Plain Layout
 
 \series bold
-Recovery scenario
+Rebuilding demand
 \end_layout
 
 \end_inset
@@ -3410,7 +3445,7 @@ all values
 \begin_inset Text
 
 \begin_layout Plain Layout
-rebuilding
+yes
 \end_layout
 
 \end_inset
@@ -3457,7 +3492,7 @@ all values
 \begin_inset Text
 
 \begin_layout Plain Layout
-rebuilding
+yes
 \end_layout
 
 \end_inset
@@ -3504,7 +3539,7 @@ all values greater than 90 days
 \begin_inset Text
 
 \begin_layout Plain Layout
-rebuilding
+yes
 \end_layout
 
 \end_inset
@@ -3551,7 +3586,7 @@ all values greater than 90 days
 \begin_inset Text
 
 \begin_layout Plain Layout
-rebuilding
+yes
 \end_layout
 
 \end_inset
@@ -3614,22 +3649,6 @@ We examine here the spread of ARIO results after removing these specific
  parameter sets.
  We conduct our assessment by observing the total and per sector production
  change in Germany two years after the event, for all remaining simulations.
-
-\change_deleted 1286759212 1694102404
- We compare two scenarios of for the recovery of the productive capital
- destroyed by the event: with and without rebuilding demand (
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "subsubsec423"
-plural "false"
-caps "false"
-noprefix "false"
-
-\end_inset
-
-).
-\change_unchanged
-
 \end_layout
 
 \begin_layout Subsubsection
@@ -3647,7 +3666,11 @@ name "subsubsec521"
 \end_layout
 
 \begin_layout Standard
-Figure 
+Figure
+\begin_inset space \thinspace{}
+\end_inset
+
+
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "fig2"
@@ -3670,6 +3693,50 @@ gains) to -250% (i.e.
 losses) of the direct losses.
  However, we find that more than 90% of the results fall between -40% and
  +10% of the direct losses.
+ In the recovery case, we consistently observe negative impacts, comprised
+ between -50% and -10% of the direct losses, most results being lower than
+ the -21% found by 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "trenczek-2022-schaed-sturz"
+literal "false"
+
+\end_inset
+
+.
+ When considering 
+\color black
+rebuilding demand
+\color inherit
+, we find a mix of positive and negative impacts across all MRIOTs and a
+ much wider range of impacts (from 34% gains to -280% losses).
+ The choice of the year of MRIOT data used (2000 or 2010) shows noticeable
+ changes in the results for EUREGIO only in the simulations with rebuilding
+ demand (where negatives extremes shift from -134% to -173%) and to a lesser
+ extent, for the EORA26 MRIOT in both simulations with and without rebuilding
+ demand (negative extremes shift from -40% to -45% without rebuilding demand,
+ and from -250% to -280% with rebuilding demand).
+ Results for EXIOBASE 3 deviate by less than 2% when changing the year,
+ both when considering and not considering rebuilding demand.
+\end_layout
+
+\begin_layout Standard
+When not considering rebuilding demand, the sensitivity to MRIOT choice
+ does not change the results by more than 5%.
+ Highest losses by MRIOT are -49% (EUREGIO 2000), -47% (EORA26 2010), and
+ -40% (EXIOBASE3 2010), and average results are comprised between -28% (EORA
+ 2010) and -23% (EXIOBASE 3 both years).
+ Minimum losses (no simulation results in gains in this scenario) differ
+ by at most 3% (-13% for EORA 26 2010 and -10% for EXIOBASE3 both years).
+ Conversely, when considering a rebuilding demand, results are more sensitive
+ to the MRIOTs used.
+ For instance, maximum gains for EUREGIO 2000 are 26%, while they amount
+ to 34% for EXIOBASE 3 2010.
+ 75% quartile is respectively at 10%, -2% and -18% for EXIOBASE 3, EORA26
+ and EUREGIO.
+ Across both years, average results are respectively at -11%, -31% and -48%
+ for EXIOBASE 3, EORA26 and EUREGIO and first quartile is -32% for EXIOBASE
+ 3, -47% for EORA26 and -67% for EUREGIO.
 \end_layout
 
 \begin_layout Standard
@@ -3677,7 +3744,7 @@ losses) of the direct losses.
 placement t
 wide true
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \begin_inset Graphics
@@ -3705,12 +3772,9 @@ Comparison of aggregated production net cumulative change between the different
  Results are expressed as a percentage of the direct damages.
  Each dot represents a different simulation.
  Color indicates the year of the MRIOT used.
- 
-\change_inserted -1263083292 1693302637
-The boxplot shows the 25% and 75% quartiles.
- 
-\change_unchanged
-The left side shows simulations for the recovery case, whereas the right
+ The boxplot shows the 25% and 75% quartiles and whiskers shows 99% of the
+ distribution.
+ The left side shows simulations for the recovery case, whereas the right
  side shows simulations for the rebuilding case.
  The dashed line shows the indirect losses estimated in 
 \begin_inset CommandInset citation
@@ -3729,15 +3793,12 @@ name "fig2"
 
 
 \begin_inset Note Note
-status open
+status collapsed
 
 \begin_layout Plain Layout
 le box plot montre quoi, les quantiles à 25% et 75%? il faut le préciser)
-\change_inserted 1286759212 1694102444
  VV tu as juste indiqué ce que représente la boite, mais l'extremité des
  barres montre quoi?
-\change_unchanged
-
 \end_layout
 
 \end_inset
@@ -3756,107 +3817,19 @@ le box plot montre quoi, les quantiles à 25% et 75%? il faut le préciser)
 \end_layout
 
 \begin_layout Standard
-In the recovery case, we consistently observe negative impacts, comprised
- between -50% and -10% of the direct losses, most results being lower than
- the -21% found by 
-\begin_inset CommandInset citation
-LatexCommand citep
-key "trenczek-2022-schaed-sturz"
-literal "false"
-
-\end_inset
-
-.
-\end_layout
-
-\begin_layout Standard
-When considering 
-\color black
-rebuilding demand
-\color inherit
-, we find a mix of positive and negative impacts across all MRIOTs
-\change_inserted -1263083292 1693303356
- and a much wider range of impacts (from 34% gains to -280% losses)
-\change_unchanged
-.
-\change_inserted -1263083292 1692187829
-
-\end_layout
-
-\begin_layout Standard
-
-\change_inserted -1263083292 1693303906
-The choice of the year of MRIOT data used (2000 or 2010) shows noticeable
- changes in the results for EUREGIO only in 
-\change_inserted 1286759212 1694102491
-the simulations with 
-\change_inserted -1263083292 1693303906
-rebuilding demand 
-\change_deleted 1286759212 1694102492
-case
-\change_inserted -1263083292 1693303906
- (where negatives extremes shift from -134% to -173%) and to a lesser extent,
- for the EORA26 MRIOT in both 
-\change_inserted 1286759212 1694102508
-simulations with and without 
-\change_inserted -1263083292 1693303906
-rebuilding 
-\change_inserted 1286759212 1694102515
-demand
-\change_deleted 1286759212 1694102513
-and no rebuilding cases
-\change_inserted -1263083292 1693303906
- (negative extremes shift from -40% to -45% without rebuilding demand, and
- from -250% to -280% with rebuilding demand).
- Results for EXIOBASE 3 deviate by less than 2% when changing the year,
- both when considering and not considering rebuilding demand.
-\end_layout
-
-\begin_layout Standard
-
-\change_inserted -1263083292 1693307370
-When not considering rebuilding demand, the sensitivity to MRIOT choice
- does not change the results by more than 5%.
- Highest losses by MRIOT are -49% (EUREGIO - 2000), -47% (EORA26 - 2010),
- and -40% (EXIOBASE3 - 2010), and average results are comprised between
- -28% (EORA - 2010) and -23% (EXIOBASE 3 - both year).
- Minimum losses (no simulation results in gains in this scenario) differ
- by at most 3% (-13% for EORA 26 - 2010 and -10% for EXIOBASE3 - both year).
- Conversely, when considering a rebuilding demand, results are more sensitive
- to the MRIOTs used.
- For instance, maximum gains for EUREGIO (2000) are 26%, while they amount
- to 34% for EXIOBASE 3 (2010).
- 75% quartile is respectively at 10%, -2% and -18% for EXIOBASE 3, EORA26
- and EUREGIO.
- Average results are respectively at -11%, -31% and -48% for EXIOBASE 3,
- EORA26 and EUREGIO, finally 25% quartile is -32% for EXIOBASE 3, -47% for
- EORA26 and -67% for EUREGIO.
-\end_layout
-
-\begin_layout Standard
-
-\change_inserted 1286759212 1694102635
 \begin_inset Note Note
 status open
 
 \begin_layout Plain Layout
-
-\change_inserted 1286759212 1694102800
 VV tu as dû faire des simualtions en plus pour pouvoir dire ça? je ne conrpends
  pas trop comment tu as obtenu ces chiffres.
- Il faut le préciser dans le texte
-\change_unchanged
-
+ Il faut le préciser dans le texte.
 \end_layout
 
 \end_inset
 
- In the simulations with rebuilding demand, 
-\change_deleted 1286759212 1694102644
-We investigate what drives the negative impacts in the rebuilding case and
- find that
-\change_inserted -1263083292 1693307361
- outcomes are predominantly related to the pace of the rebuilding process.
+ In the simulations with rebuilding demand, outcomes are predominantly related
+ to the pace of the rebuilding process.
  Notably, excessively rapid path (3 months) tends to lead to shortages,
  thereby driving the occurrence of important negative impacts.
  On the other hand, longest rebuilding paths (2 years) induce negative impacts
@@ -3865,43 +3838,17 @@ We investigate what drives the negative impacts in the rebuilding case and
  Conversely, rebuilding paths that do not result in shortages, or only lead
  to marginal shortages, generate production gains.
  These gains are driven by the demand generated through the rebuilding process.
- 
-\change_unchanged
-
 \end_layout
 
 \begin_layout Standard
-
-\change_inserted -1263083292 1692188331
-Furthermore we
-\change_unchanged
- observe that
-\change_inserted -1263083292 1693307074
-, 
-\change_deleted 1286759212 1694102824
-in the rebuilding case
-\change_inserted 1286759212 1694102827
-with rebuilding demand
-\change_inserted -1263083292 1693307074
-,
-\change_unchanged
- the variation in results between different MRIOTs becomes more pronounced
- for sets of parameters which lead to important negative indirect impacts.
+Furthermore we observe that, with rebuilding demand, the variation in results
+ between different MRIOTs becomes more pronounced for sets of parameters
+ which lead to important negative indirect impacts.
  This indicates a higher sensitivity to both the chosen parameters and the
- specific MRIOT employed
-\change_inserted -1263083292 1693307170
-, when considering rebuilding demand and making
-\change_unchanged
+ specific MRIOT employed, when considering rebuilding demand and making
  pessimistic assumptions on the parameters.
- This observation echoes
-\change_inserted -1263083292 1693307178
- with
-\change_deleted -1263083292 1693306077
- 
-\change_unchanged
-the non-linear relationship between indirect losses and direct losses
-\change_inserted -1263083292 1693307285
- found by 
+ This observation echoes withthe non-linear relationship between indirect
+ losses and direct losses found by 
 \begin_inset CommandInset citation
 LatexCommand citealp
 key "hallegatte13_model_role_inven_heter_asses"
@@ -3912,13 +3859,7 @@ literal "false"
 : given a specific direct shock and a set of assumptions (e.g., parameters
  value) that give rise to indirect losses at a magnitude equal to or surpassing
  that of the direct losses, even minor adjustments in these assumptions
- lead to non-linear changes in 
-\change_deleted 1286759212 1694102850
-the
-\change_inserted -1263083292 1693307285
- indirect losses.
-\change_unchanged
-
+ lead to non-linear changes in indirect losses.
 \end_layout
 
 \begin_layout Subsubsection
@@ -3936,7 +3877,7 @@ name "subsubsec522"
 \end_layout
 
 \begin_layout Standard
-Next, we examine the per-sector production changes (see Figure
+Next, we examine the per-sector production changes (Figure
 \begin_inset space ~
 \end_inset
 
@@ -3975,38 +3916,25 @@ Conversely, when we consider the rebuilding demand, the overall range of
  On average, losses per sector are comparable to, or greater than, those
  obtained without accounting for rebuilding demand, with the notable (and
  expected) exception of the Construction sector, which registers an average
- gain of 0.6
-\change_inserted -1263083292 1693387403
-%
-\change_inserted 1286759212 1694103218
-, due to the fact that the rebuilding demand targets mostly this sector
- : this sector has to respond to an increase in demand to rebuild the infrastruc
-tures destroyed by the disaster
-\change_inserted -1263083292 1693387403
-.
+ gain of 0.6%, due to the fact that the rebuilding demand targets mostly
+ this sector : this sector has to respond to an increase in demand to rebuild
+ the infrastructures destroyed by the disaster.
  
-\change_inserted 1286759212 1694103250
-
 \begin_inset Note Note
-status collapsed
+status open
 
 \begin_layout Plain Layout
-
-\change_inserted 1286759212 1694103269
 Je ne comprends pas du tout ce quye tu veux dire dans cette phrase ? "The
  Manufacturing, "Sales, Transports and Services," and to a lesser extent,
  Agriculture sectors, portray select simulations yielding gains of under
- 0.5% of yearly production."
-\change_unchanged
-
+ 0.5% of yearly production." SJ : Pour ces secteurs un petit nombre de simulations
+ montre des gain de l'ordre de 0.5% de production annuelle.
 \end_layout
 
 \end_inset
 
-
-\change_inserted -1263083292 1693387403
-The Manufacturing, "Sales, Transports and Services," and to a lesser extent,
- Agriculture sectors, portray select simulations yielding gains of under
+For a select set of simulations, the Manufacturing, "Sales, Transports and
+ Services," and Agriculture sectors, yield production gains although under
  0.5% of yearly production.
 \end_layout
 
@@ -4033,32 +3961,13 @@ Comparison of per sector production net cumulative change between the different
  MRIOTs after applying selection criterion.
  Values are expressed as a percentage of the yearly production of each sector.
  Color indicates the MRIOT used.
- 
-\change_inserted -1263083292 1693402688
-Boxplot shows the 25% and 75% quartiles.
- 
-\change_unchanged
-The left side shows simulations for the recovery case, whereas the right
+ Boxplot shows the 25% and 75% quartiles and whiskers shows 99% of the distribut
+ion.
+ The left side shows simulations for the recovery case, whereas the right
  side shows simulations for the rebuilding case.
 \begin_inset CommandInset label
 LatexCommand label
 name "fig3"
-
-\end_inset
-
-
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-idem, 
-\change_deleted 1286759212 1694103302
-explique ce que d;écrivent les box plot: 25/50% de percentile?
-\change_inserted 1286759212 1694103306
-explique le reste des barres
-\change_unchanged
-
-\end_layout
 
 \end_inset
 
@@ -4094,7 +4003,7 @@ Due to the high impact of
 \emph on
 shortages, 
 \emph default
-when they occur, on ARIO simulation outputs (section 
+when they occur, on ARIO simulation outputs (Section 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "subsec32"
@@ -4113,14 +4022,10 @@ noprefix "false"
 \end_inset
 
 ).
- Overall, simulations with shortages are less frequent than 
-\change_inserted 1286759212 1694103330
-simulations 
-\change_unchanged
-without (less than 14% of the simulations).
+ Overall, simulations with shortages are less frequent than simulations
+ without (less than 14% of the simulations).
  In the recovery case, shortages are almost absent (less than 1.4% of the
- simulations).
- 
+ simulations)
 \begin_inset Foot
 status open
 
@@ -4146,8 +4051,8 @@ The occurrence and extent of shortages is particularly pronounced when a
 \begin_inset Formula $\psi$
 \end_inset
 
- value above 0.8, a short rebuilding time, and (to a lesser extent) a slower
- pace of overproduction.
+ value above 0.8, a short rebuilding time (e.g.
+ three or six months), and (to a lesser extent) a slower pace of overproduction.
  Moreover, slight differences in parameter sets fulfilling this combination
  of factors lead to higher relative deviations in the results than for the
  rest of the parameter sets.
@@ -4155,21 +4060,13 @@ The occurrence and extent of shortages is particularly pronounced when a
 
 \begin_layout Standard
 Among the different MRIOTs, EXIOBASE 3 demonstrates greater 
-\change_inserted -1263083292 1693390237
-
 \begin_inset Quotes eld
 \end_inset
 
-
-\change_unchanged
 resilience
-\change_inserted -1263083292 1693390238
-
 \begin_inset Quotes erd
 \end_inset
 
-
-\change_unchanged
  to shortages.
  Very few simulations within this framework exhibit shortages, and there
  are no outlier results associated with this MRIOT.
@@ -4237,46 +4134,6 @@ name "fig4"
 \end_inset
 
 
-\end_layout
-
-\begin_layout Standard
-Setting 
-\begin_inset Formula $\psi$
-\end_inset
-
- to 0.80 and 
-\begin_inset Formula $\alpha_{\tau}$
-\end_inset
-
- to one year, following
-\begin_inset space ~
-\end_inset
-
-
-\begin_inset CommandInset citation
-LatexCommand citep
-key "hallegatte13_model_role_inven_heter_asses"
-literal "false"
-
-\end_inset
-
-, significantly reduces the spread of results (see Appendix
-\begin_inset space ~
-\end_inset
-
-
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "app3"
-plural "false"
-caps "false"
-noprefix "false"
-
-\end_inset
-
-).
- However, sensitivity remains high, ranging from gains of €3 billion to
- losses exceeding €15 billion in the rebuilding case.
 \end_layout
 
 \begin_layout Itemize
@@ -4405,27 +4262,104 @@ The duration of the recovery/rebuilding time also plays a role.
  for EORA26.
 \end_layout
 
-\begin_layout Subsection
-Impact on other regions
-\change_inserted 1286759212 1690307508
+\begin_layout Standard
+We also look at the results of simulation restricted to the historical parameter
+ values for 
+\begin_inset Formula $\psi$
+\end_inset
 
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-
-\change_inserted 1286759212 1690307655
-cette section n'est pas très intéressante.
- ici il faut plutot regarder s'il y a beaucoup de variabilité ou non.
-\change_unchanged
-
-\end_layout
-
+ 
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+(0.8)
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+ and 
+\begin_inset Formula $\alpha_{\tau}$
 \end_inset
 
 
-\change_unchanged
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ (365
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+ days) found in 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "hallegatte13_model_role_inven_heter_asses"
+literal "false"
 
+\end_inset
+
+.
+ The range of results is between -62% and +2% of the direct losses (Figure
+\begin_inset space \thinspace{}
+\end_inset
+
+
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:historic-values"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+).
+ The difference in results spread when considering or not rebuilding demand
+ is still present when restricting the parameters to these values: with
+ rebuilding demand, results are in the -61% to +2% range, where with rebuilding
+ demand, they are within -15% to -45%.
+ However, all average results are similar with and without rebuilding demand:
+ between -25% and -30% of the direct losses, with the notable exception
+ of the EUREGIO MRIOT when rebuilding demand is considered, where the average
+ result is -40%.
+\end_layout
+
+\begin_layout Subsection
+Impact on other regions
 \end_layout
 
 \begin_layout Standard
@@ -4451,25 +4385,19 @@ r impacts.
 \begin_layout Standard
 In simulations with rebuilding demand, most outcomes are also gains, and
  in this case tend to be significantly higher than in the recovery case.
- For instance, these gains (aggregated over all sectors)reach up to +5%
- in France of the direct damages, +25% in the 
-\change_deleted 1286759212 1694103625
- 
-\change_unchanged
-Rest Of the World (
+ For instance, these gains (aggregated over all sectors) reach up to +0.03%
+ of yearly production in France (5% of the initial direct damages), +0.01%
+ of yearly production in the Rest Of the World (
 \family typewriter
 ROW
 \family default
-) region, +10% in China.
+) region (+25% of the initial damages), +0.020% in China (+10% of the initial
+ damages) and +0.002% of yearly production in USA (+2% of the initial damages).
 \begin_inset Note Note
 status open
 
 \begin_layout Plain Layout
-
-\change_inserted 1286759212 1694104419
-VV
-\change_unchanged
-ce n'ets pas très clair ce que ces % signifient: c'est des % de la valeur
+VVce n'ets pas très clair ce que ces % signifient: c'est des % de la valeur
  du dommage direct initial, c'est ça? exprime aussi tpout en % de la production
  annuelle, comme tu le fais plus bas, ce sera plus clair.
 \end_layout
@@ -4538,7 +4466,7 @@ Analyzing the sector-level impacts, the majority of the gains are driven
  On the other hand, no significant patterns emerge in terms of losses, except
  that the Construction and Other sectors exhibit noticeably fewer losses
  compared to the rest of the sectors.
- Figures are presented in Appendix
+ Figures for these results are presented in
 \begin_inset space ~
 \end_inset
 
@@ -4578,28 +4506,16 @@ In this paper we conducted an analysis of the responses of the ARIO model
  and other to indirect losses of more than 250% of the direct losses.
  Our findings highlight the importance of employing and comparing multiple
  MRIOTs, exploring different parameter configurations, and assessing various
- recovery scenarios when using 
-\change_inserted 1286759212 1694103872
-models such as 
-\change_unchanged
-ARIO.
+ recovery scenarios when using models such as ARIO.
  Furthermore, transparent justifications for these choices are imperative,
  as they can alter the qualitative nature of results.
 \end_layout
 
 \begin_layout Standard
-
-\change_inserted -1263083292 1693497152
 In particular, we found that whether a rebuilding demand is considered or
  not, and how long it takes to answer this demand, appears to be a main
  factor in possible outcomes.
- 
-\change_inserted 1286759212 1694103918
-For instance, i
-\change_deleted 1286759212 1694103917
-I
-\change_inserted -1263083292 1693497152
-f the model is set to rebuild 
+ For instance, if the model is set to rebuild 
 \begin_inset Quotes eld
 \end_inset
 
@@ -4608,91 +4524,22 @@ too fast
 \end_inset
 
  (e.g.
- 3 months
-\change_deleted 1286759212 1694103925
- for our case study
-\change_inserted -1263083292 1693497152
-), indirect impacts 
-\change_deleted 1286759212 1694103929
-are
-\change_inserted 1286759212 1694103930
-seem
-\change_inserted -1263083292 1693497152
- 
-\change_deleted 1286759212 1694103933
-unreasonable
-\change_inserted 1286759212 1694103938
-extremely large 
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-
-\change_inserted 1286759212 1694103957
-precise plus; on ne peut pas dire "unreasonable"
-\change_unchanged
-
-\end_layout
-
-\end_inset
-
-
-\change_inserted -1263083292 1693497152
-.
- 
-\change_deleted 1286759212 1694103969
-Note that t
-\change_inserted 1286759212 1694103971
-T
-\change_inserted -1263083292 1693497152
-his 
-\change_deleted 1286759212 1694103983
-behavior
-\change_inserted 1286759212 1694103985
-result
-\change_inserted -1263083292 1693497152
- supports the importance of careful
-\change_deleted 1286759212 1694103899
-l
-\change_inserted -1263083292 1693497152
- ressources allocation after a disaster in order to avoid supply chains
- struggle.
+ 3 months), indirect impacts seem extremely large (higher than 500% of the
+ initial direct damages).
+ This result supports the importance of careful ressources allocation after
+ a disaster in order to avoid supply chains struggle.
 \end_layout
 
 \begin_layout Standard
-
-\change_inserted -1263083292 1693497602
 The use of different MRIOTs showed important variation in results (when
- considering a rebuilding demand), with EXIOBASE 3 leading to indirect impacts
- lower in average than EUREGIO and EORA26
-\change_inserted 1286759212 1694104008
-.
-\change_deleted 1286759212 1694104007
-, 
-\change_inserted 1286759212 1694104011
-
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-
-\change_inserted 1286759212 1694104020
-je ne comprends pas ce que tu veux dire dans la suite de la phrase
-\change_unchanged
-
-\end_layout
-
-\end_inset
-
-
-\change_inserted -1263083292 1693497602
-which also show more variability in the results, tied with the presence
- of important negative outcomes for some simulation using EUREGIO and EORA26.
+ considering a rebuilding demand).
+ Using EXIOBASE 3 leads to indirect impacts lower in average than EUREGIO
+ and EORA26.
+ EUREGIO and EORA26 also show more variability in the results, tied with
+ the presence of important negative outcomes.
 \end_layout
 
 \begin_layout Standard
-
-\change_inserted -1263083292 1693579455
 Similar to the influence of the MRIOT choice, changes in parameters values
  have more influence on the results when considering rebuilding demand.
  Simulations show high sensitivity to parameter 
@@ -4700,87 +4547,29 @@ Similar to the influence of the MRIOT choice, changes in parameters values
 \end_inset
 
  and rebuilding duration in this case.
- 
-\change_inserted 1286759212 1694104080
-The fact that r
-\change_deleted 1286759212 1694104078
-R
-\change_inserted -1263083292 1693579455
-ebuilding duration that are too short lead to 
-\change_deleted 1286759212 1694104093
-excessive
-\change_inserted 1286759212 1694104093
-large
-\change_inserted -1263083292 1693579455
- indirect impact
-\change_inserted 1286759212 1694104115
-s
-\change_inserted -1263083292 1693579455
- 
-\change_inserted 1286759212 1694104097
-is 
-\change_inserted -1263083292 1693579455
-due to the important shortage it creates: as rebuilding demand per step
- is higher, intermediate demand is more rationned which quickly results
- in shortages.
+ The fact that rebuilding duration that are too short lead to large indirect
+ impacts is related to the important shortage it creates: as rebuilding
+ demand per step is higher, intermediate demand is more rationned which
+ quickly results in shortages.
  High 
 \begin_inset Formula $\psi$
 \end_inset
 
  values are also associated with important shortages and indirect impact
  as such values effectively reduce the buffering effect of inventories.
- We found that values higher than 0.97 lead to 
-\change_inserted 1286759212 1694104138
-large 
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-
-\change_inserted 1286759212 1694104142
-précise plus les valeurs
-\change_unchanged
-
-\end_layout
-
-\end_inset
-
-
-\change_deleted 1286759212 1694104132
-unreasonnable
-\change_inserted -1263083292 1693579455
- results when rebuilding demand is considered while this is not the case
- when no rebuilding demand is considered, as the rationning is less prononced
- in this case.
-\change_unchanged
-
+ We found that values higher than 0.97 lead to results exceeding 500% of
+ the direct damages when rebuilding demand is considered while this is not
+ the case when no rebuilding demand is considered, as the rationning is
+ less prononced in this case.
 \end_layout
 
 \begin_layout Standard
-
-\change_inserted -1263083292 1693579649
-These elements show that
-\change_unchanged
- results are heavily dependent on assumptions about 
-\change_inserted -1263083292 1693579663
-rebuilding
-\change_unchanged
- and the rigidity of constraints on the actors.
+These elements show that results are heavily dependent on assumptions about
+ rebuilding and the rigidity of constraints on the actors.
  This aligns with existing studies that have shown both positive and negative
  indirect impacts following a shock.
- 
-\change_inserted -1263083292 1693579697
-We observe that
-\change_unchanged
- 
-\change_inserted -1263083292 1693579711
-the 
-\change_unchanged
-ARIO 
-\change_inserted -1263083292 1693579713
-model 
-\change_unchanged
-can both lead to negative and positive impacts (the 
+ We observe that the ARIO model can both lead to negative and positive impacts
+ (the 
 \begin_inset Quotes eld
 \end_inset
 
@@ -4790,18 +4579,10 @@ creative destruction
 
  hypothesis).
  While this provides versatility in representing economic dynamics, it highlight
-s the importance of carefully exploring the range of possible outcomes
-\change_inserted -1263083292 1693579855
- and avoid limiting studies to one set of parameters values, scenario and
- MRIOT
-\change_unchanged
-.
- 
-\change_inserted -1263083292 1693579903
-In particular, 
-\change_unchanged
-we suggest that the ARIO model is best used when examining different recovery
- story-lines from a shock.
+s the importance of carefully exploring the range of possible outcomes and
+ avoid limiting studies to one set of parameters values, scenario and MRIOT.
+ In particular, we suggest that the ARIO model is best used when examining
+ different recovery story-lines from a shock.
  For instance, comparing results obtained assuming an 
 \begin_inset Quotes eld
 \end_inset
@@ -4836,12 +4617,8 @@ Our analysis did not include parameters related to inventories, such as
  size and resupply time and sectoral (or even regional) heterogeneity, due
  to the complexity it would introduce, especially on a per-sector and per-MRIOT
  basis.
-
-\change_inserted -1263083292 1693580255
  Future studies should focus on this aspect to account for dissimilarities
  across different sectors or regions, especially on inventories management.
-
-\change_unchanged
  Further research steps should also involve analyzing the effects of other
  events using our methodology and conducting an inter-comparison with other
  models to enhance the robustness and consistency of our findings.
@@ -4860,8 +4637,6 @@ literal "false"
  it can influence vulnerability to indirect economics impacts.
  This paper and the BoARIO package, both provide a starting point toward
  such studies.
-\change_inserted -1263083292 1693580787
-
 \end_layout
 
 \begin_layout Section
@@ -4901,7 +4676,7 @@ boario 0.5.0a0
  extensive documentation of both the model and API is available online at
  
 \begin_inset Flex URL
-status collapsed
+status open
 
 \begin_layout Plain Layout
 
@@ -4912,7 +4687,7 @@ https://spjuhel.github.io/BoARIO/
 
  and code sources is available on a github repository at 
 \begin_inset Flex URL
-status collapsed
+status open
 
 \begin_layout Plain Layout
 
@@ -4944,18 +4719,19 @@ literal "false"
 
 \begin_layout Standard
 We defined a pipeline that automates the execution of our experiments.
- This pipeline, hosted on a GitHub repository
-\begin_inset Foot
+ This pipeline, hosted on a GitHub repository (
+\begin_inset Flex URL
 status open
 
 \begin_layout Plain Layout
-which will be made available after publication
+
+https://github.com/spjuhel/BoARIO-Sensitivity
 \end_layout
 
 \end_inset
 
-, provides a comprehensive framework for reproducing all our results effortlessl
-y, albeit with the requirement of access to sufficient computational resources.
+), provides a comprehensive framework for reproducing all our results effortless
+ly, albeit with the requirement of access to sufficient computational resources.
  One of the notable advantages of this approach is the flexibility it offers,
  as researchers may modify or extend the pipeline to conduct additional
  experiments using BoARIO, thereby facilitating further investigations.
@@ -5912,139 +5688,6 @@ The implementation does (yet) not account for the role of labor (notably
 \end_layout
 
 \begin_layout Section
-Input details
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-
-\change_inserted 1286759212 1694103683
-VV 
-\change_unchanged
-il faut que tu mettes plus d'explication, ou alors enleve cette section
- et mets directement dans le texte principal: see the following files etc.
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset CommandInset label
-LatexCommand label
-name "app2"
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Subsection
-Per sector parameters
-\end_layout
-
-\begin_layout Standard
-\begin_inset CommandInset label
-LatexCommand label
-name "app2.2"
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-Please refer to the following files: 
-\begin_inset ERT
-status collapsed
-
-\begin_layout Plain Layout
-
-
-\backslash
-verb|exiobase3_sectors_config.csv|
-\end_layout
-
-\end_inset
-
-, 
-\begin_inset ERT
-status collapsed
-
-\begin_layout Plain Layout
-
-
-\backslash
-verb|eora26_sectors_config.csv|
-\end_layout
-
-\end_inset
-
-, 
-\begin_inset ERT
-status collapsed
-
-\begin_layout Plain Layout
-
-
-\backslash
-verb|euregio_sectors_config.csv|
-\end_layout
-
-\end_inset
-
-.
-\end_layout
-
-\begin_layout Subsection
-Aggregation correspondence tables
-\end_layout
-
-\begin_layout Standard
-\begin_inset CommandInset label
-LatexCommand label
-name "app2.3"
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-Please refer to the following files: 
-\begin_inset ERT
-status collapsed
-
-\begin_layout Plain Layout
-
-
-\backslash
-verb|regions_common_aggreg.ods|
-\end_layout
-
-\end_inset
-
-, 
-\begin_inset ERT
-status collapsed
-
-\begin_layout Plain Layout
-
-
-\backslash
-verb|sectors_common_aggreg.ods|
-\end_layout
-
-\end_inset
-
-.
- The first sheet of these spreadsheet documents shows the aggregated regions
- (or sectors), and each other sheets gives the correspondence with each
- MRIOT.
-\end_layout
-
-\begin_layout Section
 Detailed results
 \end_layout
 
@@ -6080,7 +5723,7 @@ Figure
 
 \begin_inset CommandInset ref
 LatexCommand ref
-reference "tab:historic-values"
+reference "fig:historic-values"
 plural "false"
 caps "false"
 noprefix "false"
@@ -6096,23 +5739,15 @@ literal "false"
 
 \end_inset
 
-.
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-
-\change_inserted 1286759212 1694103670
-VV 
-\change_unchanged
-liste les valeurs de ces paramètres.
- AU fait, tu fais référence à cette swection quelque part dans le texte
- principal?
-\end_layout
-
+: 
+\begin_inset Formula $\psi=0.8$
 \end_inset
 
+ and 
+\begin_inset Formula $\alpha_{\tau}=365$
+\end_inset
 
+.
 \end_layout
 
 \begin_layout Standard
@@ -6149,7 +5784,7 @@ Results obtained when setting
 
 \begin_inset CommandInset label
 LatexCommand label
-name "tab:historic-values"
+name "fig:historic-values"
 
 \end_inset
 
@@ -6208,12 +5843,8 @@ noprefix "false"
 
 \end_inset
 
- show the results for some
-\change_inserted 1286759212 1694104455
- 
-\change_unchanged
-regions not directly affected by the event, both aggregated results over
- all sectors, and per economic sector results.
+ show the results for some regions not directly affected by the event, both
+ aggregated results over all sectors, and per economic sector results.
 \end_layout
 
 \begin_layout Standard
@@ -6462,12 +6093,8 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Results (aggregated) in the rest of the World
-\change_inserted 1286759212 1694103769
-, i.e.
- the world without Germany, USA, France and China
-\change_unchanged
-.
+Results (aggregated) in the rest of the World, i.e.
+ the world without Germany, USA, France and China.
 \begin_inset CommandInset label
 LatexCommand label
 name "app3.4.fig:ROW1"
@@ -6505,12 +6132,8 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Results (per sector) in the rest of the World
-\change_inserted 1286759212 1694103776
-, i.e.
- the world without Germany, USA, France and China
-\change_unchanged
-.
+Results (per sector) in the rest of the World, i.e.
+ the world without Germany, USA, France and China.
 \begin_inset CommandInset label
 LatexCommand label
 name "app3.4.fig:ROW2"
