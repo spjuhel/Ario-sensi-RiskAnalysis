@@ -98,6 +98,7 @@ theorems-ams
 \html_math_output 0
 \html_css_as_file 0
 \html_be_strict false
+\author 1286759212 "Vincent Viguié"
 \end_header
 
 \begin_body
@@ -3744,7 +3745,7 @@ When not considering rebuilding demand, the sensitivity to MRIOT choice
 placement t
 wide true
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
@@ -4495,9 +4496,118 @@ name "sec6"
 \end_inset
 
 
+\change_inserted 1286759212 1694192463
+
 \end_layout
 
 \begin_layout Standard
+In this paper we carry out an in-depth sensitivity analysis of ARIO, a model
+ which has often been used in the literature to assess the indirect economic
+ impact of disasters, and whose mechanisms have been used as a foundation
+ by numerous other models (Colon et al., 2019; Koks and Thissen, 2016; Otto
+ et al., 2017; Shughrue and Seto, 2018).
+ We find that the choice of taking into account or not the demand for reconstruc
+tion after a disaster especially leads to large differences in the results.
+
+\change_deleted 1286759212 1694193581
+ 
+\change_unchanged
+
+\end_layout
+
+\begin_layout Standard
+When taking into account this demand, i.e.
+ if we suppose that the recovery can only come when some economic sectors
+ produce more to rebuild what was destroyed by the disaster, the economic
+ impact of the disaster can be positive (i.e.
+ economic gains).
+ The extra demand can indeed act as a stimulus for the economy (Hallegatte,
+ 2014).
+ It can also be largely negative, as the extra demand may conversely create
+ shortages harming the whole economy.
+
+\change_deleted 1286759212 1694193581
+ 
+\change_unchanged
+
+\end_layout
+
+\begin_layout Standard
+When we do not take into account this demand, i.e.
+ if we suppose that the recovery occurs exogenously without any demand to
+ rebuild damaged infrastructures, then the economic impact is always moderately
+ negative.
+ In our simulations, when taking into account rebuilding demand, total productio
+n change ranges from about +40% (i.e.
+ gains) to -250% (i.e.
+ losses) of the direct losses.
+ When we do not take into account this demand, total production change ranges
+ only from -50% to -10% of the direct losses.
+
+\change_deleted 1286759212 1694193581
+ 
+\change_unchanged
+
+\end_layout
+
+\begin_layout Standard
+Both hypotheses can be found in the literature, in different papers (e.g.,
+ Wang et al.
+ (2020) and Koks et al.
+ (2014)).
+ Both choices represent extreme cases, as it may be expected that reconstruction
+ will lead to at least some demand to the construction sector (see for instance
+ the empirical work by Hsiang (2010)).
+ It may also be expected that the need for rebuilding may not be strictly
+ equivalent to the direct damages, as some destroyed elements may not be
+ reconstructed or new types of infrastructures may be built instead.
+ Our results highlight that a better description of rebuilding may be essential
+ to improve the reliability of natural disaster economic costs models.
+ We can note, however, that some disasters, which lead to business interruptions
+ while not destroying capital, may be studied with models such as ARIO without
+ having to solve this issue.
+ They indeed lead to a zero rebuilding demand.
+ This is for instance the case of droughts, or of some power blackouts.
+\end_layout
+
+\begin_layout Standard
+We can also note that, when we do not take into account rebuilding demand,
+ the shape of the exogenous recovery over time does only influence marginally
+ the results.
+ When not taking onto account this demand, the specificity of the shape
+ of the recovery appears to be only a secondary concern.
+
+\change_deleted 1286759212 1694193581
+ 
+\change_unchanged
+
+\end_layout
+
+\begin_layout Standard
+When taking into account the rebuilding demand, the economic data used as
+ input to the model appears to play an important role in the simulation
+ results.
+ Using EXIOBASE 3 as the input-output table leads to indirect impacts lower
+ in average than using EUREGIO and EORA26.
+ EUREGIO and EORA26 also show more variability in the results, tied with
+ the presence of important negative outcomes.
+ It is difficult to determine a priori which database is more suited to
+ the economic analysis of a disaster, and, here again, different choices
+ have been made in different papers in the literature.
+ Our results highlight the importance of employing and comparing the outcomes
+ of multiple IO tables in such studies.
+
+\change_deleted 1286759212 1694193581
+ 
+\change_unchanged
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Comment
+status collapsed
+
+\begin_layout Plain Layout
 In this paper we conducted an analysis of the responses of the ARIO model
  to the use of different MRIOTs, a wide range of values for its main parameters,
  and two shock recovery mecanisms.
@@ -4511,7 +4621,7 @@ In this paper we conducted an analysis of the responses of the ARIO model
  as they can alter the qualitative nature of results.
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 In particular, we found that whether a rebuilding demand is considered or
  not, and how long it takes to answer this demand, appears to be a main
  factor in possible outcomes.
@@ -4530,7 +4640,7 @@ too fast
  a disaster in order to avoid supply chains struggle.
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 The use of different MRIOTs showed important variation in results (when
  considering a rebuilding demand).
  Using EXIOBASE 3 leads to indirect impacts lower in average than EUREGIO
@@ -4539,18 +4649,33 @@ The use of different MRIOTs showed important variation in results (when
  the presence of important negative outcomes.
 \end_layout
 
+\end_inset
+
+
+\end_layout
+
 \begin_layout Standard
-Similar to the influence of the MRIOT choice, changes in parameters values
- have more influence on the results when considering rebuilding demand.
+Finally, changes in parameters values also largely have more influence 
+\change_deleted 1286759212 1694193581
+ 
+\change_unchanged
+the results expecially when 
+\change_deleted 1286759212 1694193581
+ 
+\change_unchanged
+rebuilding demand is taken into account.
  Simulations show high sensitivity to parameter 
 \begin_inset Formula $\psi$
 \end_inset
 
  and rebuilding duration in this case.
- The fact that rebuilding duration that are too short lead to large indirect
- impacts is related to the important shortage it creates: as rebuilding
- demand per step is higher, intermediate demand is more rationned which
- quickly results in shortages.
+ Rebuilding durations that are too short especially lead to large indirect
+ impacts : as rebuilding demand per step is high in this case, intermediate
+ demand is often 
+\change_deleted 1286759212 1694193581
+ 
+\change_unchanged
+rationed which quickly results in shortages.
  High 
 \begin_inset Formula $\psi$
 \end_inset
@@ -4559,8 +4684,8 @@ Similar to the influence of the MRIOT choice, changes in parameters values
  as such values effectively reduce the buffering effect of inventories.
  We found that values higher than 0.97 lead to results exceeding 500% of
  the direct damages when rebuilding demand is considered while this is not
- the case when no rebuilding demand is considered, as the rationning is
- less prononced in this case.
+ the case when no rebuilding demand is considered, as the rationing is less
+ pronounced in this case.
 \end_layout
 
 \begin_layout Standard
@@ -4580,7 +4705,8 @@ creative destruction
  hypothesis).
  While this provides versatility in representing economic dynamics, it highlight
 s the importance of carefully exploring the range of possible outcomes and
- avoid limiting studies to one set of parameters values, scenario and MRIOT.
+ avoid limiting studies to one set of parameters values, scenario and IO
+ table or MRIOT.
  In particular, we suggest that the ARIO model is best used when examining
  different recovery story-lines from a shock.
  For instance, comparing results obtained assuming an 
@@ -4605,21 +4731,13 @@ struggling recovery path
 \end_layout
 
 \begin_layout Standard
-In addition, integrating detailed empirical data on indirect losses following
- a shock can further refine and reduce the uncertainty of the ARIO model's
- results by calibrating better each parameter.
- This approach would contribute to enhance the accuracy and reliability
- of the model's outcomes.
-\end_layout
-
-\begin_layout Standard
 Our analysis did not include parameters related to inventories, such as
  size and resupply time and sectoral (or even regional) heterogeneity, due
  to the complexity it would introduce, especially on a per-sector and per-MRIOT
  basis.
- Future studies should focus on this aspect to account for dissimilarities
+ Future studies could focus on this aspect to account for dissimilarities
  across different sectors or regions, especially on inventories management.
- Further research steps should also involve analyzing the effects of other
+ Further research steps could also involve analyzing the effects of other
  events using our methodology and conducting an inter-comparison with other
  models to enhance the robustness and consistency of our findings.
  Recent events such as the COVID19 pandemic and the war in Ukraine also
