@@ -538,9 +538,18 @@ https://github.com/spjuhel/BoARIO
  impacts amounting to values that would have been registered, in light of
  what actually occurred.
  We then evaluate the remaining uncertainty.
- Our results show that the reliability of the outcomes of ARIO are crucially
- determined by the quality and quantity of data available on the empirical
- consequences of the natural disaster.
+ 
+\change_inserted 1286759212 1695306655
+
+\end_layout
+
+\begin_layout Standard
+Our results show that the reliability of the outcomes of ARIO are crucially
+ determined by the quality and quantity of data available on the 
+\change_inserted 1286759212 1696328287
+pre-existing state of the economy and on the 
+\change_unchanged
+empirical consequences of the natural disaster.
  This
 \color red
  
@@ -558,6 +567,11 @@ literal "false"
  This also calls for improvements in the collection of detailed economic
  data after present day natural disasters, to better anticipate the economic
  cost of future natural disasters caused by climate change.
+
+\change_inserted 1286759212 1696328352
+ 
+\change_unchanged
+
 \end_layout
 
 \begin_layout Section
@@ -4751,7 +4765,9 @@ s the importance of carefully exploring the range of possible outcomes and
  table or MRIOT.
  In particular, we suggest that the ARIO model is best used when examining
  different recovery story-lines from a shock.
- For instance, comparing results obtained assuming an 
+ 
+\change_deleted 1286759212 1696328618
+For instance, comparing results obtained assuming an 
 \begin_inset Quotes eld
 \end_inset
 
@@ -4770,6 +4786,13 @@ struggling recovery path
  could offer valuable insights at local and global levels, providing both
  optimistic and pessimistic estimates of aggregated losses from extreme
  events.
+\change_inserted 1286759212 1696328618
+For instance, comparing results obtained assuming different recovering paces
+ could offer valuable insights at local and global levels, providing both
+ optimistic and pessimistic estimates of aggregated losses from extreme
+ events.
+\change_unchanged
+
 \end_layout
 
 \begin_layout Standard
@@ -4783,8 +4806,11 @@ Our analysis did not include parameters related to inventories, such as
  events using our methodology and conducting an inter-comparison with other
  models to enhance the robustness and consistency of our findings.
  Recent events such as the COVID19 pandemic and the war in Ukraine also
- show how trade relations can changes quickly and how supply chains are
- put in difficulty 
+ show how trade relations can changes quickly 
+\change_deleted 1286759212 1696328704
+and how supply chains are put in difficulty
+\change_unchanged
+ 
 \begin_inset CommandInset citation
 LatexCommand citep
 key "guenette-2022-implic-war,maital-2020-global-econom"
@@ -4799,7 +4825,7 @@ literal "false"
  such studies.
 \end_layout
 
-\begin_layout Section
+\begin_layout Section*
 Reproducibility and code availability
 \end_layout
 
@@ -4813,7 +4839,7 @@ name "sec7"
 
 \end_layout
 
-\begin_layout Subsection
+\begin_layout Subsection*
 BoARIO python package
 \end_layout
 
@@ -4859,7 +4885,7 @@ https://github.com/spjuhel/BoARIO
 .
 \end_layout
 
-\begin_layout Subsection
+\begin_layout Subsection*
 Simulation pipeline
 \end_layout
 
@@ -4895,6 +4921,32 @@ ly, albeit with the requirement of access to sufficient computational resources.
  One of the notable advantages of this approach is the flexibility it offers,
  as researchers may modify or extend the pipeline to conduct additional
  experiments using BoARIO, thereby facilitating further investigations.
+\change_inserted 1286759212 1695308718
+
+\end_layout
+
+\begin_layout Section*
+
+\change_inserted 1286759212 1695308922
+Acknowledgements
+\end_layout
+
+\begin_layout Standard
+
+\change_inserted 1286759212 1696328937
+We would like to thank Alessio Ciullo, Stéphane Hallegatte, Fabio D'Andrea,
+ Aglae Jezequiel and Frédéric Ghersi for interesting discussions and comments
+ on previous versions of this paper.
+ The authors also gratefully acknowledge funding from ADEME for the PhD
+ scholarship of Samuel Juhel.
+\change_deleted 1286759212 1696328939
+
+\end_layout
+
+\begin_layout Standard
+
+\change_inserted 1286759212 1695308798
+
 \end_layout
 
 \begin_layout Standard
